@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Jul 2025 22:39:03 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Sun, 20 Jul 2025 22:39:03 +0530</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to Colonialbiker&amp;rsquo;s blog. I just want to share whatever little I know to everyone on the internet. The content might be boring but I assure you that as time passes by, the quality of content will also improve.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Thanks a lot for taking your time and reading the posts!!!&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
