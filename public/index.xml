@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Colonialbiker Blog Site</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Colonialbiker Blog Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Jul 2025 22:39:03 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Jul 2025 23:56:44 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nmap Basics</title>
+      <link>//localhost:1313/posts/nmap-basics/</link>
+      <pubDate>Sun, 20 Jul 2025 23:56:44 +0530</pubDate>
+      <guid>//localhost:1313/posts/nmap-basics/</guid>
+      <description>&lt;h2 id=&#34;1-network-discovery&#34;&gt;1. Network discovery&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Find out IP address ranges&lt;/li&gt;&#xA;&lt;li&gt;Determine estimated services offered by a host&lt;/li&gt;&#xA;&lt;li&gt;Figure out general network topology&lt;/li&gt;&#xA;&lt;li&gt;Check for Firewall filtering policies&lt;/li&gt;&#xA;&lt;li&gt;sL : List scan&lt;/li&gt;&#xA;&lt;li&gt;A : Advanced / Aggressive&lt;/li&gt;&#xA;&lt;li&gt;Finding an organization&amp;rsquo;s IP address :&#xA;&lt;ul&gt;&#xA;&lt;li&gt;host -t ns target.com&lt;/li&gt;&#xA;&lt;li&gt;host -t a target.com&lt;/li&gt;&#xA;&lt;li&gt;host -t aaaa target.com&lt;/li&gt;&#xA;&lt;li&gt;host -t mx target.com&lt;/li&gt;&#xA;&lt;li&gt;host -t soa target.com&lt;/li&gt;&#xA;&lt;li&gt;nmap -Pn -T4 –-traceroute target.com&lt;/li&gt;&#xA;&lt;li&gt;whois &amp;lt;x.x.x.x&amp;gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-host-discovery&#34;&gt;2. Host discovery&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;nmap -sL abc.com&lt;/li&gt;&#xA;&lt;li&gt;nmap -sn -t4 abc.com : Ping scan&lt;/li&gt;&#xA;&lt;li&gt;nmap -Pn -t4 abc.com : Disable Ping&lt;/li&gt;&#xA;&lt;li&gt;nmap -sn -PS8O -v abc.com : TCP SYN Ping&lt;/li&gt;&#xA;&lt;li&gt;nmap -sn -PA8O -v abc.com: TCP ACK Ping&lt;/li&gt;&#xA;&lt;li&gt;nmap -sn -PU -v abc.com : UDP Ping&lt;/li&gt;&#xA;&lt;li&gt;nmap -sn -PE -v abc.com : ICMP Ping (8/echo)&lt;/li&gt;&#xA;&lt;li&gt;nmap -sn -PR -v abc.com : ARP Scan&lt;/li&gt;&#xA;&lt;li&gt;nmap -sn -PE -PS443 -PA80 -PP abc.com : Default&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;3-port-scanning&#34;&gt;3. Port Scanning&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Open : accepting TCP connections&lt;/li&gt;&#xA;&lt;li&gt;Closed : Accessible but no application listening&lt;/li&gt;&#xA;&lt;li&gt;Filtered : Not able to determine if port is open ( Firewall )&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>//localhost:1313/posts/my-first-post/</link>
       <pubDate>Sun, 20 Jul 2025 22:39:03 +0530</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>//localhost:1313/posts/my-first-post/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to Colonialbiker&amp;rsquo;s blog. I just want to share whatever little I know to everyone on the internet. The content might be boring but I assure you that as time passes by, the quality of content will also improve.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Thanks a lot for taking your time and reading the posts!!!&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

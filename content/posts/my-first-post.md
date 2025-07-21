@@ -2,6 +2,9 @@
 date = '2025-07-20T22:39:03+05:30'
 draft = false
 title = 'My First Post'
+authorbox = true
+toc = false
+tocOpen = false
 +++
 ## Introduction
 
