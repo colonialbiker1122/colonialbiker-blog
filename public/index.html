@@ -24,6 +24,172 @@
 			<div class="cards">
 					<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/the-intelligence-cycle/">The Intelligence Cycle</a></h1>
+	<div class="entry__content"><h2 id="stages">Stages</h2>
+<ol>
+<li>Planning and targeting</li>
+</ol>
+<ul>
+<li>Identify intelligence requirements</li>
+<li>Identify key assets, security concerns, etc</li>
+<li>Identify potential threats and corresponding mitigations</li>
+</ul>
+<ol start="2">
+<li>Preparation and Collection</li>
+</ol>
+<ul>
+<li>Defining and developing collection methods to obtain information regarding requirements</li>
+</ul>
+<ol start="3">
+<li>Processing and Exploitation</li>
+<li>Analysis and Production</li>
+<li>Dissemination and integration</li>
+</ol>
+<ul>
+<li>What are the most pressing issues?</li>
+<li>How urgent is the intel? How much detail recipient needs?</li>
+</ul>
+<ol start="6">
+<li>Evaluation and Feedback</li>
+</ol>
+<h2 id="defining-intelligence-requirements-ir">Defining Intelligence Requirements (IR)</h2>
+<ul>
+<li>IR is any subject, general or specific, upon which there is a need for collection of information</li>
+<li>IR is a requirement for intelligence to fill a gap in the command’s knowledge or understanding of the battlespace or threat forces</li>
+<li>What’s the mission of my organisation?</li>
+<li>What threat actors are interested in my industry?</li>
+<li>What threat actors are known for targeting my area of operation?</li>
+<li>What asset does my organisation protect?</li>
+<li>What threat actors could target my organization in order to reach another company I supply for?</li>
+<li>Had my organisation been targeted previously?</li>
+<li>To validate the priority for any IR,
+<ul>
+<li>Specificity of question</li>
+<li>Necessity of question</li>
+<li>Feasibility of collection</li>
+<li>Timelines of intelligence</li>
+</ul>
+</li>
+</ul>
+<h2 id="collection-process">Collection process</h2>
+<ul>
+<li>Internal: networks, endpoints etc</li>
+<li>External : Blogs, public DB, forums, Threat Intel feeds</li>
+<li>Collection Management Framework (CMF)</li>
+<li>IoC: Indicator of compromise: hashes, URLs, domains, IPs, paths, filenames, registry keys, malware files
+<ul>
+<li>Quality over quantity of IoC becomes crucial</li>
+</ul>
+</li>
+<li>Dropper : installs malware</li>
+<li>C2: attacker controlled computer server
+<ul>
+<li>For C2 communications, threat actors use cloud-based services, emails, blogs, comments, github repos, DNS queries etc.</li>
+</ul>
+</li>
+<li>Honeypots: Decoy which imitates possible target of attacks
+<ul>
+<li>Low interaction: transport layer, limited access to OS</li>
+<li>Medium interaction: Application layer</li>
+<li>High interaction: Involve real OS and apps to imitate</li>
+</ul>
+</li>
+</ul>
+<h2 id="processing-and-exploitation">Processing and exploitation</h2>
+<p>3 commonly used frameworks are as follows:</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-03T21:51:09&#43;05:30">August 03, 2025</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/more-about-apis/">More About APIs</a></h1>
+	<div class="entry__content"><h2 id="common-http-methods">Common HTTP methods</h2>
+<ul>
+<li>GET: Retrieve data</li>
+<li>POST: Create records</li>
+<li>PUT: Update resource</li>
+<li>PATCH: Partially update</li>
+<li>DELETE: Delete a resource</li>
+</ul>
+<h2 id="http-request-components">HTTP Request Components</h2>
+<ul>
+<li>Version</li>
+<li>URL</li>
+<li>Method</li>
+<li>Request header: Cookies, user-agent, refers, etc</li>
+<li>Body (optional) : form data  (JSON/ Form encoded)</li>
+</ul>
+<h2 id="http-response-components">HTTP Response Components</h2>
+<ul>
+<li>Requested resource</li>
+<li>Content length</li>
+<li>Content type</li>
+<li>Headers</li>
+<li>Time last modified</li>
+<li>HTTP status codes</li>
+</ul>
+<h2 id="http-status-codes">HTTP Status codes</h2>
+<ul>
+<li>100 series: Informational</li>
+<li>200 series: Successful</li>
+<li>300 series: Redirection</li>
+<li>400 series: Client error: Bad API request, Resource not on server etc</li>
+<li>500 series: Server error: Configuration mismatch, Error check issues, Package dependency issue</li>
+<li>Examples:
+<ul>
+<li>102: Processing</li>
+<li>200: Successful</li>
+<li>201: Created (POST)</li>
+<li>301: Permanently moved</li>
+<li>404: Not found</li>
+<li>400: Bad request</li>
+<li>401: Unauthorised</li>
+<li>403: Forbidden</li>
+</ul>
+</li>
+</ul>
+<h2 id="api-restfulness">API Restfulness</h2>
+<ol>
+<li>Client-Server architecture</li>
+<li>Stateless</li>
+<li>Cacheable: Responses can be saved by browser/server, Reduce server load, Resuse API results.</li>
+<li>Layered</li>
+<li>Uniform interface: Unique URLs for each resource. Unified procedures to modify/other action for each resource</li>
+<li>Code on demand: API can deliver code/ business logic</li>
+</ol>
+<h2 id="miscellaneous-points">Miscellaneous points</h2>
+<ul>
+<li>Caching</li>
+<li>Versioning</li>
+<li>KISS: Keep It Simple Stupid</li>
+<li>Filter, order, paginate</li>
+<li>Rate Limiting</li>
+<li>Monitoring</li>
+<li>Standard API naming conventions</li>
+<li>Consistent naming strategy</li>
+<li>Query parameters</li>
+<li>No trailing slash</li>
+<li>No file names</li>
+<li>Nouns, not verbs</li>
+<li>Forward slashes for hierarchy</li>
+<li>Lower case letter</li>
+<li>Tools:
+<ul>
+<li>Insomnia</li>
+<li>Postman</li>
+<li>cURL</li>
+</ul>
+</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-03T21:38:51&#43;05:30">August 03, 2025</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/3-pillars-of-api-security/">3 Pillars of API Security</a></h1>
 	<div class="entry__content"><h2 id="1-governance">1. Governance</h2>
 <ul>
