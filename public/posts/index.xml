@@ -6,8 +6,29 @@
     <description>Recent content in Posts on Colonialbiker Blog Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Aug 2025 19:55:14 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 09 Aug 2025 09:41:41 +0530</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes</title>
+      <link>//localhost:1313/posts/kubernetes/</link>
+      <pubDate>Sat, 09 Aug 2025 09:41:41 +0530</pubDate>
+      <guid>//localhost:1313/posts/kubernetes/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Automated deployment, scaling, management&lt;/li&gt;&#xA;&lt;li&gt;Pods: Smallest deployable compute object in kubernetes&lt;/li&gt;&#xA;&lt;li&gt;Services: exposes an app running on a set of pods&lt;/li&gt;&#xA;&lt;li&gt;Automated rollouts/ rollbacks&lt;/li&gt;&#xA;&lt;li&gt;Storage orchestration: local/ network/ public cloud&lt;/li&gt;&#xA;&lt;li&gt;Horizontal scaling: metrics/ commands&lt;/li&gt;&#xA;&lt;li&gt;Automated bin packaging&lt;/li&gt;&#xA;&lt;li&gt;Secret and configuration management&lt;/li&gt;&#xA;&lt;li&gt;IPv4/ IPv6 stack&lt;/li&gt;&#xA;&lt;li&gt;Batch/ continuous integration workloads&lt;/li&gt;&#xA;&lt;li&gt;Self-healing&lt;/li&gt;&#xA;&lt;li&gt;Service discovery and load balancing&lt;/li&gt;&#xA;&lt;li&gt;Extensibility&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;kubernetes-control-plane&#34;&gt;Kubernetes Control Plane&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;kube-api-server: All communications in cluster utilize this API&lt;/li&gt;&#xA;&lt;li&gt;etcd: Distributed key-value store containing all cluster data (deployment configs, desired states, meta data etc)&lt;/li&gt;&#xA;&lt;li&gt;kube-scheduler: assigns new pods to nodes&lt;/li&gt;&#xA;&lt;li&gt;kube-controller-manager: Monitor and control cluster state&lt;/li&gt;&#xA;&lt;li&gt;cloud-controller-manager: interact with cloud providers. Link clusters to cloud provider’s API&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;kubernetes-worker-plane&#34;&gt;Kubernetes Worker Plane&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;kubelet-communicates with kube-api-server&lt;/li&gt;&#xA;&lt;li&gt;Container runtime: Docker, podman, etc&lt;/li&gt;&#xA;&lt;li&gt;Kube-proxy: Network proxy&lt;/li&gt;&#xA;&lt;li&gt;Node: Worker machine (physical/ virtual)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Container Orchestration</title>
+      <link>//localhost:1313/posts/container-orchestration/</link>
+      <pubDate>Sat, 09 Aug 2025 09:38:03 +0530</pubDate>
+      <guid>//localhost:1313/posts/container-orchestration/</guid>
+      <description>&lt;h2 id=&#34;container-orchestration&#34;&gt;Container Orchestration&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Container lifecycle: (automation of lifecycle is orchestration)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Deployment&lt;/li&gt;&#xA;&lt;li&gt;Management&lt;/li&gt;&#xA;&lt;li&gt;Scaling&lt;/li&gt;&#xA;&lt;li&gt;Networking&lt;/li&gt;&#xA;&lt;li&gt;Availability&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Configuration files: YAML/JSON. Stores resources, network, logs etc&lt;/li&gt;&#xA;&lt;li&gt;Deployment scheduling : Finds the right host based on predefined settings&lt;/li&gt;&#xA;&lt;li&gt;Manage container lifecycle: System parameters, file parameters&lt;/li&gt;&#xA;&lt;li&gt;Scaling and productivity&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Docker swarm&lt;/li&gt;&#xA;&lt;li&gt;Kubernetes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;benefits&#34;&gt;Benefits&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Increased production&lt;/li&gt;&#xA;&lt;li&gt;Faster deployment&lt;/li&gt;&#xA;&lt;li&gt;Reduced costs&lt;/li&gt;&#xA;&lt;li&gt;Stronger security&lt;/li&gt;&#xA;&lt;li&gt;Easier scaling&lt;/li&gt;&#xA;&lt;li&gt;Faster recovery&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to Docker</title>
+      <link>//localhost:1313/posts/docker/</link>
+      <pubDate>Sat, 09 Aug 2025 09:03:43 +0530</pubDate>
+      <guid>//localhost:1313/posts/docker/</guid>
+      <description>&lt;h2 id=&#34;container-characteristics&#34;&gt;Container characteristics&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Container engine virtualises OS&lt;/li&gt;&#xA;&lt;li&gt;Container is light-weight, fast, isolated, portable and secure&lt;/li&gt;&#xA;&lt;li&gt;Binaries, libraries within container enable apps to run&lt;/li&gt;&#xA;&lt;li&gt;Platform independent: cloud/ on-premises etc&lt;/li&gt;&#xA;&lt;li&gt;OS independent: Windows/ Linux&lt;/li&gt;&#xA;&lt;li&gt;Language independent&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;container-vendors&#34;&gt;Container vendors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Docker: Robust&lt;/li&gt;&#xA;&lt;li&gt;Podman: More-secure&lt;/li&gt;&#xA;&lt;li&gt;LXC: data-intensive&lt;/li&gt;&#xA;&lt;li&gt;Vagrant: High isolation-level&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;docker&#34;&gt;Docker&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Build: create container image from dockerfile&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Images:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Run: Creates container from an image&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Push: Store images in configured registry&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Pull: Retrieve&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Dockerfile: FROM base_img RUN command&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Safety Instrumented Systems</title>
       <link>//localhost:1313/posts/safety-instrumented-systems/</link>

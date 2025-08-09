@@ -24,6 +24,126 @@
 			<div class="cards">
 					<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/kubernetes/">Kubernetes</a></h1>
+	<div class="entry__content"><h2 id="introduction">Introduction</h2>
+<ul>
+<li>Automated deployment, scaling, management</li>
+<li>Pods: Smallest deployable compute object in kubernetes</li>
+<li>Services: exposes an app running on a set of pods</li>
+<li>Automated rollouts/ rollbacks</li>
+<li>Storage orchestration: local/ network/ public cloud</li>
+<li>Horizontal scaling: metrics/ commands</li>
+<li>Automated bin packaging</li>
+<li>Secret and configuration management</li>
+<li>IPv4/ IPv6 stack</li>
+<li>Batch/ continuous integration workloads</li>
+<li>Self-healing</li>
+<li>Service discovery and load balancing</li>
+<li>Extensibility</li>
+</ul>
+<h2 id="kubernetes-control-plane">Kubernetes Control Plane</h2>
+<ul>
+<li>kube-api-server: All communications in cluster utilize this API</li>
+<li>etcd: Distributed key-value store containing all cluster data (deployment configs, desired states, meta data etc)</li>
+<li>kube-scheduler: assigns new pods to nodes</li>
+<li>kube-controller-manager: Monitor and control cluster state</li>
+<li>cloud-controller-manager: interact with cloud providers. Link clusters to cloud provider’s API</li>
+</ul>
+<h2 id="kubernetes-worker-plane">Kubernetes Worker Plane</h2>
+<ul>
+<li>kubelet-communicates with kube-api-server</li>
+<li>Container runtime: Docker, podman, etc</li>
+<li>Kube-proxy: Network proxy</li>
+<li>Node: Worker machine (physical/ virtual)</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-09T09:41:41&#43;05:30">August 09, 2025</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/container-orchestration/">Container Orchestration</a></h1>
+	<div class="entry__content"><h2 id="container-orchestration">Container Orchestration</h2>
+<ul>
+<li>Container lifecycle: (automation of lifecycle is orchestration)
+<ul>
+<li>Deployment</li>
+<li>Management</li>
+<li>Scaling</li>
+<li>Networking</li>
+<li>Availability</li>
+</ul>
+</li>
+<li>Configuration files: YAML/JSON. Stores resources, network, logs etc</li>
+<li>Deployment scheduling : Finds the right host based on predefined settings</li>
+<li>Manage container lifecycle: System parameters, file parameters</li>
+<li>Scaling and productivity</li>
+</ul>
+<h2 id="tools">Tools</h2>
+<ul>
+<li>Docker swarm</li>
+<li>Kubernetes</li>
+</ul>
+<h2 id="benefits">Benefits</h2>
+<ul>
+<li>Increased production</li>
+<li>Faster deployment</li>
+<li>Reduced costs</li>
+<li>Stronger security</li>
+<li>Easier scaling</li>
+<li>Faster recovery</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-09T09:38:03&#43;05:30">August 09, 2025</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/docker/">Introduction to Docker</a></h1>
+	<div class="entry__content"><h2 id="container-characteristics">Container characteristics</h2>
+<ul>
+<li>Container engine virtualises OS</li>
+<li>Container is light-weight, fast, isolated, portable and secure</li>
+<li>Binaries, libraries within container enable apps to run</li>
+<li>Platform independent: cloud/ on-premises etc</li>
+<li>OS independent: Windows/ Linux</li>
+<li>Language independent</li>
+</ul>
+<h2 id="container-vendors">Container vendors</h2>
+<ul>
+<li>Docker: Robust</li>
+<li>Podman: More-secure</li>
+<li>LXC: data-intensive</li>
+<li>Vagrant: High isolation-level</li>
+</ul>
+<h2 id="docker">Docker</h2>
+<ul>
+<li>
+<p>Build: create container image from dockerfile</p>
+</li>
+<li>
+<p>Images:</p>
+</li>
+<li>
+<p>Run: Creates container from an image</p>
+</li>
+<li>
+<p>Push: Store images in configured registry</p>
+</li>
+<li>
+<p>Pull: Retrieve</p>
+</li>
+<li>
+<p>Dockerfile: FROM base_img RUN command</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-09T09:03:43&#43;05:30">August 09, 2025</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/safety-instrumented-systems/">Safety Instrumented Systems</a></h1>
 	<div class="entry__content"><h2 id="safety-on-the-whole-combines">Safety on the whole combines</h2>
 <ul>
@@ -428,273 +548,6 @@ Non-renewable: coal, natural gas</p>
 <p><em>Check project Helk and Project Mordor and Threat Hunter Playbook</em></p></div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2025-08-04T20:54:31&#43;05:30">August 04, 2025</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/the-intelligence-cycle/">The Intelligence Cycle</a></h1>
-	<div class="entry__content"><h2 id="stages">Stages</h2>
-<ol>
-<li>Planning and targeting</li>
-</ol>
-<ul>
-<li>Identify intelligence requirements</li>
-<li>Identify key assets, security concerns, etc</li>
-<li>Identify potential threats and corresponding mitigations</li>
-</ul>
-<ol start="2">
-<li>Preparation and Collection</li>
-</ol>
-<ul>
-<li>Defining and developing collection methods to obtain information regarding requirements</li>
-</ul>
-<ol start="3">
-<li>Processing and Exploitation</li>
-<li>Analysis and Production</li>
-<li>Dissemination and integration</li>
-</ol>
-<ul>
-<li>What are the most pressing issues?</li>
-<li>How urgent is the intel? How much detail recipient needs?</li>
-</ul>
-<ol start="6">
-<li>Evaluation and Feedback</li>
-</ol>
-<h2 id="defining-intelligence-requirements-ir">Defining Intelligence Requirements (IR)</h2>
-<ul>
-<li>IR is any subject, general or specific, upon which there is a need for collection of information</li>
-<li>IR is a requirement for intelligence to fill a gap in the command’s knowledge or understanding of the battlespace or threat forces</li>
-<li>What’s the mission of my organisation?</li>
-<li>What threat actors are interested in my industry?</li>
-<li>What threat actors are known for targeting my area of operation?</li>
-<li>What asset does my organisation protect?</li>
-<li>What threat actors could target my organization in order to reach another company I supply for?</li>
-<li>Had my organisation been targeted previously?</li>
-<li>To validate the priority for any IR,
-<ul>
-<li>Specificity of question</li>
-<li>Necessity of question</li>
-<li>Feasibility of collection</li>
-<li>Timelines of intelligence</li>
-</ul>
-</li>
-</ul>
-<h2 id="collection-process">Collection process</h2>
-<ul>
-<li>Internal: networks, endpoints etc</li>
-<li>External : Blogs, public DB, forums, Threat Intel feeds</li>
-<li>Collection Management Framework (CMF)</li>
-<li>IoC: Indicator of compromise: hashes, URLs, domains, IPs, paths, filenames, registry keys, malware files
-<ul>
-<li>Quality over quantity of IoC becomes crucial</li>
-</ul>
-</li>
-<li>Dropper : installs malware</li>
-<li>C2: attacker controlled computer server
-<ul>
-<li>For C2 communications, threat actors use cloud-based services, emails, blogs, comments, github repos, DNS queries etc.</li>
-</ul>
-</li>
-<li>Honeypots: Decoy which imitates possible target of attacks
-<ul>
-<li>Low interaction: transport layer, limited access to OS</li>
-<li>Medium interaction: Application layer</li>
-<li>High interaction: Involve real OS and apps to imitate</li>
-</ul>
-</li>
-</ul>
-<h2 id="processing-and-exploitation">Processing and exploitation</h2>
-<p>3 commonly used frameworks are as follows:</p></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-03T21:51:09&#43;05:30">August 03, 2025</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/more-about-apis/">More About APIs</a></h1>
-	<div class="entry__content"><h2 id="common-http-methods">Common HTTP methods</h2>
-<ul>
-<li>GET: Retrieve data</li>
-<li>POST: Create records</li>
-<li>PUT: Update resource</li>
-<li>PATCH: Partially update</li>
-<li>DELETE: Delete a resource</li>
-</ul>
-<h2 id="http-request-components">HTTP Request Components</h2>
-<ul>
-<li>Version</li>
-<li>URL</li>
-<li>Method</li>
-<li>Request header: Cookies, user-agent, refers, etc</li>
-<li>Body (optional) : form data  (JSON/ Form encoded)</li>
-</ul>
-<h2 id="http-response-components">HTTP Response Components</h2>
-<ul>
-<li>Requested resource</li>
-<li>Content length</li>
-<li>Content type</li>
-<li>Headers</li>
-<li>Time last modified</li>
-<li>HTTP status codes</li>
-</ul>
-<h2 id="http-status-codes">HTTP Status codes</h2>
-<ul>
-<li>100 series: Informational</li>
-<li>200 series: Successful</li>
-<li>300 series: Redirection</li>
-<li>400 series: Client error: Bad API request, Resource not on server etc</li>
-<li>500 series: Server error: Configuration mismatch, Error check issues, Package dependency issue</li>
-<li>Examples:
-<ul>
-<li>102: Processing</li>
-<li>200: Successful</li>
-<li>201: Created (POST)</li>
-<li>301: Permanently moved</li>
-<li>404: Not found</li>
-<li>400: Bad request</li>
-<li>401: Unauthorised</li>
-<li>403: Forbidden</li>
-</ul>
-</li>
-</ul>
-<h2 id="api-restfulness">API Restfulness</h2>
-<ol>
-<li>Client-Server architecture</li>
-<li>Stateless</li>
-<li>Cacheable: Responses can be saved by browser/server, Reduce server load, Resuse API results.</li>
-<li>Layered</li>
-<li>Uniform interface: Unique URLs for each resource. Unified procedures to modify/other action for each resource</li>
-<li>Code on demand: API can deliver code/ business logic</li>
-</ol>
-<h2 id="miscellaneous-points">Miscellaneous points</h2>
-<ul>
-<li>Caching</li>
-<li>Versioning</li>
-<li>KISS: Keep It Simple Stupid</li>
-<li>Filter, order, paginate</li>
-<li>Rate Limiting</li>
-<li>Monitoring</li>
-<li>Standard API naming conventions</li>
-<li>Consistent naming strategy</li>
-<li>Query parameters</li>
-<li>No trailing slash</li>
-<li>No file names</li>
-<li>Nouns, not verbs</li>
-<li>Forward slashes for hierarchy</li>
-<li>Lower case letter</li>
-<li>Tools:
-<ul>
-<li>Insomnia</li>
-<li>Postman</li>
-<li>cURL</li>
-</ul>
-</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-03T21:38:51&#43;05:30">August 03, 2025</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/3-pillars-of-api-security/">3 Pillars of API Security</a></h1>
-	<div class="entry__content"><h2 id="1-governance">1. Governance</h2>
-<ul>
-<li>Know your APIs
-<ul>
-<li>Get full inventory of APIs : Purpose, owner, documentation etc.</li>
-<li>Standardise and enforce API deployment process</li>
-<li>Check for existence of shadow/ rogue APIs, proper validation, governance at gateway and marketplace.</li>
-<li>API Documentation : Mandatory</li>
-<li>API development standards: style guides, authentication requirements, versioning, PII tracking</li>
-</ul>
-</li>
-<li>Threat modelling:
-<ul>
-<li>Identify APIs, business flows, data access paths</li>
-<li>Assess: vulnerabilities, logic flows, access controls, 3rd party risks</li>
-<li>Probability:</li>
-<li>Impact: Understand the damage/ loss/ consequences</li>
-<li>Mitigation: Develop plans to assess the risk and mitigation strategies</li>
-</ul>
-</li>
-<li>OpenAPI specification AKA Swagger</li>
-<li>Design guides:
-<ul>
-<li>Authentication: Type (token/ certificate etc.), how to implement.</li>
-<li>Authorisation: Who has access to what</li>
-<li>Naming conventions: URIs as nouns, methods as verbs, pluralisation, hierarchy, case, language</li>
-<li>Error codes: status code, reference ID , human readable</li>
-<li>Versioning: when to increment, when not to</li>
-<li>Units/ formats/ standards: date/time, timezone</li>
-</ul>
-</li>
-</ul>
-<h2 id="2-testing">2. Testing</h2>
-<ul>
-<li>Data security:
-<ul>
-<li>Access Control</li>
-<li>Excessive/ Sensitive Data Exposure</li>
-<li>File / directory exposure</li>
-<li>Encryption at rest</li>
-</ul>
-</li>
-<li>Business logic:
-<ul>
-<li>Cross-account access</li>
-<li>API function abuse</li>
-<li>RBAC: Role-based Access Control</li>
-<li>Pen-testing</li>
-</ul>
-</li>
-<li>API security
-<ul>
-<li>Unsecured endpoints</li>
-<li>Authentication exploits</li>
-<li>Enumeration</li>
-<li>Application DoS, Rate Limiting</li>
-<li>Missing SSL/ TLS issues</li>
-<li>Injection, fuzzing</li>
-<li>Server Side Request Forgery</li>
-</ul>
-</li>
-</ul>
-<h2 id="3-monitoring">3. Monitoring</h2>
-<ul>
-<li>Runtime protection
-<ul>
-<li>Policy enforcement</li>
-<li>Authentication</li>
-<li>Traffic filtering</li>
-</ul>
-</li>
-<li>Threat detection
-<ul>
-<li>Fraudulent traffic</li>
-<li>Distributed attacks</li>
-<li>Incident Response</li>
-</ul>
-</li>
-<li>Control validation
-<ul>
-<li>Verify API controls</li>
-<li>Uncover anomalies</li>
-</ul>
-</li>
-<li>API Discovery sources
-<ul>
-<li>API gateway</li>
-<li>Web Application Firewall</li>
-<li>Code repository</li>
-<li>Application crawling</li>
-</ul>
-</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-02T12:56:34&#43;05:30">August 02, 2025</time>
 	</div>
 </article>
 					</div>
