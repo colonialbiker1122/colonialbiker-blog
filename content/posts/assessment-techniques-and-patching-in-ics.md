@@ -2,6 +2,7 @@
 date = '2025-08-06T19:52:28+05:30'
 draft = false
 title = 'Assessment Techniques and Patching in ICS'
+categories = ['OT Security']
 +++
 ## Assessment techniques for ICS
 - Asset discovery/ identification

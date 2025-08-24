@@ -2,6 +2,7 @@
 date = '2025-08-09T09:41:41+05:30'
 draft = false
 title = 'Kubernetes'
+categories = ['DevOps']
 +++
 ## Introduction
 - Automated deployment, scaling, management

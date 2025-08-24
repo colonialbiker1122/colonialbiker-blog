@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>API | Colonialbiker Blog Site</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+	<link rel="alternate" type="application/rss+xml" href="/categories/api/index.xml" title="Colonialbiker Blog Site">
+</head>
+<body class="body kind-term">
+	<header class="header">
+	<a class="logo" href="/">Colonialbiker Blog Site</a>
+	
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		
+		<div class="page block">
+			<h1 class="page__title">API</h1>
+			
+		</div>
+		<div class="cards">
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/more-about-apis/">More About APIs</a></h1>
+	<div class="entry__content"><h2 id="common-http-methods">Common HTTP methods</h2>
+<ul>
+<li>GET: Retrieve data</li>
+<li>POST: Create records</li>
+<li>PUT: Update resource</li>
+<li>PATCH: Partially update</li>
+<li>DELETE: Delete a resource</li>
+</ul>
+<h2 id="http-request-components">HTTP Request Components</h2>
+<ul>
+<li>Version</li>
+<li>URL</li>
+<li>Method</li>
+<li>Request header: Cookies, user-agent, refers, etc</li>
+<li>Body (optional) : form data  (JSON/ Form encoded)</li>
+</ul>
+<h2 id="http-response-components">HTTP Response Components</h2>
+<ul>
+<li>Requested resource</li>
+<li>Content length</li>
+<li>Content type</li>
+<li>Headers</li>
+<li>Time last modified</li>
+<li>HTTP status codes</li>
+</ul>
+<h2 id="http-status-codes">HTTP Status codes</h2>
+<ul>
+<li>100 series: Informational</li>
+<li>200 series: Successful</li>
+<li>300 series: Redirection</li>
+<li>400 series: Client error: Bad API request, Resource not on server etc</li>
+<li>500 series: Server error: Configuration mismatch, Error check issues, Package dependency issue</li>
+<li>Examples:
+<ul>
+<li>102: Processing</li>
+<li>200: Successful</li>
+<li>201: Created (POST)</li>
+<li>301: Permanently moved</li>
+<li>404: Not found</li>
+<li>400: Bad request</li>
+<li>401: Unauthorised</li>
+<li>403: Forbidden</li>
+</ul>
+</li>
+</ul>
+<h2 id="api-restfulness">API Restfulness</h2>
+<ol>
+<li>Client-Server architecture</li>
+<li>Stateless</li>
+<li>Cacheable: Responses can be saved by browser/server, Reduce server load, Resuse API results.</li>
+<li>Layered</li>
+<li>Uniform interface: Unique URLs for each resource. Unified procedures to modify/other action for each resource</li>
+<li>Code on demand: API can deliver code/ business logic</li>
+</ol>
+<h2 id="miscellaneous-points">Miscellaneous points</h2>
+<ul>
+<li>Caching</li>
+<li>Versioning</li>
+<li>KISS: Keep It Simple Stupid</li>
+<li>Filter, order, paginate</li>
+<li>Rate Limiting</li>
+<li>Monitoring</li>
+<li>Standard API naming conventions</li>
+<li>Consistent naming strategy</li>
+<li>Query parameters</li>
+<li>No trailing slash</li>
+<li>No file names</li>
+<li>Nouns, not verbs</li>
+<li>Forward slashes for hierarchy</li>
+<li>Lower case letter</li>
+<li>Tools:
+<ul>
+<li>Insomnia</li>
+<li>Postman</li>
+<li>cURL</li>
+</ul>
+</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-03T21:38:51&#43;05:30">August 03, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/api/" rel="category">API</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/3-pillars-of-api-security/">3 Pillars of API Security</a></h1>
+	<div class="entry__content"><h2 id="1-governance">1. Governance</h2>
+<ul>
+<li>Know your APIs
+<ul>
+<li>Get full inventory of APIs : Purpose, owner, documentation etc.</li>
+<li>Standardise and enforce API deployment process</li>
+<li>Check for existence of shadow/ rogue APIs, proper validation, governance at gateway and marketplace.</li>
+<li>API Documentation : Mandatory</li>
+<li>API development standards: style guides, authentication requirements, versioning, PII tracking</li>
+</ul>
+</li>
+<li>Threat modelling:
+<ul>
+<li>Identify APIs, business flows, data access paths</li>
+<li>Assess: vulnerabilities, logic flows, access controls, 3rd party risks</li>
+<li>Probability:</li>
+<li>Impact: Understand the damage/ loss/ consequences</li>
+<li>Mitigation: Develop plans to assess the risk and mitigation strategies</li>
+</ul>
+</li>
+<li>OpenAPI specification AKA Swagger</li>
+<li>Design guides:
+<ul>
+<li>Authentication: Type (token/ certificate etc.), how to implement.</li>
+<li>Authorisation: Who has access to what</li>
+<li>Naming conventions: URIs as nouns, methods as verbs, pluralisation, hierarchy, case, language</li>
+<li>Error codes: status code, reference ID , human readable</li>
+<li>Versioning: when to increment, when not to</li>
+<li>Units/ formats/ standards: date/time, timezone</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-testing">2. Testing</h2>
+<ul>
+<li>Data security:
+<ul>
+<li>Access Control</li>
+<li>Excessive/ Sensitive Data Exposure</li>
+<li>File / directory exposure</li>
+<li>Encryption at rest</li>
+</ul>
+</li>
+<li>Business logic:
+<ul>
+<li>Cross-account access</li>
+<li>API function abuse</li>
+<li>RBAC: Role-based Access Control</li>
+<li>Pen-testing</li>
+</ul>
+</li>
+<li>API security
+<ul>
+<li>Unsecured endpoints</li>
+<li>Authentication exploits</li>
+<li>Enumeration</li>
+<li>Application DoS, Rate Limiting</li>
+<li>Missing SSL/ TLS issues</li>
+<li>Injection, fuzzing</li>
+<li>Server Side Request Forgery</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-monitoring">3. Monitoring</h2>
+<ul>
+<li>Runtime protection
+<ul>
+<li>Policy enforcement</li>
+<li>Authentication</li>
+<li>Traffic filtering</li>
+</ul>
+</li>
+<li>Threat detection
+<ul>
+<li>Fraudulent traffic</li>
+<li>Distributed attacks</li>
+<li>Incident Response</li>
+</ul>
+</li>
+<li>Control validation
+<ul>
+<li>Verify API controls</li>
+<li>Uncover anomalies</li>
+</ul>
+</li>
+<li>API Discovery sources
+<ul>
+<li>API gateway</li>
+<li>Web Application Firewall</li>
+<li>Code repository</li>
+<li>Application crawling</li>
+</ul>
+</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-02T12:56:34&#43;05:30">August 02, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/api/" rel="category">API</a>, 
+		<a class="meta-categories__link" href="/categories/api-security/" rel="category">API Security</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+		</div>
+	</main>
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="mailto:colonialbiker123@gmail.com">
+			<svg class="social__icon" aria-label="Email" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M299 268l124 106c-4 4-10 7-17 7H106c-7 0-13-3-17-7l124-106 43 38 43-38zm-43 13L89 138c4-4 10-7 17-7h300c7 0 13 3 17 7L256 281zm54-23l121-105v208L310 258zM81 153l121 105L81 361V153z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/sumukh-kesarla">
+			<svg class="social__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2025 Colonialbiker Blog Site. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+</body>
+</html>

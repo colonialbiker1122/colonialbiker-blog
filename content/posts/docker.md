@@ -2,6 +2,7 @@
 date = '2025-08-09T09:03:43+05:30'
 draft = false
 title = 'Introduction to Docker'
+categories = ['DevOps']
 +++
 ## Container characteristics
 - Container engine virtualises OS

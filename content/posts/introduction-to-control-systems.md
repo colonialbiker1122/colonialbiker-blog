@@ -2,6 +2,7 @@
 date = '2025-08-04T22:32:27+05:30'
 draft = false
 title = 'Introduction to Control Systems'
+categories = ['ICS']
 +++
 ## Introduction
 System: Collection of interconnected parts that form a larger more complex whole

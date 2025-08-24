@@ -2,6 +2,7 @@
 date = '2025-08-03T21:51:09+05:30'
 draft = false
 title = 'The Intelligence Cycle'
+categories = ['Cyber Threat Intel']
 +++
 ## Stages
 1. Planning and targeting

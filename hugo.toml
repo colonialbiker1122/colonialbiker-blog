@@ -2,7 +2,8 @@ baseURL = '/'
 languageCode = 'en-us'
 title = 'Colonialbiker Blog Site'
 theme = 'binario'
-pagination.pagerSize = "10" # Number of elements per page in pagination
+pagination.pagerSize = "6" # Number of elements per page in pagination
+summaryLength = 50
 
 [Params]
   description = "Colonialbiker BLog Website"

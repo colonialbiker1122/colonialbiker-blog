@@ -6,6 +6,70 @@
     <description>Recent content in Categories on Colonialbiker Blog Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 10 Aug 2025 08:50:35 +0530</lastBuildDate>
     <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DevOps</title>
+      <link>//localhost:1313/categories/devops/</link>
+      <pubDate>Sun, 10 Aug 2025 08:50:35 +0530</pubDate>
+      <guid>//localhost:1313/categories/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ICS</title>
+      <link>//localhost:1313/categories/ics/</link>
+      <pubDate>Wed, 06 Aug 2025 19:55:14 +0530</pubDate>
+      <guid>//localhost:1313/categories/ics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OT Security</title>
+      <link>//localhost:1313/categories/ot-security/</link>
+      <pubDate>Wed, 06 Aug 2025 19:52:28 +0530</pubDate>
+      <guid>//localhost:1313/categories/ot-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power Utility</title>
+      <link>//localhost:1313/categories/power-utility/</link>
+      <pubDate>Tue, 05 Aug 2025 22:01:51 +0530</pubDate>
+      <guid>//localhost:1313/categories/power-utility/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cyber Threat Intel</title>
+      <link>//localhost:1313/categories/cyber-threat-intel/</link>
+      <pubDate>Mon, 04 Aug 2025 20:54:31 +0530</pubDate>
+      <guid>//localhost:1313/categories/cyber-threat-intel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>API</title>
+      <link>//localhost:1313/categories/api/</link>
+      <pubDate>Sun, 03 Aug 2025 21:38:51 +0530</pubDate>
+      <guid>//localhost:1313/categories/api/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>API Security</title>
+      <link>//localhost:1313/categories/api-security/</link>
+      <pubDate>Sat, 02 Aug 2025 12:56:34 +0530</pubDate>
+      <guid>//localhost:1313/categories/api-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM Security</title>
+      <link>//localhost:1313/categories/llm-security/</link>
+      <pubDate>Sat, 02 Aug 2025 12:44:04 +0530</pubDate>
+      <guid>//localhost:1313/categories/llm-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vulnerability Assessment</title>
+      <link>//localhost:1313/categories/vulnerability-assessment/</link>
+      <pubDate>Sun, 20 Jul 2025 23:56:44 +0530</pubDate>
+      <guid>//localhost:1313/categories/vulnerability-assessment/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

@@ -2,6 +2,7 @@
 date = '2025-08-06T19:22:45+05:30'
 draft = false
 title = 'Know Your Industrial Control Systems'
+categories = ['ICS']
 +++
 ## Common Terminologies
 - SCADA: Supervisory control and data acquisition system. It grew out of telemetry systems developed for space program. Initially, all the components were hard wired, then came the role of microprocessor based digital telemetry systems.

@@ -29,6 +29,281 @@
 			
 				<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/docker/">Introduction to Docker</a></h1>
+	<div class="entry__content"><h2 id="container-characteristics">Container characteristics</h2>
+<ul>
+<li>Container engine virtualises OS</li>
+<li>Container is light-weight, fast, isolated, portable and secure</li>
+<li>Binaries, libraries within container enable apps to run</li>
+<li>Platform independent: cloud/ on-premises etc</li>
+<li>OS independent: Windows/ Linux</li>
+<li>Language independent</li>
+</ul>
+<h2 id="container-vendors">Container vendors</h2>
+<ul>
+<li>Docker: Robust</li>
+<li>Podman: More-secure</li>
+<li>LXC: data-intensive</li>
+<li>Vagrant: High isolation-level</li>
+</ul>
+<h2 id="docker">Docker</h2>
+<ul>
+<li>
+<p>Build: create container image from dockerfile</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-09T09:03:43&#43;05:30">August 09, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/devops/" rel="category">DevOps</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/safety-instrumented-systems/">Safety Instrumented Systems</a></h1>
+	<div class="entry__content"><h2 id="safety-on-the-whole-combines">Safety on the whole combines</h2>
+<ul>
+<li>Physical Infrastructure and Safeguards</li>
+<li>Process control logic (soft interlocks)</li>
+<li>Physical safeguards (burst disks, mechanical trips, 1-way valve)</li>
+<li>Safety Instrumented systems</li>
+</ul>
+<h2 id="failure-modes-for-ics">Failure modes for ICS</h2>
+<ul>
+<li>Intermittent failures:
+<ul>
+<li>Corrected by logic conditions in the system</li>
+<li>Minimal to no process interruption</li>
+</ul>
+</li>
+<li>Nuisance trips:
+<ul>
+<li>Logic interlocks, fail safes</li>
+</ul>
+</li>
+<li>Unplanned outages:
+<ul>
+<li>Sustained process failures</li>
+</ul>
+</li>
+<li>Dangerous failures:
+<ul>
+<li>Kinetic and safety impacts</li>
+<li>Extended outages</li>
+</ul>
+</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-06T19:55:14&#43;05:30">August 06, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/ics/" rel="category">ICS</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/assessment-techniques-and-patching-in-ics/">Assessment Techniques and Patching in ICS</a></h1>
+	<div class="entry__content"><h2 id="assessment-techniques-for-ics">Assessment techniques for ICS</h2>
+<ul>
+<li>Asset discovery/ identification</li>
+<li>Asset Management</li>
+<li>Vulnerability Management</li>
+<li>Cadence : first time / one-time/ periodic/ ongoing</li>
+<li>Work with operational personnel to understand impact: system-level/ network-level/ device-level</li>
+<li>Physical walkthrough: Infrastructure, Protocols, Media, age of systems, etc</li>
+<li>Routine, scheduled scanning</li>
+<li>Common Techniques:
+<ul>
+<li>Authenticated/ credentialed scanning : Ports and services, software inventory, patch auditing (OS and app), light weight scanning</li>
+<li>Configuration auditing : Identify known good state or optimal configuration and compare it against it</li>
+<li>Native OS commands: Check network config, installed patches, ports nad services , user accounts, etc.</li>
+<li>Native ICS protocols and tools</li>
+</ul>
+</li>
+</ul>
+<h2 id="patching-in-ics">Patching in ICS</h2>
+<ul>
+<li>Cyber maintenance</li>
+<li>Create an intelligent process that fits the context of system</li>
+<li>Automate and leverage virtualisation where possible</li>
+<li>Remove unneeded ports and services</li>
+<li>Change default or easily-guessed credentials</li>
+<li>Opt for SSH over telnet for infrastructure devices</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-06T19:52:28&#43;05:30">August 06, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/ot-security/" rel="category">OT Security</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/know-your-industrial-control-systems/">Know Your Industrial Control Systems</a></h1>
+	<div class="entry__content"><h2 id="common-terminologies">Common Terminologies</h2>
+<ul>
+<li>SCADA: Supervisory control and data acquisition system. It grew out of telemetry systems developed for space program. Initially, all the components were hard wired, then came the role of microprocessor based digital telemetry systems.</li>
+<li>DCS: Distributed control systems. These are typically installed within the plant premises.</li>
+<li>SCADA systems also support remote functionalities.</li>
+<li>2 basic components of SCADA:
+<ul>
+<li>RTU: Remote Terminal Unit or smart devices. These devices provide local control.</li>
+</ul>
+</li>
+<li>Central station computer</li>
+<li>MODBUS: Serial communications</li>
+<li>IEC 61850: Electric Utility Substation Communications</li>
+<li>HMI: Human-machine interface : Window</li>
+<li>Distributed control system (DCS): Process control (continuous/batch)</li>
+<li>Programmable logic controller (PLC): Discrete/ sequence control</li>
+<li>SCADA: Remote monitoring and dispatch</li>
+<li>SIS: Safety instrumental system : Life safety/ personnel protection</li>
+<li>OT: Operational technology = ICS (Industrial Control Systems) + CPS(Cyber Physical Systems) + others</li>
+<li>Purdue model: Structural / segmentation model for ICS security</li>
+<li>DCS topology:
+<ul>
+<li>Smart transmitters and valves: HART / Bus protocol</li>
+<li>Ladder logic</li>
+</ul>
+</li>
+<li>SCADA implementation in geographically dispersed areas</li>
+<li>Common SCADA mode communications: Microwave, satellite, cellular, dial-up mod</li>
+</ul>
+<h2 id="ics-protocols">ICS Protocols</h2>
+<ul>
+<li>Traditional ICS protocols acquire measurement values via polling. Periodically request the state. Period determined by throughput/ latency requirements.</li>
+<li>MODBUS
+<ul>
+<li>Added features beyond basic capabilities in MODBUS</li>
+<li>Define more data types to enhance inter-operability</li>
+<li>Bandwidth minimization for SCADA systems: send only deltas.</li>
+</ul>
+</li>
+<li>Publisher-subscriber based protocols: IEC 61805 GOOSE or UDP multicast in IP</li>
+<li>Industry  specific models:
+<ul>
+<li>ODVA’s CIP: Motion control, synchronization etc</li>
+<li>IEC 61850: Electric Power Industry</li>
+</ul>
+</li>
+<li>DCS protocols: OPC, Siemens S7, MODBUS, HART, Profibus, IP</li>
+<li>SCADA protocols: DNP3, ICCP, IEC 60870-5-104</li>
+<li>Issues with major ICS Protocols:
+<ul>
+<li>Insecure by design</li>
+<li>Insecure by implementation</li>
+</ul>
+</li>
+<li>Can be secured by using techniques such as TLS etc.</li>
+<li>Modern Wrappers: SSP21</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-06T19:22:45&#43;05:30">August 06, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/ics/" rel="category">ICS</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/scada-in-electric-power-industry/">SCADA in Electric Power Industry</a></h1>
+	<div class="entry__content"><h2 id="scada-system-capabilities">SCADA system capabilities</h2>
+<ul>
+<li>Access quantitative measurements of important processes both immediately and over time</li>
+<li>Detect and correct problems as soon as they happen</li>
+<li>Measure trends over tine</li>
+<li>Discover and eliminate bottlenecks and inefficiencies</li>
+<li>Control larger and more complex processes</li>
+<li>Information can be meter readings, current quality, power outages etc.</li>
+</ul>
+<h2 id="stages">Stages</h2>
+<ul>
+<li>Data acquisition
+<ul>
+<li>Sensors (digital/ analog)</li>
+<li>Control relays</li>
+</ul>
+</li>
+<li>Data collectors
+<ul>
+<li>Remote Terminal Unit (RTU): Small computerised units deployed in fields at specific sites. RTUs serve as local collection points for gathering reports from sensors and delivering commands to control relays</li>
+</ul>
+</li>
+<li>Data communication
+<ul>
+<li>Network which connects SCADA master unit to RTU</li>
+</ul>
+</li>
+<li>Data Presentation and Control
+<ul>
+<li>SCADA master units: Large computer consoles that serve as the central processor for SCADA system. Master units provide a human interface to the system and automatically regulate the manages system in response to sensor inputs</li>
+</ul>
+</li>
+</ul>
+<h2 id="rtu-connections">RTU Connections</h2>
+<ul>
+<li>RJ45 serial ports (terminal server)</li>
+<li>RJ45 10/100 Ethernet ports</li>
+<li>RJ11 Telco jack</li>
+<li>50 pin connectors for discretes and relays</li>
+<li>4 pin screw plugs for analogs</li>
+</ul>
+<h2 id="electric-scada-measurements">Electric SCADA measurements</h2>
+<ul>
+<li>Voltage , current, reactance</li>
+<li>Status of line devices: Switches, Breakers, Reclosers, cap banks, voltage regulators etc</li>
+<li>Status of customer serving devices: Transformers, street lights</li>
+<li>Electric usage data (metering)</li>
+<li>Outage data from all devices</li>
+<li>50 Hz waveform</li>
+<li>Substation switch house equipment</li>
+</ul>
+<h2 id="risks">Risks</h2>
+<ul>
+<li>Physical threats</li>
+<li>Insider threats</li>
+<li>Antiquated systems</li>
+<li>Incompetence</li>
+<li>Malwares</li>
+<li>Denial of service</li>
+</ul>
+<h2 id="impacts">Impacts</h2>
+<ul>
+<li>Property damage</li>
+<li>Asset damage</li>
+<li>Blackouts</li>
+<li>Meter data security</li>
+<li>Loss of billing data</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-05T22:01:51&#43;05:30">August 05, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/ics/" rel="category">ICS</a>, 
+		<a class="meta-categories__link" href="/categories/power-utility/" rel="category">Power Utility</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/electric-power-industry/">Electric Power Industry</a></h1>
 	<div class="entry__content"><h2 id="introduction">Introduction</h2>
 <h3 id="few-typical-components">Few typical components</h3>
@@ -74,623 +349,11 @@ Non-renewable: coal, natural gas</p>
 <p>An example of a use case of smart grid is where E-vehicles which are battery powered also are compatible to 2 way power distribution i.e Power from a vehicle can be used to power a site in case of main grid failure and at other times, be used as it was intended to.</p></div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2025-08-05T21:49:53&#43;05:30">August 05, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/introduction-to-control-systems/">Introduction to Control Systems</a></h1>
-	<div class="entry__content"><h2 id="introduction">Introduction</h2>
-<p>System: Collection of interconnected parts that form a larger more complex whole</p>
-<p>3 different problems</p>
-<ol>
-<li>System identification problem</li>
-</ol>
-<ul>
-<li>Determine mathematical problem</li>
-<li>Ask following questions:
-<ul>
-<li>How can I model the system that I’m trying to control ?</li>
-<li>What are the relevant dynamics/</li>
-<li>What equation will convent known inputs to measured outputs?</li>
-<li>i. Black box method</li>
-<li>ii. White box method</li>
-</ul>
-</li>
-</ul>
-<ol start="2">
-<li>Simulation problem</li>
-</ol>
-<ul>
-<li>Predicting how outputs change</li>
-<li>Ask the following questions:
-<ul>
-<li>Does my system model match my test data?</li>
-<li>Will my system work in all operating environments?</li>
-<li>How my system behaves with potentially destructive commands?</li>
-</ul>
-</li>
-</ul>
-<ol start="3">
-<li>Control problem</li>
-</ol>
-<ul>
-<li>How do we generate the appropriate system input that will produce the desired output?</li>
-<li>Ask the following questions:
-<ul>
-<li>How can I get my system to meet my performance requirements?</li>
-<li>How can I automate a process that currently involves humans in the loop?</li>
-<li>How can my system operate in a dynamic and noisy environment?</li>
-</ul>
-</li>
-</ul>
-<h2 id="miscellaneous">Miscellaneous</h2>
-<ul>
-<li>
-<p>Open Loop System</p></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-04T22:32:27&#43;05:30">August 04, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/threat-hunting/">Threat Hunting</a></h1>
-	<div class="entry__content"><h2 id="introduction">Introduction</h2>
-<ul>
-<li>Human driven activity of proactively and iteratively searching through the organisation’s environment (network, endpoints, apps etc) for signs of compromise in order to shorten the dwell-time and minimise the breach impact for the on.</li>
-<li>Types
-<ul>
-<li>Data-driven</li>
-<li>Intel-driven</li>
-<li>Entity-driven</li>
-<li>TTP-driven</li>
-</ul>
-</li>
-<li>Pyramid of pain: How much pain will be caused to adversaries to change their ways once you have identified their IoCs, network infra, etc.
-<ul>
-<li>TTP -&gt; Tools -&gt; Network/Host Artifact -&gt; Domain names -&gt; IP Addresses -&gt; Hash Values</li>
-</ul>
-</li>
-</ul>
-<h2 id="threat-hunting-maturity-model">Threat Hunting Maturity Model</h2>
-<ul>
-<li>Used to classify the team’s detection capability.
-<ol>
-<li>Initial: Automated alerting. Little or no routine data collection</li>
-<li>Minimal: Use CTI indicators. Moderate/ high routine data collection</li>
-<li>Procedural: Use data analysis procedures created by others</li>
-<li>Innovative: Create new data analysis procedures</li>
-<li>Leading: Automate majority of successful dat analysis procedure</li>
-</ol>
-</li>
-<li>Threat hunting loop:
-<ul>
-<li>Build Hypothesis —&gt; Start Investigation —&gt; Uncover Anomalies/ Patterns -&gt; Prove/ Disprove Hypothesis -&gt; Automate Result —&gt; Inform and enrich Analytics</li>
-</ul>
-</li>
-</ul>
-<h2 id="sans-threat-hunting-model-dan-gunther">SANS Threat Hunting Model (Dan Gunther)</h2>
-<ol>
-<li>Purpose: State purpose of hunt, data, desired outcome.</li>
-<li>Scope: Define hypothesis, identify network etc to get data</li>
-<li>Equip: How to collect data, collect enough data, how to analyze, how to avoid bias, implement CMF (Collection Management Framework)</li>
-<li>Plan review</li>
-<li>Execute</li>
-<li>Feedback: Improve previous stages</li>
-</ol>
-<h2 id="data-driven-methodology-rodriguez-brothers-insomnihack">Data Driven Methodology (Rodriguez brothers) InsomniHack</h2>
-<h3 id="1-define-research-goal-understand-and-map-data-to-adversary">1. Define research goal: Understand and map data to adversary</h3>
-<ul>
-<li>What is it that we are going to hunt?</li>
-<li>Do I understand my data? Do I have data wiki?</li>
-<li>Do I have data stored somewhere in my environment?</li>
-<li>Have we mapped logs to adversary action?</li>
-<li>How specific do I have to be?</li>
-<li>How many techniques can I cover per hypothesis?</li>
-<li>Focus on technique enabler or main behaviour?</li>
-</ul>
-<h3 id="2-modelling-the-data">2. Modelling the data</h3>
-<ul>
-<li>Understanding where data comes from</li>
-<li>Send logs to data lake to consult it</li>
-<li>Structure data by creating data dictionaries</li>
-<li>Try mapping each data source to an event</li>
-<li>OSSEM: Open Source Security Events Metadata</li>
-</ul>
-<h3 id="3-emulating-the-adversary">3. Emulating the adversary:</h3>
-<ul>
-<li>Way for red teamers to replicate adversary behaviours in organisation environment</li>
-</ul>
-<h3 id="4-defining-detection-model">4. Defining detection model:</h3>
-<ul>
-<li>Way to carry out the hunt</li>
-</ul>
-<h3 id="5-validating-detection-model">5. Validating detection model:</h3>
-<ul>
-<li>Try detection in production</li>
-<li>Zero results: Adversary behaviour not present</li>
-<li>Atleast one result: Look closer at results to confirm breach</li>
-<li>High volume of result: adjust process and try again</li>
-</ul>
-<h3 id="6-documentation">6. Documentation:</h3>
-<p><em>Check project Helk and Project Mordor and Threat Hunter Playbook</em></p></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-04T20:54:31&#43;05:30">August 04, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/the-intelligence-cycle/">The Intelligence Cycle</a></h1>
-	<div class="entry__content"><h2 id="stages">Stages</h2>
-<ol>
-<li>Planning and targeting</li>
-</ol>
-<ul>
-<li>Identify intelligence requirements</li>
-<li>Identify key assets, security concerns, etc</li>
-<li>Identify potential threats and corresponding mitigations</li>
-</ul>
-<ol start="2">
-<li>Preparation and Collection</li>
-</ol>
-<ul>
-<li>Defining and developing collection methods to obtain information regarding requirements</li>
-</ul>
-<ol start="3">
-<li>Processing and Exploitation</li>
-<li>Analysis and Production</li>
-<li>Dissemination and integration</li>
-</ol>
-<ul>
-<li>What are the most pressing issues?</li>
-<li>How urgent is the intel? How much detail recipient needs?</li>
-</ul>
-<ol start="6">
-<li>Evaluation and Feedback</li>
-</ol>
-<h2 id="defining-intelligence-requirements-ir">Defining Intelligence Requirements (IR)</h2>
-<ul>
-<li>IR is any subject, general or specific, upon which there is a need for collection of information</li>
-<li>IR is a requirement for intelligence to fill a gap in the command’s knowledge or understanding of the battlespace or threat forces</li>
-<li>What’s the mission of my organisation?</li>
-<li>What threat actors are interested in my industry?</li>
-<li>What threat actors are known for targeting my area of operation?</li>
-<li>What asset does my organisation protect?</li>
-<li>What threat actors could target my organization in order to reach another company I supply for?</li>
-<li>Had my organisation been targeted previously?</li>
-<li>To validate the priority for any IR,
-<ul>
-<li>Specificity of question</li>
-<li>Necessity of question</li>
-<li>Feasibility of collection</li>
-<li>Timelines of intelligence</li>
-</ul>
-</li>
-</ul>
-<h2 id="collection-process">Collection process</h2>
-<ul>
-<li>Internal: networks, endpoints etc</li>
-<li>External : Blogs, public DB, forums, Threat Intel feeds</li>
-<li>Collection Management Framework (CMF)</li>
-<li>IoC: Indicator of compromise: hashes, URLs, domains, IPs, paths, filenames, registry keys, malware files
-<ul>
-<li>Quality over quantity of IoC becomes crucial</li>
-</ul>
-</li>
-<li>Dropper : installs malware</li>
-<li>C2: attacker controlled computer server
-<ul>
-<li>For C2 communications, threat actors use cloud-based services, emails, blogs, comments, github repos, DNS queries etc.</li>
-</ul>
-</li>
-<li>Honeypots: Decoy which imitates possible target of attacks
-<ul>
-<li>Low interaction: transport layer, limited access to OS</li>
-<li>Medium interaction: Application layer</li>
-<li>High interaction: Involve real OS and apps to imitate</li>
-</ul>
-</li>
-</ul>
-<h2 id="processing-and-exploitation">Processing and exploitation</h2>
-<p>3 commonly used frameworks are as follows:</p></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-03T21:51:09&#43;05:30">August 03, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/more-about-apis/">More About APIs</a></h1>
-	<div class="entry__content"><h2 id="common-http-methods">Common HTTP methods</h2>
-<ul>
-<li>GET: Retrieve data</li>
-<li>POST: Create records</li>
-<li>PUT: Update resource</li>
-<li>PATCH: Partially update</li>
-<li>DELETE: Delete a resource</li>
-</ul>
-<h2 id="http-request-components">HTTP Request Components</h2>
-<ul>
-<li>Version</li>
-<li>URL</li>
-<li>Method</li>
-<li>Request header: Cookies, user-agent, refers, etc</li>
-<li>Body (optional) : form data  (JSON/ Form encoded)</li>
-</ul>
-<h2 id="http-response-components">HTTP Response Components</h2>
-<ul>
-<li>Requested resource</li>
-<li>Content length</li>
-<li>Content type</li>
-<li>Headers</li>
-<li>Time last modified</li>
-<li>HTTP status codes</li>
-</ul>
-<h2 id="http-status-codes">HTTP Status codes</h2>
-<ul>
-<li>100 series: Informational</li>
-<li>200 series: Successful</li>
-<li>300 series: Redirection</li>
-<li>400 series: Client error: Bad API request, Resource not on server etc</li>
-<li>500 series: Server error: Configuration mismatch, Error check issues, Package dependency issue</li>
-<li>Examples:
-<ul>
-<li>102: Processing</li>
-<li>200: Successful</li>
-<li>201: Created (POST)</li>
-<li>301: Permanently moved</li>
-<li>404: Not found</li>
-<li>400: Bad request</li>
-<li>401: Unauthorised</li>
-<li>403: Forbidden</li>
-</ul>
-</li>
-</ul>
-<h2 id="api-restfulness">API Restfulness</h2>
-<ol>
-<li>Client-Server architecture</li>
-<li>Stateless</li>
-<li>Cacheable: Responses can be saved by browser/server, Reduce server load, Resuse API results.</li>
-<li>Layered</li>
-<li>Uniform interface: Unique URLs for each resource. Unified procedures to modify/other action for each resource</li>
-<li>Code on demand: API can deliver code/ business logic</li>
-</ol>
-<h2 id="miscellaneous-points">Miscellaneous points</h2>
-<ul>
-<li>Caching</li>
-<li>Versioning</li>
-<li>KISS: Keep It Simple Stupid</li>
-<li>Filter, order, paginate</li>
-<li>Rate Limiting</li>
-<li>Monitoring</li>
-<li>Standard API naming conventions</li>
-<li>Consistent naming strategy</li>
-<li>Query parameters</li>
-<li>No trailing slash</li>
-<li>No file names</li>
-<li>Nouns, not verbs</li>
-<li>Forward slashes for hierarchy</li>
-<li>Lower case letter</li>
-<li>Tools:
-<ul>
-<li>Insomnia</li>
-<li>Postman</li>
-<li>cURL</li>
-</ul>
-</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-03T21:38:51&#43;05:30">August 03, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/3-pillars-of-api-security/">3 Pillars of API Security</a></h1>
-	<div class="entry__content"><h2 id="1-governance">1. Governance</h2>
-<ul>
-<li>Know your APIs
-<ul>
-<li>Get full inventory of APIs : Purpose, owner, documentation etc.</li>
-<li>Standardise and enforce API deployment process</li>
-<li>Check for existence of shadow/ rogue APIs, proper validation, governance at gateway and marketplace.</li>
-<li>API Documentation : Mandatory</li>
-<li>API development standards: style guides, authentication requirements, versioning, PII tracking</li>
-</ul>
-</li>
-<li>Threat modelling:
-<ul>
-<li>Identify APIs, business flows, data access paths</li>
-<li>Assess: vulnerabilities, logic flows, access controls, 3rd party risks</li>
-<li>Probability:</li>
-<li>Impact: Understand the damage/ loss/ consequences</li>
-<li>Mitigation: Develop plans to assess the risk and mitigation strategies</li>
-</ul>
-</li>
-<li>OpenAPI specification AKA Swagger</li>
-<li>Design guides:
-<ul>
-<li>Authentication: Type (token/ certificate etc.), how to implement.</li>
-<li>Authorisation: Who has access to what</li>
-<li>Naming conventions: URIs as nouns, methods as verbs, pluralisation, hierarchy, case, language</li>
-<li>Error codes: status code, reference ID , human readable</li>
-<li>Versioning: when to increment, when not to</li>
-<li>Units/ formats/ standards: date/time, timezone</li>
-</ul>
-</li>
-</ul>
-<h2 id="2-testing">2. Testing</h2>
-<ul>
-<li>Data security:
-<ul>
-<li>Access Control</li>
-<li>Excessive/ Sensitive Data Exposure</li>
-<li>File / directory exposure</li>
-<li>Encryption at rest</li>
-</ul>
-</li>
-<li>Business logic:
-<ul>
-<li>Cross-account access</li>
-<li>API function abuse</li>
-<li>RBAC: Role-based Access Control</li>
-<li>Pen-testing</li>
-</ul>
-</li>
-<li>API security
-<ul>
-<li>Unsecured endpoints</li>
-<li>Authentication exploits</li>
-<li>Enumeration</li>
-<li>Application DoS, Rate Limiting</li>
-<li>Missing SSL/ TLS issues</li>
-<li>Injection, fuzzing</li>
-<li>Server Side Request Forgery</li>
-</ul>
-</li>
-</ul>
-<h2 id="3-monitoring">3. Monitoring</h2>
-<ul>
-<li>Runtime protection
-<ul>
-<li>Policy enforcement</li>
-<li>Authentication</li>
-<li>Traffic filtering</li>
-</ul>
-</li>
-<li>Threat detection
-<ul>
-<li>Fraudulent traffic</li>
-<li>Distributed attacks</li>
-<li>Incident Response</li>
-</ul>
-</li>
-<li>Control validation
-<ul>
-<li>Verify API controls</li>
-<li>Uncover anomalies</li>
-</ul>
-</li>
-<li>API Discovery sources
-<ul>
-<li>API gateway</li>
-<li>Web Application Firewall</li>
-<li>Code repository</li>
-<li>Application crawling</li>
-</ul>
-</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-02T12:56:34&#43;05:30">August 02, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/owasp-llm-top-10/">OWASP LLM Top 10</a></h1>
-	<div class="entry__content"><h2 id="1-prompt-injection">1. Prompt Injection</h2>
-<ul>
-<li>Direct / Jailbreak</li>
-<li>Indirect : Summarise webpage, upload resume</li>
-<li>Previlige control, trust boundaries</li>
-</ul>
-<h2 id="2-insecure-output-handling">2. Insecure output handling</h2>
-<ul>
-<li>Apps with LLM privileges beyond user requirement</li>
-<li>Example: LLM output interpreted by browser resulting in XSS</li>
-</ul>
-<h2 id="3-training-data-poisoning">3. Training data poisoning</h2>
-<ul>
-<li>Supply chain of training data, ML-BOM, sandboxing, MLSecOps, biased opinions (leading to Hate crimes etc.)</li>
-</ul>
-<h2 id="4-model-denial-of-service">4. Model Denial of Service</h2>
-<ul>
-<li>Continuous input overflow, repetitive long input, recursive context expansion, variable length input flooding, DoS etc.</li>
-</ul>
-<h2 id="5-supply-chain-vulnerabilities">5. Supply chain vulnerabilities</h2>
-<ul>
-<li>Poisoned crowd-sourced data, outdated models, model and code signing, PyPi package registry, AI-BOM</li>
-</ul>
-<h2 id="6-sensitive-information-discourse">6. Sensitive Information Discourse</h2>
-<ul>
-<li>Memorisation of training data (sensitive data), unintended disclosure of confidential information due to LLM misinterpretation</li>
-</ul>
-<h2 id="7-insecure-plugin-design">7. Insecure plugin design</h2>
-<h2 id="8-excessive-agency">8. Excessive agency</h2>
-<ul>
-<li>Eliminate excessive functionality/ permissions/ autonomy.</li>
-</ul>
-<h2 id="9-overreliance">9. Overreliance</h2>
-<ul>
-<li>Hallucination, confabulation, plagiarism, disinformation, Parameters Efficient Tuning (PET), chain of thought prompting</li>
-</ul>
-<h2 id="10-model-theft">10. Model theft</h2>
-<ul>
-<li>Shadow model, ML model registry, side channel attacks, self-instruct (generate synthetic training data)</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-02T12:44:04&#43;05:30">August 02, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/cyber-threat-intelligence-introduction/">Cyber Threat Intelligence Introduction</a></h1>
-	<div class="entry__content"><h2 id="intelligence">Intelligence</h2>
-<ol>
-<li>Strategic</li>
-</ol>
-<ul>
-<li>Information related to CXO level members</li>
-<li>Main threat capabilities, motivations, probability, consequences etc. (disruption, theft, financial gain etc)</li>
-</ul>
-<ol start="2">
-<li>Operational</li>
-</ol>
-<ul>
-<li>Those who are involved in day-to-day decisions, which groups may target, which groups are active, CIEs, tactics used etc.</li>
-</ul>
-<ol start="3">
-<li>Tactical</li>
-</ol>
-<ul>
-<li>To those in need of instantaneous information IP addresses, domains, URLs, hashes, registry keys, email artifacts etc.</li>
-</ul>
-<h2 id="areas-of-interest">Areas of interest</h2>
-<ul>
-<li>Cybercrime</li>
-<li>Cyberterrorism</li>
-<li>Hactivism</li>
-<li>Cyberespionage</li>
-</ul>
-<h2 id="advanced-persistent-threats">Advanced Persistent Threats</h2>
-<ul>
-<li>APT = Threat actor + high operational security + low detection rate + high success level</li>
-</ul>
-<h2 id="stix--structured-threat-information-expression">STIX : Structured threat information expression</h2>
-<p>Any threat actor can be defined by:</p></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-07-23T19:52:25&#43;05:30">July 23, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/owasp-api-security-top-10/">OWASP API Security Top 10</a></h1>
-	<div class="entry__content"><h2 id="1-broken-object-level-authorisation">1. Broken Object level Authorisation</h2>
-<ul>
-<li>Access data / objects belonging to other users.</li>
-<li>Attacker authenticates as user A and retrieves data of B</li>
-<li>Enforce data access controls at application logic layer</li>
-<li>Define data access policies and implement controls</li>
-</ul>
-<h2 id="2-broken-authentication">2. Broken authentication</h2>
-<ul>
-<li>Due to poorly implemented or missing security controls</li>
-<li>Weak password requirements, credential stuffing, authentication information in URLs, absence of token expiry validation, insecure password storage, no captcha/ rate limiting / lockout</li>
-</ul>
-<h2 id="3-broken-object-property-level-authorisation">3. Broken object property level authorisation</h2>
-<ul>
-<li>Mass assignment : Ability to update object elements</li>
-<li>Excessive data exposure : reeling unnecessary sensitive data</li>
-<li>Eg. set account-type=premium</li>
-</ul>
-<h2 id="4-unrestricted-resource-consumption">4. Unrestricted resource consumption</h2>
-<ul>
-<li>Risk : DoS, performance impact, mass data harvesting.</li>
-<li>Missing / inadequate rate controls, execution timeouts, max-allocation memory/ files / upload size, excessive operations or records returned in a single request</li>
-</ul>
-<h2 id="5-broken-function-level-authentication">5. Broken function level authentication</h2>
-<ul>
-<li>Improperly modify objects (create/ update / delete) to escalate privileges, replace GET → PUT / DELETE</li>
-<li>Modify parameters : role=admin, delete an invoice, set account balance = 0</li>
-</ul>
-<h2 id="6-unrestricted-access-to-sensitive-business-flows">6. Unrestricted access to sensitive business flows</h2>
-<ul>
-<li>Application logic flow</li>
-<li>Implement fraudulent traffic detection and control</li>
-</ul>
-<h2 id="7-server-side-request-forgery">7. Server side request forgery</h2>
-<ul>
-<li>Exploiting URL inputs to make request to 3rd party server</li>
-<li>Eg. LFI , Malware downloaded from malicious sites</li>
-<li>Validate and sanitise all user-supplied info (URL params)</li>
-<li>Ensure communication only permitted with trusted resources</li>
-</ul>
-<h2 id="8-security-misconfiguration">8. Security misconfiguration</h2>
-<ul>
-<li>Lack of security hardening, improperly configured permissions, missing security patches, CORS policy missing, use of bots to scan, detect and exploit misconfigurations</li>
-<li>Implement hardening procedures.</li>
-</ul>
-<h2 id="9-improper-inventory-management">9. Improper inventory management</h2>
-<ul>
-<li>Unauthorised API access via old/unused versions or through trusted 3rd parties</li>
-<li>Unpatched endpoints, outdated documentation, deploy/manage all APIs in gatewa</li>
-</ul>
-<h2 id="10-unsafe-consumption-of-apis">10. Unsafe consumption of APIs</h2>
-<ul>
-<li>3rd party APIs are exploited and then used to attack legitimate APIs relying on them.</li>
-<li>Validate data and evaluate security controls of 3rd APIs , encrypt API communication.</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-07-23T19:39:40&#43;05:30">July 23, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/nmap-basics/">Nmap Basics</a></h1>
-	<div class="entry__content"><h2 id="1-network-discovery">1. Network discovery</h2>
-<ul>
-<li>Find out IP address ranges</li>
-<li>Determine estimated services offered by a host</li>
-<li>Figure out general network topology</li>
-<li>Check for Firewall filtering policies</li>
-<li>sL : List scan</li>
-<li>A : Advanced / Aggressive</li>
-<li>Finding an organization&rsquo;s IP address :
-<ul>
-<li>host -t ns target.com</li>
-<li>host -t a target.com</li>
-<li>host -t aaaa target.com</li>
-<li>host -t mx target.com</li>
-<li>host -t soa target.com</li>
-<li>nmap -Pn -T4 –-traceroute target.com</li>
-<li>whois &lt;x.x.x.x&gt;</li>
-</ul>
-</li>
-</ul>
-<h2 id="2-host-discovery">2. Host discovery</h2>
-<ul>
-<li>nmap -sL abc.com</li>
-<li>nmap -sn -t4 abc.com : Ping scan</li>
-<li>nmap -Pn -t4 abc.com : Disable Ping</li>
-<li>nmap -sn -PS8O -v abc.com : TCP SYN Ping</li>
-<li>nmap -sn -PA8O -v abc.com: TCP ACK Ping</li>
-<li>nmap -sn -PU -v abc.com : UDP Ping</li>
-<li>nmap -sn -PE -v abc.com : ICMP Ping (8/echo)</li>
-<li>nmap -sn -PR -v abc.com : ARP Scan</li>
-<li>nmap -sn -PE -PS443 -PA80 -PP abc.com : Default</li>
-</ul>
-<h2 id="3-port-scanning">3. Port Scanning</h2>
-<ul>
-<li>Open : accepting TCP connections</li>
-<li>Closed : Accessible but no application listening</li>
-<li>Filtered : Not able to determine if port is open ( Firewall )</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-07-20T23:56:44&#43;05:30">July 20, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/power-utility/" rel="category">Power Utility</a>
+	</span>
+</div>
 	</div>
 </article>
 				</div>
@@ -700,8 +363,9 @@ Non-renewable: coal, natural gas</p>
 	
 <div class="pagination block">
 				<a class="pagination__item pagination__item--desktop" href="/posts/">1</a>
-				<span class="pagination__item pagination__item--active" data-total="3">2</span>
+				<span class="pagination__item pagination__item--active" data-total="4">2</span>
 				<a class="pagination__item pagination__item--desktop" href="/posts/page/3/">3</a>
+				<a class="pagination__item pagination__item--desktop" href="/posts/page/4/">4</a>
 </div>
 
 	</div>

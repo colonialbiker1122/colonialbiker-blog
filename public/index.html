@@ -24,6 +24,133 @@
 			<div class="cards">
 					<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/linux-from-scratch/">Linux From Scratch</a></h1>
+	<div class="entry__content"><h2 id="introduction">Introduction</h2>
+<ul>
+<li>New partition
+<ul>
+<li>Root partition: /root</li>
+<li>Swap partition: 2xRAM capacity</li>
+<li>Grub BIOS: GUID partition table (GPT), IMB</li>
+<li>/boot: kernel + booting info</li>
+</ul>
+</li>
+<li>New file system: ext4 etc</li>
+<li>Consists of labels, directory blocks, data blocks, indexing</li>
+<li>Mount new partition: Mount the file system embedded in partition</li>
+<li>Create basic directory layout: /etc, /var, /bin, /lib, /sbin, /lib64, /tools, /usr, /usr/bin, /usr/lib, /usr/sbin</li>
+<li>Cross-compilation: Build compiler for different machine
+<ul>
+<li>Build: Machine where we build programs</li>
+<li>Host: Machine where built programs will run</li>
+<li>Target: Machine that compiler produces code for</li>
+</ul>
+</li>
+<li>Binutils: Contains linker, assembler, etc for handling object files</li>
+<li>GCC : GNU compiler collection. C and C++ compilers</li>
+<li>API headers: Expose kernel’s API for use by Glibc</li>
+<li>Glibc: Main C library which provides basic routines for allocating memory, searching directories, opening and closing files, pattern matching, arithmetic etc.</li>
+<li>libstdc++: Standard C++ library. Needed to compile the part of GCC which is written in C++</li>
+<li>M4: Macro processor</li>
+<li>Ncurses: Library for terminal independent character screens</li>
+<li>Bash: Bourne-again shell</li>
+<li>Coreutils: Basic utility programs needed by every OS</li>
+<li>Diffutils: Programs which show differences between files/ directories.</li>
+<li>File: Determine type of a given file(s)</li>
+<li>Findutils: programs to find files</li>
+<li>Gawk: Programs for manipulating text files</li>
+<li>Grep: Programs for searching through contents of files</li>
+<li>Gzip: Programs for compressing/ decompressing files</li>
+<li>Make: Program for controlling the generation of executables and other files of a package from source files</li>
+<li>Patch: Program for modify/ create files by applying a patch file typically created by diff program</li>
+<li>Sed: Stream editor</li>
+<li>Tar: To create tar archives and other archive manipulation</li>
+<li>xz: Compress/ decompress files. lzma, xz schemes.</li>
+<li>Binutils pass2:</li>
+<li>GCC Pass2:</li>
+<li>Prepare virtual kernel file systems: /dev, /proc, /sys, /run</li>
+<li>Mounting and populating /dev: In case of normal boot, kernel automatically mounts devtmpfs file system on /dev. Bind mount host system’s /dev directory</li>
+<li>Entering chroot environment</li>
+<li>Create root level directories: /boot, /home, /mnt, /opt, /srv</li>
+<li>Create essential files and symlinks
+<ul>
+<li>Mounted file systems : /etc/mtab —&mdash;-&gt; /proc</li>
+<li>Create /etc/hosts</li>
+<li>Root entries in /etc/passwd, /etc/group</li>
+</ul>
+</li>
+<li>Gettext: Utilities for internationalisation and localisation</li>
+<li>Bison: Parser generator</li>
+<li>Perl: Practical extraction and report language</li>
+<li>Python3:</li>
+<li>Texinfo: Read, write, convert info pages</li>
+<li>Util-linux: Miscellaneous utility programs</li>
+<li>Installing basic system softwares:
+<ul>
+<li>Package manager</li>
+<li>Man pages</li>
+<li>Iana-etc: /etc/protocols, /etc/services&hellip;</li>
+</ul>
+</li>
+<li>System V boot process
+<ul>
+<li>init program sets up basic processes such as login (via getty) and runs a script. The script named rc executes additional scripts to initialize. Init program controlled by /etc/inittab file.</li>
+</ul>
+</li>
+<li>Run levels
+<ul>
+<li>0 - Halt</li>
+<li>1 - Single user</li>
+<li>2 - User definable or 3</li>
+<li>3 - Full multiuser (network)</li>
+<li>4 - User definable or 3</li>
+<li>5 - Full multiuser (display)</li>
+<li>6 - Reboot</li>
+</ul>
+</li>
+<li>lfsbootscripts: /etc/rc.d, /etc/init.d, /etc/sysconfig, /lib/services, /lib/lsb</li>
+</ul>
+<h2 id="device-handling">Device handling</h2>
+<ul>
+<li>Traditionally static device creation method was used. Many device nodes were created in /dev where actual device connected or not</li>
+<li>udev method: Device nodes created only for those devices which are detected by kernel. Stored in /devtmpfs</li>
+<li>devfs: Had issues with naming conventions and race conditions</li>
+<li>sysfs: Provide information about system’s hardware configuration to userspace processes</li>
+<li>Device node creation
+<ul>
+<li>Drivers compiled in kernel register objects in sysfs(devtmpfs)</li>
+<li>sysfs filesystem is mounted on /sys</li>
+<li>Device files are created by kernel in devtmpfs file system.</li>
+<li>Kernel sents uevent to udevd</li>
+</ul>
+</li>
+<li>Network devices
+<ul>
+<li>Old: eth0, eth1</li>
+<li>New: enp5s0, wlp3s0</li>
+</ul>
+</li>
+<li>General network configuration:
+<ul>
+<li>/etc/sysconfig/: which interfaces are up and down</li>
+<li>One file each named ifconfig.xyz —-&gt;xyz = network card</li>
+<li>Create /etc/resolv.conf file</li>
+<li>Customise /etc/hosts file</li>
+</ul>
+</li>
+</ul>
+<h2 id="system-v-bootscript">System V bootscript</h2>
+<ul>
+<li>During kernel initialisation, first program to run is init</li>
+<li>init reads initialisation files: /etc/inittab</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-24T20:54:01&#43;05:30">August 24, 2025</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/microservices-paterrns/">Microservices Paterrns</a></h1>
 	<div class="entry__content"><h3 id="1-single-page-application">1. Single Page application</h3>
 <ul>
@@ -51,6 +178,11 @@
 <h3 id="6-adapter-patterns">6. Adapter patterns</h3></div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2025-08-10T08:50:35&#43;05:30">August 10, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/devops/" rel="category">DevOps</a>
+	</span>
+</div>
 	</div>
 </article>
 					</div>
@@ -110,6 +242,11 @@
 <h3 id="12-admin-processes">12. Admin processes</h3></div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2025-08-10T08:43:13&#43;05:30">August 10, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/devops/" rel="category">DevOps</a>
+	</span>
+</div>
 	</div>
 </article>
 					</div>
@@ -223,6 +360,11 @@
 </ol></div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2025-08-10T08:29:38&#43;05:30">August 10, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/devops/" rel="category">DevOps</a>
+	</span>
+</div>
 	</div>
 </article>
 					</div>
@@ -262,6 +404,11 @@
 </ul></div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2025-08-09T09:41:41&#43;05:30">August 09, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/devops/" rel="category">DevOps</a>
+	</span>
+</div>
 	</div>
 </article>
 					</div>
@@ -300,265 +447,11 @@
 </ul></div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2025-08-09T09:38:03&#43;05:30">August 09, 2025</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/docker/">Introduction to Docker</a></h1>
-	<div class="entry__content"><h2 id="container-characteristics">Container characteristics</h2>
-<ul>
-<li>Container engine virtualises OS</li>
-<li>Container is light-weight, fast, isolated, portable and secure</li>
-<li>Binaries, libraries within container enable apps to run</li>
-<li>Platform independent: cloud/ on-premises etc</li>
-<li>OS independent: Windows/ Linux</li>
-<li>Language independent</li>
-</ul>
-<h2 id="container-vendors">Container vendors</h2>
-<ul>
-<li>Docker: Robust</li>
-<li>Podman: More-secure</li>
-<li>LXC: data-intensive</li>
-<li>Vagrant: High isolation-level</li>
-</ul>
-<h2 id="docker">Docker</h2>
-<ul>
-<li>
-<p>Build: create container image from dockerfile</p>
-</li>
-<li>
-<p>Images:</p>
-</li>
-<li>
-<p>Run: Creates container from an image</p>
-</li>
-<li>
-<p>Push: Store images in configured registry</p>
-</li>
-<li>
-<p>Pull: Retrieve</p>
-</li>
-<li>
-<p>Dockerfile: FROM base_img RUN command</p></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-09T09:03:43&#43;05:30">August 09, 2025</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/safety-instrumented-systems/">Safety Instrumented Systems</a></h1>
-	<div class="entry__content"><h2 id="safety-on-the-whole-combines">Safety on the whole combines</h2>
-<ul>
-<li>Physical Infrastructure and Safeguards</li>
-<li>Process control logic (soft interlocks)</li>
-<li>Physical safeguards (burst disks, mechanical trips, 1-way valve)</li>
-<li>Safety Instrumented systems</li>
-</ul>
-<h2 id="failure-modes-for-ics">Failure modes for ICS</h2>
-<ul>
-<li>Intermittent failures:
-<ul>
-<li>Corrected by logic conditions in the system</li>
-<li>Minimal to no process interruption</li>
-</ul>
-</li>
-<li>Nuisance trips:
-<ul>
-<li>Logic interlocks, fail safes</li>
-</ul>
-</li>
-<li>Unplanned outages:
-<ul>
-<li>Sustained process failures</li>
-</ul>
-</li>
-<li>Dangerous failures:
-<ul>
-<li>Kinetic and safety impacts</li>
-<li>Extended outages</li>
-</ul>
-</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-06T19:55:14&#43;05:30">August 06, 2025</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/assessment-techniques-and-patching-in-ics/">Assessment Techniques and Patching in ICS</a></h1>
-	<div class="entry__content"><h2 id="assessment-techniques-for-ics">Assessment techniques for ICS</h2>
-<ul>
-<li>Asset discovery/ identification</li>
-<li>Asset Management</li>
-<li>Vulnerability Management</li>
-<li>Cadence : first time / one-time/ periodic/ ongoing</li>
-<li>Work with operational personnel to understand impact: system-level/ network-level/ device-level</li>
-<li>Physical walkthrough: Infrastructure, Protocols, Media, age of systems, etc</li>
-<li>Routine, scheduled scanning</li>
-<li>Common Techniques:
-<ul>
-<li>Authenticated/ credentialed scanning : Ports and services, software inventory, patch auditing (OS and app), light weight scanning</li>
-<li>Configuration auditing : Identify known good state or optimal configuration and compare it against it</li>
-<li>Native OS commands: Check network config, installed patches, ports nad services , user accounts, etc.</li>
-<li>Native ICS protocols and tools</li>
-</ul>
-</li>
-</ul>
-<h2 id="patching-in-ics">Patching in ICS</h2>
-<ul>
-<li>Cyber maintenance</li>
-<li>Create an intelligent process that fits the context of system</li>
-<li>Automate and leverage virtualisation where possible</li>
-<li>Remove unneeded ports and services</li>
-<li>Change default or easily-guessed credentials</li>
-<li>Opt for SSH over telnet for infrastructure devices</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-06T19:52:28&#43;05:30">August 06, 2025</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/know-your-industrial-control-systems/">Know Your Industrial Control Systems</a></h1>
-	<div class="entry__content"><h2 id="common-terminologies">Common Terminologies</h2>
-<ul>
-<li>SCADA: Supervisory control and data acquisition system. It grew out of telemetry systems developed for space program. Initially, all the components were hard wired, then came the role of microprocessor based digital telemetry systems.</li>
-<li>DCS: Distributed control systems. These are typically installed within the plant premises.</li>
-<li>SCADA systems also support remote functionalities.</li>
-<li>2 basic components of SCADA:
-<ul>
-<li>RTU: Remote Terminal Unit or smart devices. These devices provide local control.</li>
-</ul>
-</li>
-<li>Central station computer</li>
-<li>MODBUS: Serial communications</li>
-<li>IEC 61850: Electric Utility Substation Communications</li>
-<li>HMI: Human-machine interface : Window</li>
-<li>Distributed control system (DCS): Process control (continuous/batch)</li>
-<li>Programmable logic controller (PLC): Discrete/ sequence control</li>
-<li>SCADA: Remote monitoring and dispatch</li>
-<li>SIS: Safety instrumental system : Life safety/ personnel protection</li>
-<li>OT: Operational technology = ICS (Industrial Control Systems) + CPS(Cyber Physical Systems) + others</li>
-<li>Purdue model: Structural / segmentation model for ICS security</li>
-<li>DCS topology:
-<ul>
-<li>Smart transmitters and valves: HART / Bus protocol</li>
-<li>Ladder logic</li>
-</ul>
-</li>
-<li>SCADA implementation in geographically dispersed areas</li>
-<li>Common SCADA mode communications: Microwave, satellite, cellular, dial-up mod</li>
-</ul>
-<h2 id="ics-protocols">ICS Protocols</h2>
-<ul>
-<li>Traditional ICS protocols acquire measurement values via polling. Periodically request the state. Period determined by throughput/ latency requirements.</li>
-<li>MODBUS
-<ul>
-<li>Added features beyond basic capabilities in MODBUS</li>
-<li>Define more data types to enhance inter-operability</li>
-<li>Bandwidth minimization for SCADA systems: send only deltas.</li>
-</ul>
-</li>
-<li>Publisher-subscriber based protocols: IEC 61805 GOOSE or UDP multicast in IP</li>
-<li>Industry  specific models:
-<ul>
-<li>ODVA’s CIP: Motion control, synchronization etc</li>
-<li>IEC 61850: Electric Power Industry</li>
-</ul>
-</li>
-<li>DCS protocols: OPC, Siemens S7, MODBUS, HART, Profibus, IP</li>
-<li>SCADA protocols: DNP3, ICCP, IEC 60870-5-104</li>
-<li>Issues with major ICS Protocols:
-<ul>
-<li>Insecure by design</li>
-<li>Insecure by implementation</li>
-</ul>
-</li>
-<li>Can be secured by using techniques such as TLS etc.</li>
-<li>Modern Wrappers: SSP21</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-06T19:22:45&#43;05:30">August 06, 2025</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/scada-in-electric-power-industry/">SCADA in Electric Power Industry</a></h1>
-	<div class="entry__content"><h2 id="scada-system-capabilities">SCADA system capabilities</h2>
-<ul>
-<li>Access quantitative measurements of important processes both immediately and over time</li>
-<li>Detect and correct problems as soon as they happen</li>
-<li>Measure trends over tine</li>
-<li>Discover and eliminate bottlenecks and inefficiencies</li>
-<li>Control larger and more complex processes</li>
-<li>Information can be meter readings, current quality, power outages etc.</li>
-</ul>
-<h2 id="stages">Stages</h2>
-<ul>
-<li>Data acquisition
-<ul>
-<li>Sensors (digital/ analog)</li>
-<li>Control relays</li>
-</ul>
-</li>
-<li>Data collectors
-<ul>
-<li>Remote Terminal Unit (RTU): Small computerised units deployed in fields at specific sites. RTUs serve as local collection points for gathering reports from sensors and delivering commands to control relays</li>
-</ul>
-</li>
-<li>Data communication
-<ul>
-<li>Network which connects SCADA master unit to RTU</li>
-</ul>
-</li>
-<li>Data Presentation and Control
-<ul>
-<li>SCADA master units: Large computer consoles that serve as the central processor for SCADA system. Master units provide a human interface to the system and automatically regulate the manages system in response to sensor inputs</li>
-</ul>
-</li>
-</ul>
-<h2 id="rtu-connections">RTU Connections</h2>
-<ul>
-<li>RJ45 serial ports (terminal server)</li>
-<li>RJ45 10/100 Ethernet ports</li>
-<li>RJ11 Telco jack</li>
-<li>50 pin connectors for discretes and relays</li>
-<li>4 pin screw plugs for analogs</li>
-</ul>
-<h2 id="electric-scada-measurements">Electric SCADA measurements</h2>
-<ul>
-<li>Voltage , current, reactance</li>
-<li>Status of line devices: Switches, Breakers, Reclosers, cap banks, voltage regulators etc</li>
-<li>Status of customer serving devices: Transformers, street lights</li>
-<li>Electric usage data (metering)</li>
-<li>Outage data from all devices</li>
-<li>50 Hz waveform</li>
-<li>Substation switch house equipment</li>
-</ul>
-<h2 id="risks">Risks</h2>
-<ul>
-<li>Physical threats</li>
-<li>Insider threats</li>
-<li>Antiquated systems</li>
-<li>Incompetence</li>
-<li>Malwares</li>
-<li>Denial of service</li>
-</ul>
-<h2 id="impacts">Impacts</h2>
-<ul>
-<li>Property damage</li>
-<li>Asset damage</li>
-<li>Blackouts</li>
-<li>Meter data security</li>
-<li>Loss of billing data</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-05T22:01:51&#43;05:30">August 05, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/devops/" rel="category">DevOps</a>
+	</span>
+</div>
 	</div>
 </article>
 					</div>
@@ -566,9 +459,10 @@
 	</main>
 	
 <div class="pagination block">
-				<span class="pagination__item pagination__item--active" data-total="3">1</span>
+				<span class="pagination__item pagination__item--active" data-total="4">1</span>
 				<a class="pagination__item pagination__item--desktop" href="/page/2/">2</a>
 				<a class="pagination__item pagination__item--desktop" href="/page/3/">3</a>
+				<a class="pagination__item pagination__item--desktop" href="/page/4/">4</a>
 </div>
 
 	</div>

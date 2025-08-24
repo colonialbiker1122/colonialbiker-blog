@@ -2,6 +2,7 @@
 date = '2025-08-06T19:55:14+05:30'
 draft = false
 title = 'Safety Instrumented Systems'
+categories = ['ICS']
 +++
 ## Safety on the whole combines
 - Physical Infrastructure and Safeguards

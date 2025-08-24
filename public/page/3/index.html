@@ -24,12 +24,490 @@
 			<div class="cards">
 					<div class="card card--2col">
 					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/my-first-post/">My First Post</a></h1>
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/introduction-to-control-systems/">Introduction to Control Systems</a></h1>
 	<div class="entry__content"><h2 id="introduction">Introduction</h2>
-<p>Welcome to Colonialbiker&rsquo;s blog. I just want to share whatever little I know to everyone on the internet. The content might be boring but I assure you that as time passes by, the quality of content will also improve.</p>
-<p><strong>Thanks a lot for taking your time and reading the posts!!!</strong></p></div>
+<p>System: Collection of interconnected parts that form a larger more complex whole</p>
+<p>3 different problems</p>
+<ol>
+<li>System identification problem</li>
+</ol>
+<ul>
+<li>Determine mathematical problem</li>
+<li>Ask following questions:
+<ul>
+<li>How can I model the system that I’m trying to control ?</li>
+<li>What are the relevant dynamics/</li>
+<li>What equation will convent known inputs to measured outputs?</li>
+<li>i. Black box method</li>
+<li>ii. White box method</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>Simulation problem</li>
+</ol>
+<ul>
+<li>Predicting how outputs change</li>
+<li>Ask the following questions:
+<ul>
+<li>Does my system model match my test data?</li>
+<li>Will my system work in all operating environments?</li>
+<li>How my system behaves with potentially destructive commands?</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>Control problem</li>
+</ol>
+<ul>
+<li>How do we generate the appropriate system input that will produce the desired output?</li>
+<li>Ask the following questions:
+<ul>
+<li>How can I get my system to meet my performance requirements?</li>
+<li>How can I automate a process that currently involves humans in the loop?</li>
+<li>How can my system operate in a dynamic and noisy environment?</li>
+</ul>
+</li>
+</ul>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<ul>
+<li>
+<p>Open Loop System</p></div>
 	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-07-20T22:39:03&#43;05:30">July 20, 2025</time>
+	<time class="entry__meta-published meta-published" datetime="2025-08-04T22:32:27&#43;05:30">August 04, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/ics/" rel="category">ICS</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/threat-hunting/">Threat Hunting</a></h1>
+	<div class="entry__content"><h2 id="introduction">Introduction</h2>
+<ul>
+<li>Human driven activity of proactively and iteratively searching through the organisation’s environment (network, endpoints, apps etc) for signs of compromise in order to shorten the dwell-time and minimise the breach impact for the on.</li>
+<li>Types
+<ul>
+<li>Data-driven</li>
+<li>Intel-driven</li>
+<li>Entity-driven</li>
+<li>TTP-driven</li>
+</ul>
+</li>
+<li>Pyramid of pain: How much pain will be caused to adversaries to change their ways once you have identified their IoCs, network infra, etc.
+<ul>
+<li>TTP -&gt; Tools -&gt; Network/Host Artifact -&gt; Domain names -&gt; IP Addresses -&gt; Hash Values</li>
+</ul>
+</li>
+</ul>
+<h2 id="threat-hunting-maturity-model">Threat Hunting Maturity Model</h2>
+<ul>
+<li>Used to classify the team’s detection capability.
+<ol>
+<li>Initial: Automated alerting. Little or no routine data collection</li>
+<li>Minimal: Use CTI indicators. Moderate/ high routine data collection</li>
+<li>Procedural: Use data analysis procedures created by others</li>
+<li>Innovative: Create new data analysis procedures</li>
+<li>Leading: Automate majority of successful dat analysis procedure</li>
+</ol>
+</li>
+<li>Threat hunting loop:
+<ul>
+<li>Build Hypothesis —&gt; Start Investigation —&gt; Uncover Anomalies/ Patterns -&gt; Prove/ Disprove Hypothesis -&gt; Automate Result —&gt; Inform and enrich Analytics</li>
+</ul>
+</li>
+</ul>
+<h2 id="sans-threat-hunting-model-dan-gunther">SANS Threat Hunting Model (Dan Gunther)</h2>
+<ol>
+<li>Purpose: State purpose of hunt, data, desired outcome.</li>
+<li>Scope: Define hypothesis, identify network etc to get data</li>
+<li>Equip: How to collect data, collect enough data, how to analyze, how to avoid bias, implement CMF (Collection Management Framework)</li>
+<li>Plan review</li>
+<li>Execute</li>
+<li>Feedback: Improve previous stages</li>
+</ol>
+<h2 id="data-driven-methodology-rodriguez-brothers-insomnihack">Data Driven Methodology (Rodriguez brothers) InsomniHack</h2>
+<h3 id="1-define-research-goal-understand-and-map-data-to-adversary">1. Define research goal: Understand and map data to adversary</h3>
+<ul>
+<li>What is it that we are going to hunt?</li>
+<li>Do I understand my data? Do I have data wiki?</li>
+<li>Do I have data stored somewhere in my environment?</li>
+<li>Have we mapped logs to adversary action?</li>
+<li>How specific do I have to be?</li>
+<li>How many techniques can I cover per hypothesis?</li>
+<li>Focus on technique enabler or main behaviour?</li>
+</ul>
+<h3 id="2-modelling-the-data">2. Modelling the data</h3>
+<ul>
+<li>Understanding where data comes from</li>
+<li>Send logs to data lake to consult it</li>
+<li>Structure data by creating data dictionaries</li>
+<li>Try mapping each data source to an event</li>
+<li>OSSEM: Open Source Security Events Metadata</li>
+</ul>
+<h3 id="3-emulating-the-adversary">3. Emulating the adversary:</h3>
+<ul>
+<li>Way for red teamers to replicate adversary behaviours in organisation environment</li>
+</ul>
+<h3 id="4-defining-detection-model">4. Defining detection model:</h3>
+<ul>
+<li>Way to carry out the hunt</li>
+</ul>
+<h3 id="5-validating-detection-model">5. Validating detection model:</h3>
+<ul>
+<li>Try detection in production</li>
+<li>Zero results: Adversary behaviour not present</li>
+<li>Atleast one result: Look closer at results to confirm breach</li>
+<li>High volume of result: adjust process and try again</li>
+</ul>
+<h3 id="6-documentation">6. Documentation:</h3>
+<p><em>Check project Helk and Project Mordor and Threat Hunter Playbook</em></p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-04T20:54:31&#43;05:30">August 04, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/cyber-threat-intel/" rel="category">Cyber Threat Intel</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/the-intelligence-cycle/">The Intelligence Cycle</a></h1>
+	<div class="entry__content"><h2 id="stages">Stages</h2>
+<ol>
+<li>Planning and targeting</li>
+</ol>
+<ul>
+<li>Identify intelligence requirements</li>
+<li>Identify key assets, security concerns, etc</li>
+<li>Identify potential threats and corresponding mitigations</li>
+</ul>
+<ol start="2">
+<li>Preparation and Collection</li>
+</ol>
+<ul>
+<li>Defining and developing collection methods to obtain information regarding requirements</li>
+</ul>
+<ol start="3">
+<li>Processing and Exploitation</li>
+<li>Analysis and Production</li>
+<li>Dissemination and integration</li>
+</ol>
+<ul>
+<li>What are the most pressing issues?</li>
+<li>How urgent is the intel? How much detail recipient needs?</li>
+</ul>
+<ol start="6">
+<li>Evaluation and Feedback</li>
+</ol>
+<h2 id="defining-intelligence-requirements-ir">Defining Intelligence Requirements (IR)</h2>
+<ul>
+<li>IR is any subject, general or specific, upon which there is a need for collection of information</li>
+<li>IR is a requirement for intelligence to fill a gap in the command’s knowledge or understanding of the battlespace or threat forces</li>
+<li>What’s the mission of my organisation?</li>
+<li>What threat actors are interested in my industry?</li>
+<li>What threat actors are known for targeting my area of operation?</li>
+<li>What asset does my organisation protect?</li>
+<li>What threat actors could target my organization in order to reach another company I supply for?</li>
+<li>Had my organisation been targeted previously?</li>
+<li>To validate the priority for any IR,
+<ul>
+<li>Specificity of question</li>
+<li>Necessity of question</li>
+<li>Feasibility of collection</li>
+<li>Timelines of intelligence</li>
+</ul>
+</li>
+</ul>
+<h2 id="collection-process">Collection process</h2>
+<ul>
+<li>Internal: networks, endpoints etc</li>
+<li>External : Blogs, public DB, forums, Threat Intel feeds</li>
+<li>Collection Management Framework (CMF)</li>
+<li>IoC: Indicator of compromise: hashes, URLs, domains, IPs, paths, filenames, registry keys, malware files
+<ul>
+<li>Quality over quantity of IoC becomes crucial</li>
+</ul>
+</li>
+<li>Dropper : installs malware</li>
+<li>C2: attacker controlled computer server
+<ul>
+<li>For C2 communications, threat actors use cloud-based services, emails, blogs, comments, github repos, DNS queries etc.</li>
+</ul>
+</li>
+<li>Honeypots: Decoy which imitates possible target of attacks
+<ul>
+<li>Low interaction: transport layer, limited access to OS</li>
+<li>Medium interaction: Application layer</li>
+<li>High interaction: Involve real OS and apps to imitate</li>
+</ul>
+</li>
+</ul>
+<h2 id="processing-and-exploitation">Processing and exploitation</h2>
+<p>3 commonly used frameworks are as follows:</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-03T21:51:09&#43;05:30">August 03, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/cyber-threat-intel/" rel="category">Cyber Threat Intel</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/more-about-apis/">More About APIs</a></h1>
+	<div class="entry__content"><h2 id="common-http-methods">Common HTTP methods</h2>
+<ul>
+<li>GET: Retrieve data</li>
+<li>POST: Create records</li>
+<li>PUT: Update resource</li>
+<li>PATCH: Partially update</li>
+<li>DELETE: Delete a resource</li>
+</ul>
+<h2 id="http-request-components">HTTP Request Components</h2>
+<ul>
+<li>Version</li>
+<li>URL</li>
+<li>Method</li>
+<li>Request header: Cookies, user-agent, refers, etc</li>
+<li>Body (optional) : form data  (JSON/ Form encoded)</li>
+</ul>
+<h2 id="http-response-components">HTTP Response Components</h2>
+<ul>
+<li>Requested resource</li>
+<li>Content length</li>
+<li>Content type</li>
+<li>Headers</li>
+<li>Time last modified</li>
+<li>HTTP status codes</li>
+</ul>
+<h2 id="http-status-codes">HTTP Status codes</h2>
+<ul>
+<li>100 series: Informational</li>
+<li>200 series: Successful</li>
+<li>300 series: Redirection</li>
+<li>400 series: Client error: Bad API request, Resource not on server etc</li>
+<li>500 series: Server error: Configuration mismatch, Error check issues, Package dependency issue</li>
+<li>Examples:
+<ul>
+<li>102: Processing</li>
+<li>200: Successful</li>
+<li>201: Created (POST)</li>
+<li>301: Permanently moved</li>
+<li>404: Not found</li>
+<li>400: Bad request</li>
+<li>401: Unauthorised</li>
+<li>403: Forbidden</li>
+</ul>
+</li>
+</ul>
+<h2 id="api-restfulness">API Restfulness</h2>
+<ol>
+<li>Client-Server architecture</li>
+<li>Stateless</li>
+<li>Cacheable: Responses can be saved by browser/server, Reduce server load, Resuse API results.</li>
+<li>Layered</li>
+<li>Uniform interface: Unique URLs for each resource. Unified procedures to modify/other action for each resource</li>
+<li>Code on demand: API can deliver code/ business logic</li>
+</ol>
+<h2 id="miscellaneous-points">Miscellaneous points</h2>
+<ul>
+<li>Caching</li>
+<li>Versioning</li>
+<li>KISS: Keep It Simple Stupid</li>
+<li>Filter, order, paginate</li>
+<li>Rate Limiting</li>
+<li>Monitoring</li>
+<li>Standard API naming conventions</li>
+<li>Consistent naming strategy</li>
+<li>Query parameters</li>
+<li>No trailing slash</li>
+<li>No file names</li>
+<li>Nouns, not verbs</li>
+<li>Forward slashes for hierarchy</li>
+<li>Lower case letter</li>
+<li>Tools:
+<ul>
+<li>Insomnia</li>
+<li>Postman</li>
+<li>cURL</li>
+</ul>
+</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-03T21:38:51&#43;05:30">August 03, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/api/" rel="category">API</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/3-pillars-of-api-security/">3 Pillars of API Security</a></h1>
+	<div class="entry__content"><h2 id="1-governance">1. Governance</h2>
+<ul>
+<li>Know your APIs
+<ul>
+<li>Get full inventory of APIs : Purpose, owner, documentation etc.</li>
+<li>Standardise and enforce API deployment process</li>
+<li>Check for existence of shadow/ rogue APIs, proper validation, governance at gateway and marketplace.</li>
+<li>API Documentation : Mandatory</li>
+<li>API development standards: style guides, authentication requirements, versioning, PII tracking</li>
+</ul>
+</li>
+<li>Threat modelling:
+<ul>
+<li>Identify APIs, business flows, data access paths</li>
+<li>Assess: vulnerabilities, logic flows, access controls, 3rd party risks</li>
+<li>Probability:</li>
+<li>Impact: Understand the damage/ loss/ consequences</li>
+<li>Mitigation: Develop plans to assess the risk and mitigation strategies</li>
+</ul>
+</li>
+<li>OpenAPI specification AKA Swagger</li>
+<li>Design guides:
+<ul>
+<li>Authentication: Type (token/ certificate etc.), how to implement.</li>
+<li>Authorisation: Who has access to what</li>
+<li>Naming conventions: URIs as nouns, methods as verbs, pluralisation, hierarchy, case, language</li>
+<li>Error codes: status code, reference ID , human readable</li>
+<li>Versioning: when to increment, when not to</li>
+<li>Units/ formats/ standards: date/time, timezone</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-testing">2. Testing</h2>
+<ul>
+<li>Data security:
+<ul>
+<li>Access Control</li>
+<li>Excessive/ Sensitive Data Exposure</li>
+<li>File / directory exposure</li>
+<li>Encryption at rest</li>
+</ul>
+</li>
+<li>Business logic:
+<ul>
+<li>Cross-account access</li>
+<li>API function abuse</li>
+<li>RBAC: Role-based Access Control</li>
+<li>Pen-testing</li>
+</ul>
+</li>
+<li>API security
+<ul>
+<li>Unsecured endpoints</li>
+<li>Authentication exploits</li>
+<li>Enumeration</li>
+<li>Application DoS, Rate Limiting</li>
+<li>Missing SSL/ TLS issues</li>
+<li>Injection, fuzzing</li>
+<li>Server Side Request Forgery</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-monitoring">3. Monitoring</h2>
+<ul>
+<li>Runtime protection
+<ul>
+<li>Policy enforcement</li>
+<li>Authentication</li>
+<li>Traffic filtering</li>
+</ul>
+</li>
+<li>Threat detection
+<ul>
+<li>Fraudulent traffic</li>
+<li>Distributed attacks</li>
+<li>Incident Response</li>
+</ul>
+</li>
+<li>Control validation
+<ul>
+<li>Verify API controls</li>
+<li>Uncover anomalies</li>
+</ul>
+</li>
+<li>API Discovery sources
+<ul>
+<li>API gateway</li>
+<li>Web Application Firewall</li>
+<li>Code repository</li>
+<li>Application crawling</li>
+</ul>
+</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-02T12:56:34&#43;05:30">August 02, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/api/" rel="category">API</a>, 
+		<a class="meta-categories__link" href="/categories/api-security/" rel="category">API Security</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/owasp-llm-top-10/">OWASP LLM Top 10</a></h1>
+	<div class="entry__content"><h2 id="1-prompt-injection">1. Prompt Injection</h2>
+<ul>
+<li>Direct / Jailbreak</li>
+<li>Indirect : Summarise webpage, upload resume</li>
+<li>Previlige control, trust boundaries</li>
+</ul>
+<h2 id="2-insecure-output-handling">2. Insecure output handling</h2>
+<ul>
+<li>Apps with LLM privileges beyond user requirement</li>
+<li>Example: LLM output interpreted by browser resulting in XSS</li>
+</ul>
+<h2 id="3-training-data-poisoning">3. Training data poisoning</h2>
+<ul>
+<li>Supply chain of training data, ML-BOM, sandboxing, MLSecOps, biased opinions (leading to Hate crimes etc.)</li>
+</ul>
+<h2 id="4-model-denial-of-service">4. Model Denial of Service</h2>
+<ul>
+<li>Continuous input overflow, repetitive long input, recursive context expansion, variable length input flooding, DoS etc.</li>
+</ul>
+<h2 id="5-supply-chain-vulnerabilities">5. Supply chain vulnerabilities</h2>
+<ul>
+<li>Poisoned crowd-sourced data, outdated models, model and code signing, PyPi package registry, AI-BOM</li>
+</ul>
+<h2 id="6-sensitive-information-discourse">6. Sensitive Information Discourse</h2>
+<ul>
+<li>Memorisation of training data (sensitive data), unintended disclosure of confidential information due to LLM misinterpretation</li>
+</ul>
+<h2 id="7-insecure-plugin-design">7. Insecure plugin design</h2>
+<h2 id="8-excessive-agency">8. Excessive agency</h2>
+<ul>
+<li>Eliminate excessive functionality/ permissions/ autonomy.</li>
+</ul>
+<h2 id="9-overreliance">9. Overreliance</h2>
+<ul>
+<li>Hallucination, confabulation, plagiarism, disinformation, Parameters Efficient Tuning (PET), chain of thought prompting</li>
+</ul>
+<h2 id="10-model-theft">10. Model theft</h2>
+<ul>
+<li>Shadow model, ML model registry, side channel attacks, self-instruct (generate synthetic training data)</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-02T12:44:04&#43;05:30">August 02, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/llm-security/" rel="category">LLM Security</a>
+	</span>
+</div>
 	</div>
 </article>
 					</div>
@@ -39,7 +517,8 @@
 <div class="pagination block">
 				<a class="pagination__item pagination__item--desktop" href="/">1</a>
 				<a class="pagination__item pagination__item--desktop" href="/page/2/">2</a>
-				<span class="pagination__item pagination__item--active" data-total="3">3</span>
+				<span class="pagination__item pagination__item--active" data-total="4">3</span>
+				<a class="pagination__item pagination__item--desktop" href="/page/4/">4</a>
 </div>
 
 	</div>

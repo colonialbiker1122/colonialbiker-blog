@@ -2,6 +2,7 @@
 date = '2025-08-05T21:49:53+05:30'
 draft = false
 title = 'Electric Power Industry'
+categories = ['Power Utility']
 +++
 ## Introduction
 ### Few typical components

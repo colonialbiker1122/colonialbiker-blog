@@ -2,6 +2,7 @@
 date = '2025-08-10T08:43:13+05:30'
 draft = false
 title = '12 Factor App Methodology'
+categories = ['DevOps']
 +++
 ### 1. Codebbase
 - Version control system like Git

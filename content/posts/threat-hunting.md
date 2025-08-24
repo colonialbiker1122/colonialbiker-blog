@@ -2,6 +2,7 @@
 date = '2025-08-04T20:54:31+05:30'
 draft = false
 title = 'Threat Hunting'
+categories = ['Cyber Threat Intel']
 +++
 ## Introduction
 - Human driven activity of proactively and iteratively searching through the organisation’s environment (network, endpoints, apps etc) for signs of compromise in order to shorten the dwell-time and minimise the breach impact for the on.

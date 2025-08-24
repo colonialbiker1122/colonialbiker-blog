@@ -2,6 +2,7 @@
 date = '2025-08-10T08:29:38+05:30'
 draft = false
 title = 'DevOps'
+categories = ["DevOps"]
 +++
 ## Thinking DevOps/ Social Coding Principles
 - Working in small batches

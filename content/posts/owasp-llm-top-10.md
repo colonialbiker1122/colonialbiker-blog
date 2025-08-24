@@ -2,6 +2,7 @@
 date = '2025-08-02T12:44:04+05:30'
 draft = false
 title = 'OWASP LLM Top 10'
+categories = ['LLM Security']
 +++
 ## 1. Prompt Injection
 - Direct / Jailbreak

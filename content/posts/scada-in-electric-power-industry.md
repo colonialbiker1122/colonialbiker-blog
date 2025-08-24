@@ -2,6 +2,7 @@
 date = '2025-08-05T22:01:51+05:30'
 draft = false
 title = 'SCADA in Electric Power Industry'
+categories = ['ICS', 'Power Utility']
 +++
 ## SCADA system capabilities
 - Access quantitative measurements of important processes both immediately and over time

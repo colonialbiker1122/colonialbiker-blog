@@ -2,6 +2,7 @@
 date = '2025-08-03T21:38:51+05:30'
 draft = false
 title = 'More About APIs'
+categories = ['API']
 +++
 ## Common HTTP methods
 - GET: Retrieve data

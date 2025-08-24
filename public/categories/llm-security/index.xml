@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LLM Security on Colonialbiker Blog Site</title>
+    <link>//localhost:1313/categories/llm-security/</link>
+    <description>Recent content in LLM Security on Colonialbiker Blog Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Aug 2025 12:44:04 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/llm-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OWASP LLM Top 10</title>
+      <link>//localhost:1313/posts/owasp-llm-top-10/</link>
+      <pubDate>Sat, 02 Aug 2025 12:44:04 +0530</pubDate>
+      <guid>//localhost:1313/posts/owasp-llm-top-10/</guid>
+      <description>&lt;h2 id=&#34;1-prompt-injection&#34;&gt;1. Prompt Injection&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Direct / Jailbreak&lt;/li&gt;&#xA;&lt;li&gt;Indirect : Summarise webpage, upload resume&lt;/li&gt;&#xA;&lt;li&gt;Previlige control, trust boundaries&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-insecure-output-handling&#34;&gt;2. Insecure output handling&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Apps with LLM privileges beyond user requirement&lt;/li&gt;&#xA;&lt;li&gt;Example: LLM output interpreted by browser resulting in XSS&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;3-training-data-poisoning&#34;&gt;3. Training data poisoning&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Supply chain of training data, ML-BOM, sandboxing, MLSecOps, biased opinions (leading to Hate crimes etc.)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;4-model-denial-of-service&#34;&gt;4. Model Denial of Service&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Continuous input overflow, repetitive long input, recursive context expansion, variable length input flooding, DoS etc.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;5-supply-chain-vulnerabilities&#34;&gt;5. Supply chain vulnerabilities&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Poisoned crowd-sourced data, outdated models, model and code signing, PyPi package registry, AI-BOM&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;6-sensitive-information-discourse&#34;&gt;6. Sensitive Information Discourse&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Memorisation of training data (sensitive data), unintended disclosure of confidential information due to LLM misinterpretation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;7-insecure-plugin-design&#34;&gt;7. Insecure plugin design&lt;/h2&gt;&#xA;&lt;h2 id=&#34;8-excessive-agency&#34;&gt;8. Excessive agency&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Eliminate excessive functionality/ permissions/ autonomy.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;9-overreliance&#34;&gt;9. Overreliance&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hallucination, confabulation, plagiarism, disinformation, Parameters Efficient Tuning (PET), chain of thought prompting&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;10-model-theft&#34;&gt;10. Model theft&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Shadow model, ML model registry, side channel attacks, self-instruct (generate synthetic training data)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

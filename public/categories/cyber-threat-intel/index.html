@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>Cyber Threat Intel | Colonialbiker Blog Site</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+	<link rel="alternate" type="application/rss+xml" href="/categories/cyber-threat-intel/index.xml" title="Colonialbiker Blog Site">
+</head>
+<body class="body kind-term">
+	<header class="header">
+	<a class="logo" href="/">Colonialbiker Blog Site</a>
+	
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		
+		<div class="page block">
+			<h1 class="page__title">Cyber Threat Intel</h1>
+			
+		</div>
+		<div class="cards">
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/threat-hunting/">Threat Hunting</a></h1>
+	<div class="entry__content"><h2 id="introduction">Introduction</h2>
+<ul>
+<li>Human driven activity of proactively and iteratively searching through the organisation’s environment (network, endpoints, apps etc) for signs of compromise in order to shorten the dwell-time and minimise the breach impact for the on.</li>
+<li>Types
+<ul>
+<li>Data-driven</li>
+<li>Intel-driven</li>
+<li>Entity-driven</li>
+<li>TTP-driven</li>
+</ul>
+</li>
+<li>Pyramid of pain: How much pain will be caused to adversaries to change their ways once you have identified their IoCs, network infra, etc.
+<ul>
+<li>TTP -&gt; Tools -&gt; Network/Host Artifact -&gt; Domain names -&gt; IP Addresses -&gt; Hash Values</li>
+</ul>
+</li>
+</ul>
+<h2 id="threat-hunting-maturity-model">Threat Hunting Maturity Model</h2>
+<ul>
+<li>Used to classify the team’s detection capability.
+<ol>
+<li>Initial: Automated alerting. Little or no routine data collection</li>
+<li>Minimal: Use CTI indicators. Moderate/ high routine data collection</li>
+<li>Procedural: Use data analysis procedures created by others</li>
+<li>Innovative: Create new data analysis procedures</li>
+<li>Leading: Automate majority of successful dat analysis procedure</li>
+</ol>
+</li>
+<li>Threat hunting loop:
+<ul>
+<li>Build Hypothesis —&gt; Start Investigation —&gt; Uncover Anomalies/ Patterns -&gt; Prove/ Disprove Hypothesis -&gt; Automate Result —&gt; Inform and enrich Analytics</li>
+</ul>
+</li>
+</ul>
+<h2 id="sans-threat-hunting-model-dan-gunther">SANS Threat Hunting Model (Dan Gunther)</h2>
+<ol>
+<li>Purpose: State purpose of hunt, data, desired outcome.</li>
+<li>Scope: Define hypothesis, identify network etc to get data</li>
+<li>Equip: How to collect data, collect enough data, how to analyze, how to avoid bias, implement CMF (Collection Management Framework)</li>
+<li>Plan review</li>
+<li>Execute</li>
+<li>Feedback: Improve previous stages</li>
+</ol>
+<h2 id="data-driven-methodology-rodriguez-brothers-insomnihack">Data Driven Methodology (Rodriguez brothers) InsomniHack</h2>
+<h3 id="1-define-research-goal-understand-and-map-data-to-adversary">1. Define research goal: Understand and map data to adversary</h3>
+<ul>
+<li>What is it that we are going to hunt?</li>
+<li>Do I understand my data? Do I have data wiki?</li>
+<li>Do I have data stored somewhere in my environment?</li>
+<li>Have we mapped logs to adversary action?</li>
+<li>How specific do I have to be?</li>
+<li>How many techniques can I cover per hypothesis?</li>
+<li>Focus on technique enabler or main behaviour?</li>
+</ul>
+<h3 id="2-modelling-the-data">2. Modelling the data</h3>
+<ul>
+<li>Understanding where data comes from</li>
+<li>Send logs to data lake to consult it</li>
+<li>Structure data by creating data dictionaries</li>
+<li>Try mapping each data source to an event</li>
+<li>OSSEM: Open Source Security Events Metadata</li>
+</ul>
+<h3 id="3-emulating-the-adversary">3. Emulating the adversary:</h3>
+<ul>
+<li>Way for red teamers to replicate adversary behaviours in organisation environment</li>
+</ul>
+<h3 id="4-defining-detection-model">4. Defining detection model:</h3>
+<ul>
+<li>Way to carry out the hunt</li>
+</ul>
+<h3 id="5-validating-detection-model">5. Validating detection model:</h3>
+<ul>
+<li>Try detection in production</li>
+<li>Zero results: Adversary behaviour not present</li>
+<li>Atleast one result: Look closer at results to confirm breach</li>
+<li>High volume of result: adjust process and try again</li>
+</ul>
+<h3 id="6-documentation">6. Documentation:</h3>
+<p><em>Check project Helk and Project Mordor and Threat Hunter Playbook</em></p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-04T20:54:31&#43;05:30">August 04, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/cyber-threat-intel/" rel="category">Cyber Threat Intel</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/the-intelligence-cycle/">The Intelligence Cycle</a></h1>
+	<div class="entry__content"><h2 id="stages">Stages</h2>
+<ol>
+<li>Planning and targeting</li>
+</ol>
+<ul>
+<li>Identify intelligence requirements</li>
+<li>Identify key assets, security concerns, etc</li>
+<li>Identify potential threats and corresponding mitigations</li>
+</ul>
+<ol start="2">
+<li>Preparation and Collection</li>
+</ol>
+<ul>
+<li>Defining and developing collection methods to obtain information regarding requirements</li>
+</ul>
+<ol start="3">
+<li>Processing and Exploitation</li>
+<li>Analysis and Production</li>
+<li>Dissemination and integration</li>
+</ol>
+<ul>
+<li>What are the most pressing issues?</li>
+<li>How urgent is the intel? How much detail recipient needs?</li>
+</ul>
+<ol start="6">
+<li>Evaluation and Feedback</li>
+</ol>
+<h2 id="defining-intelligence-requirements-ir">Defining Intelligence Requirements (IR)</h2>
+<ul>
+<li>IR is any subject, general or specific, upon which there is a need for collection of information</li>
+<li>IR is a requirement for intelligence to fill a gap in the command’s knowledge or understanding of the battlespace or threat forces</li>
+<li>What’s the mission of my organisation?</li>
+<li>What threat actors are interested in my industry?</li>
+<li>What threat actors are known for targeting my area of operation?</li>
+<li>What asset does my organisation protect?</li>
+<li>What threat actors could target my organization in order to reach another company I supply for?</li>
+<li>Had my organisation been targeted previously?</li>
+<li>To validate the priority for any IR,
+<ul>
+<li>Specificity of question</li>
+<li>Necessity of question</li>
+<li>Feasibility of collection</li>
+<li>Timelines of intelligence</li>
+</ul>
+</li>
+</ul>
+<h2 id="collection-process">Collection process</h2>
+<ul>
+<li>Internal: networks, endpoints etc</li>
+<li>External : Blogs, public DB, forums, Threat Intel feeds</li>
+<li>Collection Management Framework (CMF)</li>
+<li>IoC: Indicator of compromise: hashes, URLs, domains, IPs, paths, filenames, registry keys, malware files
+<ul>
+<li>Quality over quantity of IoC becomes crucial</li>
+</ul>
+</li>
+<li>Dropper : installs malware</li>
+<li>C2: attacker controlled computer server
+<ul>
+<li>For C2 communications, threat actors use cloud-based services, emails, blogs, comments, github repos, DNS queries etc.</li>
+</ul>
+</li>
+<li>Honeypots: Decoy which imitates possible target of attacks
+<ul>
+<li>Low interaction: transport layer, limited access to OS</li>
+<li>Medium interaction: Application layer</li>
+<li>High interaction: Involve real OS and apps to imitate</li>
+</ul>
+</li>
+</ul>
+<h2 id="processing-and-exploitation">Processing and exploitation</h2>
+<p>3 commonly used frameworks are as follows:</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-03T21:51:09&#43;05:30">August 03, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/cyber-threat-intel/" rel="category">Cyber Threat Intel</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/cyber-threat-intelligence-introduction/">Cyber Threat Intelligence Introduction</a></h1>
+	<div class="entry__content"><h2 id="intelligence">Intelligence</h2>
+<ol>
+<li>Strategic</li>
+</ol>
+<ul>
+<li>Information related to CXO level members</li>
+<li>Main threat capabilities, motivations, probability, consequences etc. (disruption, theft, financial gain etc)</li>
+</ul>
+<ol start="2">
+<li>Operational</li>
+</ol>
+<ul>
+<li>Those who are involved in day-to-day decisions, which groups may target, which groups are active, CIEs, tactics used etc.</li>
+</ul>
+<ol start="3">
+<li>Tactical</li>
+</ol>
+<ul>
+<li>To those in need of instantaneous information IP addresses, domains, URLs, hashes, registry keys, email artifacts etc.</li>
+</ul>
+<h2 id="areas-of-interest">Areas of interest</h2>
+<ul>
+<li>Cybercrime</li>
+<li>Cyberterrorism</li>
+<li>Hactivism</li>
+<li>Cyberespionage</li>
+</ul>
+<h2 id="advanced-persistent-threats">Advanced Persistent Threats</h2>
+<ul>
+<li>APT = Threat actor + high operational security + low detection rate + high success level</li>
+</ul>
+<h2 id="stix--structured-threat-information-expression">STIX : Structured threat information expression</h2>
+<p>Any threat actor can be defined by:</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-07-23T19:52:25&#43;05:30">July 23, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/cyber-threat-intel/" rel="category">Cyber Threat Intel</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+		</div>
+	</main>
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="mailto:colonialbiker123@gmail.com">
+			<svg class="social__icon" aria-label="Email" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M299 268l124 106c-4 4-10 7-17 7H106c-7 0-13-3-17-7l124-106 43 38 43-38zm-43 13L89 138c4-4 10-7 17-7h300c7 0 13 3 17 7L256 281zm54-23l121-105v208L310 258zM81 153l121 105L81 361V153z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/sumukh-kesarla">
+			<svg class="social__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2025 Colonialbiker Blog Site. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+</body>
+</html>

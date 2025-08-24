@@ -2,6 +2,7 @@
 date = '2025-07-23T19:39:40+05:30'
 draft = false
 title = 'OWASP API Security Top 10'
+categories = ['API Security']
 +++
 ## 1. Broken Object level Authorisation 
 - Access data / objects belonging to other users.

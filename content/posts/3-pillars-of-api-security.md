@@ -2,6 +2,7 @@
 date = '2025-08-02T12:56:34+05:30'
 draft = false
 title = '3 Pillars of API Security'
+categories = ['API', 'API Security']
 +++
 ## 1. Governance
 - Know your APIs

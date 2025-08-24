@@ -3,12 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
+    <lastmod>2025-08-24T20:54:01+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/linux-from-scratch/</loc>
+    <lastmod>2025-08-24T20:54:01+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2025-08-24T20:54:01+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+    <lastmod>2025-08-10T08:50:35+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/devops/</loc>
     <lastmod>2025-08-10T08:50:35+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/microservices-paterrns/</loc>
-    <lastmod>2025-08-10T08:50:35+05:30</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/</loc>
     <lastmod>2025-08-10T08:50:35+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/12-factor-app-methodology/</loc>
@@ -26,14 +35,23 @@
     <loc>//localhost:1313/posts/docker/</loc>
     <lastmod>2025-08-09T09:03:43+05:30</lastmod>
   </url><url>
+    <loc>//localhost:1313/categories/ics/</loc>
+    <lastmod>2025-08-06T19:55:14+05:30</lastmod>
+  </url><url>
     <loc>//localhost:1313/posts/safety-instrumented-systems/</loc>
     <lastmod>2025-08-06T19:55:14+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/assessment-techniques-and-patching-in-ics/</loc>
     <lastmod>2025-08-06T19:52:28+05:30</lastmod>
   </url><url>
+    <loc>//localhost:1313/categories/ot-security/</loc>
+    <lastmod>2025-08-06T19:52:28+05:30</lastmod>
+  </url><url>
     <loc>//localhost:1313/posts/know-your-industrial-control-systems/</loc>
     <lastmod>2025-08-06T19:22:45+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/power-utility/</loc>
+    <lastmod>2025-08-05T22:01:51+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/scada-in-electric-power-industry/</loc>
     <lastmod>2025-08-05T22:01:51+05:30</lastmod>
@@ -44,17 +62,29 @@
     <loc>//localhost:1313/posts/introduction-to-control-systems/</loc>
     <lastmod>2025-08-04T22:32:27+05:30</lastmod>
   </url><url>
+    <loc>//localhost:1313/categories/cyber-threat-intel/</loc>
+    <lastmod>2025-08-04T20:54:31+05:30</lastmod>
+  </url><url>
     <loc>//localhost:1313/posts/threat-hunting/</loc>
     <lastmod>2025-08-04T20:54:31+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/the-intelligence-cycle/</loc>
     <lastmod>2025-08-03T21:51:09+05:30</lastmod>
   </url><url>
+    <loc>//localhost:1313/categories/api/</loc>
+    <lastmod>2025-08-03T21:38:51+05:30</lastmod>
+  </url><url>
     <loc>//localhost:1313/posts/more-about-apis/</loc>
     <lastmod>2025-08-03T21:38:51+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/3-pillars-of-api-security/</loc>
     <lastmod>2025-08-02T12:56:34+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/api-security/</loc>
+    <lastmod>2025-08-02T12:56:34+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/llm-security/</loc>
+    <lastmod>2025-08-02T12:44:04+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/owasp-llm-top-10/</loc>
     <lastmod>2025-08-02T12:44:04+05:30</lastmod>
@@ -68,10 +98,11 @@
     <loc>//localhost:1313/posts/nmap-basics/</loc>
     <lastmod>2025-07-20T23:56:44+05:30</lastmod>
   </url><url>
+    <loc>//localhost:1313/categories/vulnerability-assessment/</loc>
+    <lastmod>2025-07-20T23:56:44+05:30</lastmod>
+  </url><url>
     <loc>//localhost:1313/posts/my-first-post/</loc>
     <lastmod>2025-07-20T22:39:03+05:30</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/</loc>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
   </url>

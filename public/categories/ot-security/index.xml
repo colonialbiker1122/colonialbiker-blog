@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OT Security on Colonialbiker Blog Site</title>
+    <link>//localhost:1313/categories/ot-security/</link>
+    <description>Recent content in OT Security on Colonialbiker Blog Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Aug 2025 19:52:28 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/ot-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assessment Techniques and Patching in ICS</title>
+      <link>//localhost:1313/posts/assessment-techniques-and-patching-in-ics/</link>
+      <pubDate>Wed, 06 Aug 2025 19:52:28 +0530</pubDate>
+      <guid>//localhost:1313/posts/assessment-techniques-and-patching-in-ics/</guid>
+      <description>&lt;h2 id=&#34;assessment-techniques-for-ics&#34;&gt;Assessment techniques for ICS&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Asset discovery/ identification&lt;/li&gt;&#xA;&lt;li&gt;Asset Management&lt;/li&gt;&#xA;&lt;li&gt;Vulnerability Management&lt;/li&gt;&#xA;&lt;li&gt;Cadence : first time / one-time/ periodic/ ongoing&lt;/li&gt;&#xA;&lt;li&gt;Work with operational personnel to understand impact: system-level/ network-level/ device-level&lt;/li&gt;&#xA;&lt;li&gt;Physical walkthrough: Infrastructure, Protocols, Media, age of systems, etc&lt;/li&gt;&#xA;&lt;li&gt;Routine, scheduled scanning&lt;/li&gt;&#xA;&lt;li&gt;Common Techniques:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Authenticated/ credentialed scanning : Ports and services, software inventory, patch auditing (OS and app), light weight scanning&lt;/li&gt;&#xA;&lt;li&gt;Configuration auditing : Identify known good state or optimal configuration and compare it against it&lt;/li&gt;&#xA;&lt;li&gt;Native OS commands: Check network config, installed patches, ports nad services , user accounts, etc.&lt;/li&gt;&#xA;&lt;li&gt;Native ICS protocols and tools&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;patching-in-ics&#34;&gt;Patching in ICS&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Cyber maintenance&lt;/li&gt;&#xA;&lt;li&gt;Create an intelligent process that fits the context of system&lt;/li&gt;&#xA;&lt;li&gt;Automate and leverage virtualisation where possible&lt;/li&gt;&#xA;&lt;li&gt;Remove unneeded ports and services&lt;/li&gt;&#xA;&lt;li&gt;Change default or easily-guessed credentials&lt;/li&gt;&#xA;&lt;li&gt;Opt for SSH over telnet for infrastructure devices&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

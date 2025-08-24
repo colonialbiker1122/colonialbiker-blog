@@ -2,7 +2,7 @@
 date = '2025-07-20T23:56:44+05:30'
 draft = false
 title = 'Nmap Basics'
-comments = true
+categories = ['Vulnerability Assessment']
 +++
 ## 1. Network discovery
 - Find out IP address ranges

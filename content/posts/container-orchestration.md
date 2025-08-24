@@ -2,6 +2,7 @@
 date = '2025-08-09T09:38:03+05:30'
 draft = false
 title = 'Container Orchestration'
+categories = ['DevOps']
 +++
 ## Container Orchestration
 - Container lifecycle: (automation of lifecycle is orchestration)

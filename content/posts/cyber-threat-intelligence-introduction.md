@@ -2,6 +2,7 @@
 date = '2025-07-23T19:52:25+05:30'
 draft = false
 title = 'Cyber Threat Intelligence Introduction'
+categories = ['Cyber Threat Intel']
 +++
 ## Intelligence
 1. Strategic 
