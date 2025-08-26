@@ -24,6 +24,166 @@
 			<div class="cards">
 					<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/3-pillars-of-api-security/">3 Pillars of API Security</a></h1>
+	<div class="entry__content"><h2 id="1-governance">1. Governance</h2>
+<ul>
+<li>Know your APIs
+<ul>
+<li>Get full inventory of APIs : Purpose, owner, documentation etc.</li>
+<li>Standardise and enforce API deployment process</li>
+<li>Check for existence of shadow/ rogue APIs, proper validation, governance at gateway and marketplace.</li>
+<li>API Documentation : Mandatory</li>
+<li>API development standards: style guides, authentication requirements, versioning, PII tracking</li>
+</ul>
+</li>
+<li>Threat modelling:
+<ul>
+<li>Identify APIs, business flows, data access paths</li>
+<li>Assess: vulnerabilities, logic flows, access controls, 3rd party risks</li>
+<li>Probability:</li>
+<li>Impact: Understand the damage/ loss/ consequences</li>
+<li>Mitigation: Develop plans to assess the risk and mitigation strategies</li>
+</ul>
+</li>
+<li>OpenAPI specification AKA Swagger</li>
+<li>Design guides:
+<ul>
+<li>Authentication: Type (token/ certificate etc.), how to implement.</li>
+<li>Authorisation: Who has access to what</li>
+<li>Naming conventions: URIs as nouns, methods as verbs, pluralisation, hierarchy, case, language</li>
+<li>Error codes: status code, reference ID , human readable</li>
+<li>Versioning: when to increment, when not to</li>
+<li>Units/ formats/ standards: date/time, timezone</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-testing">2. Testing</h2>
+<ul>
+<li>Data security:
+<ul>
+<li>Access Control</li>
+<li>Excessive/ Sensitive Data Exposure</li>
+<li>File / directory exposure</li>
+<li>Encryption at rest</li>
+</ul>
+</li>
+<li>Business logic:
+<ul>
+<li>Cross-account access</li>
+<li>API function abuse</li>
+<li>RBAC: Role-based Access Control</li>
+<li>Pen-testing</li>
+</ul>
+</li>
+<li>API security
+<ul>
+<li>Unsecured endpoints</li>
+<li>Authentication exploits</li>
+<li>Enumeration</li>
+<li>Application DoS, Rate Limiting</li>
+<li>Missing SSL/ TLS issues</li>
+<li>Injection, fuzzing</li>
+<li>Server Side Request Forgery</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-monitoring">3. Monitoring</h2>
+<ul>
+<li>Runtime protection
+<ul>
+<li>Policy enforcement</li>
+<li>Authentication</li>
+<li>Traffic filtering</li>
+</ul>
+</li>
+<li>Threat detection
+<ul>
+<li>Fraudulent traffic</li>
+<li>Distributed attacks</li>
+<li>Incident Response</li>
+</ul>
+</li>
+<li>Control validation
+<ul>
+<li>Verify API controls</li>
+<li>Uncover anomalies</li>
+</ul>
+</li>
+<li>API Discovery sources
+<ul>
+<li>API gateway</li>
+<li>Web Application Firewall</li>
+<li>Code repository</li>
+<li>Application crawling</li>
+</ul>
+</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-02T12:56:34&#43;05:30">August 02, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/api/" rel="category">API</a>, 
+		<a class="meta-categories__link" href="/categories/api-security/" rel="category">API Security</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/owasp-llm-top-10/">OWASP LLM Top 10</a></h1>
+	<div class="entry__content"><h2 id="1-prompt-injection">1. Prompt Injection</h2>
+<ul>
+<li>Direct / Jailbreak</li>
+<li>Indirect : Summarise webpage, upload resume</li>
+<li>Previlige control, trust boundaries</li>
+</ul>
+<h2 id="2-insecure-output-handling">2. Insecure output handling</h2>
+<ul>
+<li>Apps with LLM privileges beyond user requirement</li>
+<li>Example: LLM output interpreted by browser resulting in XSS</li>
+</ul>
+<h2 id="3-training-data-poisoning">3. Training data poisoning</h2>
+<ul>
+<li>Supply chain of training data, ML-BOM, sandboxing, MLSecOps, biased opinions (leading to Hate crimes etc.)</li>
+</ul>
+<h2 id="4-model-denial-of-service">4. Model Denial of Service</h2>
+<ul>
+<li>Continuous input overflow, repetitive long input, recursive context expansion, variable length input flooding, DoS etc.</li>
+</ul>
+<h2 id="5-supply-chain-vulnerabilities">5. Supply chain vulnerabilities</h2>
+<ul>
+<li>Poisoned crowd-sourced data, outdated models, model and code signing, PyPi package registry, AI-BOM</li>
+</ul>
+<h2 id="6-sensitive-information-discourse">6. Sensitive Information Discourse</h2>
+<ul>
+<li>Memorisation of training data (sensitive data), unintended disclosure of confidential information due to LLM misinterpretation</li>
+</ul>
+<h2 id="7-insecure-plugin-design">7. Insecure plugin design</h2>
+<h2 id="8-excessive-agency">8. Excessive agency</h2>
+<ul>
+<li>Eliminate excessive functionality/ permissions/ autonomy.</li>
+</ul>
+<h2 id="9-overreliance">9. Overreliance</h2>
+<ul>
+<li>Hallucination, confabulation, plagiarism, disinformation, Parameters Efficient Tuning (PET), chain of thought prompting</li>
+</ul>
+<h2 id="10-model-theft">10. Model theft</h2>
+<ul>
+<li>Shadow model, ML model registry, side channel attacks, self-instruct (generate synthetic training data)</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-02T12:44:04&#43;05:30">August 02, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/llm-security/" rel="category">LLM Security</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/cyber-threat-intelligence-introduction/">Cyber Threat Intelligence Introduction</a></h1>
 	<div class="entry__content"><h2 id="intelligence">Intelligence</h2>
 <ol>

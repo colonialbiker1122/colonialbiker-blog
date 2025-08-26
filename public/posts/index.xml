@@ -6,8 +6,22 @@
     <description>Recent content in Posts on Colonialbiker Blog Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Aug 2025 20:54:01 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 26 Aug 2025 19:23:41 +0530</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DDoS (Distributed Denial of Service)</title>
+      <link>//localhost:1313/posts/ddos/</link>
+      <pubDate>Tue, 26 Aug 2025 19:23:41 +0530</pubDate>
+      <guid>//localhost:1313/posts/ddos/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Overwhelm target (server/website etc) resources making it diffucult/ impossible for legitimate users to access the service.&lt;/li&gt;&#xA;&lt;li&gt;Impacts: Disrupt, cause downtime or degrade performance&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;common-ddos-attacks&#34;&gt;Common DDoS Attacks&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;SYN flood&lt;/li&gt;&#xA;&lt;li&gt;HTTP flood&lt;/li&gt;&#xA;&lt;li&gt;UDP flood&lt;/li&gt;&#xA;&lt;li&gt;Ping of death: send IP packets greater than 65K bytes&lt;/li&gt;&#xA;&lt;li&gt;Smurf attack: Flood with ICMP packets&lt;/li&gt;&#xA;&lt;li&gt;Slowloris&lt;/li&gt;&#xA;&lt;li&gt;DNS flood&lt;/li&gt;&#xA;&lt;li&gt;Teardrop attack: Send fragmented packets. Server can’t reassemble&lt;/li&gt;&#xA;&lt;li&gt;DNS amplification&lt;/li&gt;&#xA;&lt;li&gt;SNMP amplification&lt;/li&gt;&#xA;&lt;li&gt;NTP amplification&lt;/li&gt;&#xA;&lt;li&gt;SNMP reflection&lt;/li&gt;&#xA;&lt;li&gt;SSDP&lt;/li&gt;&#xA;&lt;li&gt;Fraggle attack: Similar to smurf. Use UDP instead of ICMP&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;detailed-list-of-ddos-attacks&#34;&gt;Detailed List of DDoS Attacks&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-ddos-cldap-flood&#34;&gt;1. DDOS CLDAP flood:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Servers running CLDAP (connectionless LDAP), UDP protocol.&lt;/li&gt;&#xA;&lt;li&gt;Amplification: Small requests but huge reply from server&lt;/li&gt;&#xA;&lt;li&gt;Exhaustion of target server’s resources&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;DDOS discard flood : ( client simulator)&#xA;Server running discard protocol (port a) . TCP or UDP . RFC 863&#xA;Discard services used for testing / debugging / maintenance etc&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bridging IT-OT Divide</title>
+      <link>//localhost:1313/posts/bridging-it-ot-divide/</link>
+      <pubDate>Sun, 24 Aug 2025 21:19:32 +0530</pubDate>
+      <guid>//localhost:1313/posts/bridging-it-ot-divide/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Cultural differences&lt;/li&gt;&#xA;&lt;li&gt;Cross training&lt;/li&gt;&#xA;&lt;li&gt;Continuous Audit&lt;/li&gt;&#xA;&lt;li&gt;Unified convergent IT-OT team is required&lt;/li&gt;&#xA;&lt;li&gt;Settle periodic conflicts, budgeting, technical advisory etc&lt;/li&gt;&#xA;&lt;li&gt;IT-OT integration has led to increased attack surface&lt;/li&gt;&#xA;&lt;li&gt;Technological disparity: Legacy technology in OT domain&lt;/li&gt;&#xA;&lt;li&gt;Top-Down rationalisation is requireed from Board/ CXO to downwards&lt;/li&gt;&#xA;&lt;li&gt;Organizations don’t have OT security policies&lt;/li&gt;&#xA;&lt;li&gt;Don’t divide IT/OT. Treat security as a whole (Informational + Operational)&lt;/li&gt;&#xA;&lt;li&gt;Risk assessment + management is needed at granular level&lt;/li&gt;&#xA;&lt;li&gt;Skillsets and knowledge gap: White collar blue-brown collar jobs&lt;/li&gt;&#xA;&lt;li&gt;Upskilling from OT roles to OT-security roles is comparatively easy&lt;/li&gt;&#xA;&lt;li&gt;Mechanism to test patches is required&lt;/li&gt;&#xA;&lt;li&gt;How to deal with legacy OT systems?&lt;/li&gt;&#xA;&lt;li&gt;OT needs quality validations (CSV, GXP)&lt;/li&gt;&#xA;&lt;li&gt;How to quantify risk in OT environments?&lt;/li&gt;&#xA;&lt;li&gt;Deal with future threats?&lt;/li&gt;&#xA;&lt;li&gt;Have visibility, deal with social engineering, find vulnerabilities, supply chain issues (crowdstrikes, etc), regulatory changes&lt;/li&gt;&#xA;&lt;li&gt;Microsegmentation reduces impact (DCS/ SIS)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Linux From Scratch</title>
       <link>//localhost:1313/posts/linux-from-scratch/</link>
