@@ -5,6 +5,10 @@ theme = 'binario'
 pagination.pagerSize = "6" # Number of elements per page in pagination
 summaryLength = 50
 
+[services]
+  [servies.googleAnalytics]
+    id = 'G-RYBF471FNM'
+
 [Params]
   description = "Colonialbiker BLog Website"
   dateFormat = "January 02, 2006"
