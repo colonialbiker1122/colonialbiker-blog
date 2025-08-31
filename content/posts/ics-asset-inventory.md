@@ -1,6 +1,6 @@
 +++
 date = '2025-08-31T11:39:35+05:30'
-draft = true
+draft = false
 title = 'ICS Asset Inventory'
 +++
 ## Physical Inspection

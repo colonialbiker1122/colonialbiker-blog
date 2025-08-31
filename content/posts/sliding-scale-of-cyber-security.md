@@ -1,6 +1,6 @@
 +++
 date = '2025-08-31T11:35:05+05:30'
-draft = true
+draft = false
 title = 'Sliding Scale of Cyber Security'
 +++
 ## Architecture
