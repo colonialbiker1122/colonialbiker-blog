@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta name="generator" content="Hugo 0.148.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>Colonialbiker Blog Site</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Colonialbiker BLog Website">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Colonialbiker Blog Site">
+</head>
+<body class="body kind-home">
+	<header class="header">
+	<a class="logo" href="/">Colonialbiker Blog Site</a>
+	
+</header>
+	<div class="primary">
+	
+	<main class="main">
+			<div class="cards">
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/owasp-api-security-top-10/">OWASP API Security Top 10</a></h1>
+	<div class="entry__content"><h2 id="1-broken-object-level-authorisation">1. Broken Object level Authorisation</h2>
+<ul>
+<li>Access data / objects belonging to other users.</li>
+<li>Attacker authenticates as user A and retrieves data of B</li>
+<li>Enforce data access controls at application logic layer</li>
+<li>Define data access policies and implement controls</li>
+</ul>
+<h2 id="2-broken-authentication">2. Broken authentication</h2>
+<ul>
+<li>Due to poorly implemented or missing security controls</li>
+<li>Weak password requirements, credential stuffing, authentication information in URLs, absence of token expiry validation, insecure password storage, no captcha/ rate limiting / lockout</li>
+</ul>
+<h2 id="3-broken-object-property-level-authorisation">3. Broken object property level authorisation</h2>
+<ul>
+<li>Mass assignment : Ability to update object elements</li>
+<li>Excessive data exposure : reeling unnecessary sensitive data</li>
+<li>Eg. set account-type=premium</li>
+</ul>
+<h2 id="4-unrestricted-resource-consumption">4. Unrestricted resource consumption</h2>
+<ul>
+<li>Risk : DoS, performance impact, mass data harvesting.</li>
+<li>Missing / inadequate rate controls, execution timeouts, max-allocation memory/ files / upload size, excessive operations or records returned in a single request</li>
+</ul>
+<h2 id="5-broken-function-level-authentication">5. Broken function level authentication</h2>
+<ul>
+<li>Improperly modify objects (create/ update / delete) to escalate privileges, replace GET → PUT / DELETE</li>
+<li>Modify parameters : role=admin, delete an invoice, set account balance = 0</li>
+</ul>
+<h2 id="6-unrestricted-access-to-sensitive-business-flows">6. Unrestricted access to sensitive business flows</h2>
+<ul>
+<li>Application logic flow</li>
+<li>Implement fraudulent traffic detection and control</li>
+</ul>
+<h2 id="7-server-side-request-forgery">7. Server side request forgery</h2>
+<ul>
+<li>Exploiting URL inputs to make request to 3rd party server</li>
+<li>Eg. LFI , Malware downloaded from malicious sites</li>
+<li>Validate and sanitise all user-supplied info (URL params)</li>
+<li>Ensure communication only permitted with trusted resources</li>
+</ul>
+<h2 id="8-security-misconfiguration">8. Security misconfiguration</h2>
+<ul>
+<li>Lack of security hardening, improperly configured permissions, missing security patches, CORS policy missing, use of bots to scan, detect and exploit misconfigurations</li>
+<li>Implement hardening procedures.</li>
+</ul>
+<h2 id="9-improper-inventory-management">9. Improper inventory management</h2>
+<ul>
+<li>Unauthorised API access via old/unused versions or through trusted 3rd parties</li>
+<li>Unpatched endpoints, outdated documentation, deploy/manage all APIs in gatewa</li>
+</ul>
+<h2 id="10-unsafe-consumption-of-apis">10. Unsafe consumption of APIs</h2>
+<ul>
+<li>3rd party APIs are exploited and then used to attack legitimate APIs relying on them.</li>
+<li>Validate data and evaluate security controls of 3rd APIs , encrypt API communication.</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-07-23T19:39:40&#43;05:30">July 23, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/api-security/" rel="category">API Security</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/nmap-basics/">Nmap Basics</a></h1>
+	<div class="entry__content"><h2 id="1-network-discovery">1. Network discovery</h2>
+<ul>
+<li>Find out IP address ranges</li>
+<li>Determine estimated services offered by a host</li>
+<li>Figure out general network topology</li>
+<li>Check for Firewall filtering policies</li>
+<li>sL : List scan</li>
+<li>A : Advanced / Aggressive</li>
+<li>Finding an organization&rsquo;s IP address :
+<ul>
+<li>host -t ns target.com</li>
+<li>host -t a target.com</li>
+<li>host -t aaaa target.com</li>
+<li>host -t mx target.com</li>
+<li>host -t soa target.com</li>
+<li>nmap -Pn -T4 –-traceroute target.com</li>
+<li>whois &lt;x.x.x.x&gt;</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-host-discovery">2. Host discovery</h2>
+<ul>
+<li>nmap -sL abc.com</li>
+<li>nmap -sn -t4 abc.com : Ping scan</li>
+<li>nmap -Pn -t4 abc.com : Disable Ping</li>
+<li>nmap -sn -PS8O -v abc.com : TCP SYN Ping</li>
+<li>nmap -sn -PA8O -v abc.com: TCP ACK Ping</li>
+<li>nmap -sn -PU -v abc.com : UDP Ping</li>
+<li>nmap -sn -PE -v abc.com : ICMP Ping (8/echo)</li>
+<li>nmap -sn -PR -v abc.com : ARP Scan</li>
+<li>nmap -sn -PE -PS443 -PA80 -PP abc.com : Default</li>
+</ul>
+<h2 id="3-port-scanning">3. Port Scanning</h2>
+<ul>
+<li>Open : accepting TCP connections</li>
+<li>Closed : Accessible but no application listening</li>
+<li>Filtered : Not able to determine if port is open ( Firewall )</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-07-20T23:56:44&#43;05:30">July 20, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/vulnerability-assessment/" rel="category">Vulnerability Assessment</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/my-first-post/">My First Post</a></h1>
+	<div class="entry__content"><h2 id="introduction">Introduction</h2>
+<p>Welcome to Colonialbiker&rsquo;s blog. I just want to share whatever little I know to everyone on the internet. The content might be boring but I assure you that as time passes by, the quality of content will also improve.</p>
+<p><strong>Thanks a lot for taking your time and reading the posts!!!</strong></p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-07-20T22:39:03&#43;05:30">July 20, 2025</time>
+	</div>
+</article>
+					</div>
+			</div>
+	</main>
+	
+<div class="pagination block">
+				<a class="pagination__item pagination__item--desktop" href="/">1</a>
+				<a class="pagination__item pagination__item--desktop" href="/page/2/">2</a>
+				<a class="pagination__item pagination__item--desktop" href="/page/3/">3</a>
+			<span class="pagination__item pagination__item--gap">&hellip;</span>
+				<a class="pagination__item pagination__item--desktop" href="/page/5/">5</a>
+				<span class="pagination__item pagination__item--active" data-total="6">6</span>
+</div>
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="mailto:colonialbiker123@gmail.com">
+			<svg class="social__icon" aria-label="Email" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M299 268l124 106c-4 4-10 7-17 7H106c-7 0-13-3-17-7l124-106 43 38 43-38zm-43 13L89 138c4-4 10-7 17-7h300c7 0 13 3 17 7L256 281zm54-23l121-105v208L310 258zM81 153l121 105L81 361V153z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/sumukh-kesarla">
+			<svg class="social__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2025 Colonialbiker Blog Site. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+</body>
+</html>

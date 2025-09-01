@@ -29,6 +29,228 @@
 			
 				<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/microservices-paterrns/">Microservices Paterrns</a></h1>
+	<div class="entry__content"><h3 id="1-single-page-application">1. Single Page application</h3>
+<ul>
+<li>Updates dynamically using backend calls to REST services</li>
+</ul>
+<h3 id="2-backend-for-frontend">2. Backend for frontend</h3>
+<ul>
+<li>Customised UI for different channels</li>
+<li>One backend types per user interface</li>
+</ul>
+<h3 id="3-strangler-pattern">3. Strangler pattern</h3>
+<ul>
+<li>Transform: Create new parallel site</li>
+<li>Coexist: Incrementally redirect for new functionalities</li>
+<li>Eliminate: Remove old functionality</li>
+</ul>
+<h3 id="4-service-discovery-pattern">4. Service discovery pattern</h3>
+<ul>
+<li>Provides flexibility</li>
+</ul>
+<h3 id="5-entity-and-aggregate-pattern">5. Entity and aggregate pattern</h3>
+<ul>
+<li>E-commerce sites</li>
+</ul>
+<h3 id="6-adapter-patterns">6. Adapter patterns</h3></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-10T08:50:35&#43;05:30">August 10, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/devops/" rel="category">DevOps</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/12-factor-app-methodology/">12 Factor App Methodology</a></h1>
+	<div class="entry__content"><h3 id="1-codebbase">1. Codebbase</h3>
+<ul>
+<li>Version control system like Git</li>
+</ul>
+<h3 id="2-build-release-run">2. Build, Release, Run</h3>
+<ul>
+<li>Build: Transform codebase to executable unit</li>
+<li>Release: Combine build with config</li>
+<li>Run: Run the application</li>
+</ul>
+<h3 id="3development-production-parity">3.Development-Production parity</h3>
+<ul>
+<li>Minimise difference between deployment/ production environment.</li>
+</ul>
+<h3 id="4-dependencies">4. Dependencies</h3>
+<ul>
+<li>Explicitly declare all dependencies</li>
+</ul>
+<h3 id="5-configuration">5. Configuration</h3>
+<ul>
+<li>Store configuration in environment variables</li>
+<li>Keep everything that varies between deployments in configurations</li>
+</ul>
+<h3 id="6-backend-services">6. Backend services</h3>
+<ul>
+<li>Do not distinguish between local/ 3rd party services</li>
+<li>Access all services by a URL and credentials</li>
+</ul>
+<h3 id="7-processes">7. Processes</h3>
+<ul>
+<li>Stateless</li>
+<li>Persistent data in a database</li>
+</ul>
+<h3 id="8port-binding">8.Port binding</h3>
+<ul>
+<li>Export services by a port binding</li>
+<li>Declare web server library as a dependency</li>
+</ul>
+<h3 id="9-concurrency">9. Concurrency</h3>
+<ul>
+<li>Scalability</li>
+</ul>
+<h3 id="10-disposability">10. Disposability</h3>
+<ul>
+<li>Minimal startup time and graceful termination</li>
+</ul>
+<h3 id="11-logs">11. Logs</h3>
+<ul>
+<li>Treat logs as an event stream</li>
+</ul>
+<h3 id="12-admin-processes">12. Admin processes</h3></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-10T08:43:13&#43;05:30">August 10, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/devops/" rel="category">DevOps</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/devops/">DevOps</a></h1>
+	<div class="entry__content"><h2 id="thinking-devops-social-coding-principles">Thinking DevOps/ Social Coding Principles</h2>
+<ul>
+<li>Working in small batches</li>
+<li>Git repository</li>
+<li>Minimum Viable Product</li>
+<li>Test-driven Development: Building the thing right
+<ul>
+<li>Test cases drive the design</li>
+<li>Red, green, refactor</li>
+<li>Automate testing</li>
+</ul>
+</li>
+<li>Behaviour-driven development: Building the right thing
+<ul>
+<li>Gherkin
+<ul>
+<li>Given (some context)</li>
+<li>When (some event happens)</li>
+<li>Then (some testable outcome)</li>
+<li>And (more context, events, outcomes)</li>
+</ul>
+</li>
+<li>Add acceptance criteria to every user story</li>
+</ul>
+</li>
+<li>Cloud native microservices
+<ul>
+<li>Collection of stateless microservices</li>
+<li>Each service maintains own database</li>
+</ul>
+</li>
+<li>Designing for failure:
+<ul>
+<li>Retry pattern</li>
+<li>Circuit breaker pattern</li>
+<li>Bulkhead pattern</li>
+<li>Chaos engineering: Monkey testing
+<ul>
+<li>Netflix: Simian Army tools</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Pair programming</li>
+<li>Ephemeral infrastructure as code</li>
+<li>Automated self-service</li>
+<li>Feedback loops and data driven responses</li>
+</ul>
+<h2 id="working-devops">Working DevOps</h2>
+<ul>
+<li>Infrastructure as code
+<ul>
+<li>Configuration Management Systems: Executable textual format</li>
+<li>Ancibel, Puppt, Chef</li>
+<li>Version control</li>
+</ul>
+</li>
+<li>Ephemeral immutable infrastructure
+<ul>
+<li>Transient, parallel infrastructure</li>
+</ul>
+</li>
+<li>Immutable delivery via containers</li>
+</ul>
+<h3 id="continuous-integration">Continuous integration</h3>
+<ul>
+<li>Short lived feature branches</li>
+<li>Each checkin is verified by automated build</li>
+<li>Committing regularly</li>
+<li>Build and test every pull request</li>
+<li>Run tests after each build</li>
+</ul>
+<h3 id="continuous-delivery">Continuous delivery</h3>
+<ul>
+<li>Build quality with rigorous checks</li>
+<li>Work in small batches</li>
+<li>Automate repetitive takes to computers</li>
+<li>Measure for actionable metrics, pursue improvement</li>
+<li>Everyone is responsible</li>
+</ul>
+<h3 id="continuous-deployment">Continuous deployment</h3>
+<ul>
+<li>Production + Automation</li>
+<li>Feature flags: Decouple deployment from activation</li>
+</ul>
+<h3 id="social-metrics">Social metrics</h3>
+<ul>
+<li>Who is leveraging the code you are building?</li>
+<li>Who’s code are you leveraging ?</li>
+</ul>
+<h2 id="measuring-devops">Measuring DevOps</h2>
+<ul>
+<li>Reduce time to market</li>
+<li>Increase overall availability</li>
+<li>Reduce time to deploy</li>
+<li>Defects detected before production</li>
+<li>More efficient use of hardware infrastructure</li>
+<li>Quicker performance feedback</li>
+</ul>
+<ol>
+<li>Mean lead time</li>
+<li>Release frequency</li>
+<li>Change failure rate</li>
+<li>Mean time to recovery</li>
+</ol></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-10T08:29:38&#43;05:30">August 10, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/devops/" rel="category">DevOps</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/kubernetes/">Kubernetes</a></h1>
 	<div class="entry__content"><h2 id="introduction">Introduction</h2>
 <ul>
@@ -150,173 +372,16 @@
 </article>
 				</div>
 			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/safety-instrumented-systems/">Safety Instrumented Systems</a></h1>
-	<div class="entry__content"><h2 id="safety-on-the-whole-combines">Safety on the whole combines</h2>
-<ul>
-<li>Physical Infrastructure and Safeguards</li>
-<li>Process control logic (soft interlocks)</li>
-<li>Physical safeguards (burst disks, mechanical trips, 1-way valve)</li>
-<li>Safety Instrumented systems</li>
-</ul>
-<h2 id="failure-modes-for-ics">Failure modes for ICS</h2>
-<ul>
-<li>Intermittent failures:
-<ul>
-<li>Corrected by logic conditions in the system</li>
-<li>Minimal to no process interruption</li>
-</ul>
-</li>
-<li>Nuisance trips:
-<ul>
-<li>Logic interlocks, fail safes</li>
-</ul>
-</li>
-<li>Unplanned outages:
-<ul>
-<li>Sustained process failures</li>
-</ul>
-</li>
-<li>Dangerous failures:
-<ul>
-<li>Kinetic and safety impacts</li>
-<li>Extended outages</li>
-</ul>
-</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-06T19:55:14&#43;05:30">August 06, 2025</time>
-<div class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/ics/" rel="category">ICS</a>
-	</span>
-</div>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/assessment-techniques-and-patching-in-ics/">Assessment Techniques and Patching in ICS</a></h1>
-	<div class="entry__content"><h2 id="assessment-techniques-for-ics">Assessment techniques for ICS</h2>
-<ul>
-<li>Asset discovery/ identification</li>
-<li>Asset Management</li>
-<li>Vulnerability Management</li>
-<li>Cadence : first time / one-time/ periodic/ ongoing</li>
-<li>Work with operational personnel to understand impact: system-level/ network-level/ device-level</li>
-<li>Physical walkthrough: Infrastructure, Protocols, Media, age of systems, etc</li>
-<li>Routine, scheduled scanning</li>
-<li>Common Techniques:
-<ul>
-<li>Authenticated/ credentialed scanning : Ports and services, software inventory, patch auditing (OS and app), light weight scanning</li>
-<li>Configuration auditing : Identify known good state or optimal configuration and compare it against it</li>
-<li>Native OS commands: Check network config, installed patches, ports nad services , user accounts, etc.</li>
-<li>Native ICS protocols and tools</li>
-</ul>
-</li>
-</ul>
-<h2 id="patching-in-ics">Patching in ICS</h2>
-<ul>
-<li>Cyber maintenance</li>
-<li>Create an intelligent process that fits the context of system</li>
-<li>Automate and leverage virtualisation where possible</li>
-<li>Remove unneeded ports and services</li>
-<li>Change default or easily-guessed credentials</li>
-<li>Opt for SSH over telnet for infrastructure devices</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-06T19:52:28&#43;05:30">August 06, 2025</time>
-<div class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/ot-security/" rel="category">OT Security</a>
-	</span>
-</div>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/know-your-industrial-control-systems/">Know Your Industrial Control Systems</a></h1>
-	<div class="entry__content"><h2 id="common-terminologies">Common Terminologies</h2>
-<ul>
-<li>SCADA: Supervisory control and data acquisition system. It grew out of telemetry systems developed for space program. Initially, all the components were hard wired, then came the role of microprocessor based digital telemetry systems.</li>
-<li>DCS: Distributed control systems. These are typically installed within the plant premises.</li>
-<li>SCADA systems also support remote functionalities.</li>
-<li>2 basic components of SCADA:
-<ul>
-<li>RTU: Remote Terminal Unit or smart devices. These devices provide local control.</li>
-</ul>
-</li>
-<li>Central station computer</li>
-<li>MODBUS: Serial communications</li>
-<li>IEC 61850: Electric Utility Substation Communications</li>
-<li>HMI: Human-machine interface : Window</li>
-<li>Distributed control system (DCS): Process control (continuous/batch)</li>
-<li>Programmable logic controller (PLC): Discrete/ sequence control</li>
-<li>SCADA: Remote monitoring and dispatch</li>
-<li>SIS: Safety instrumental system : Life safety/ personnel protection</li>
-<li>OT: Operational technology = ICS (Industrial Control Systems) + CPS(Cyber Physical Systems) + others</li>
-<li>Purdue model: Structural / segmentation model for ICS security</li>
-<li>DCS topology:
-<ul>
-<li>Smart transmitters and valves: HART / Bus protocol</li>
-<li>Ladder logic</li>
-</ul>
-</li>
-<li>SCADA implementation in geographically dispersed areas</li>
-<li>Common SCADA mode communications: Microwave, satellite, cellular, dial-up mod</li>
-</ul>
-<h2 id="ics-protocols">ICS Protocols</h2>
-<ul>
-<li>Traditional ICS protocols acquire measurement values via polling. Periodically request the state. Period determined by throughput/ latency requirements.</li>
-<li>MODBUS
-<ul>
-<li>Added features beyond basic capabilities in MODBUS</li>
-<li>Define more data types to enhance inter-operability</li>
-<li>Bandwidth minimization for SCADA systems: send only deltas.</li>
-</ul>
-</li>
-<li>Publisher-subscriber based protocols: IEC 61805 GOOSE or UDP multicast in IP</li>
-<li>Industry  specific models:
-<ul>
-<li>ODVA’s CIP: Motion control, synchronization etc</li>
-<li>IEC 61850: Electric Power Industry</li>
-</ul>
-</li>
-<li>DCS protocols: OPC, Siemens S7, MODBUS, HART, Profibus, IP</li>
-<li>SCADA protocols: DNP3, ICCP, IEC 60870-5-104</li>
-<li>Issues with major ICS Protocols:
-<ul>
-<li>Insecure by design</li>
-<li>Insecure by implementation</li>
-</ul>
-</li>
-<li>Can be secured by using techniques such as TLS etc.</li>
-<li>Modern Wrappers: SSP21</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-06T19:22:45&#43;05:30">August 06, 2025</time>
-<div class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/ics/" rel="category">ICS</a>
-	</span>
-</div>
-	</div>
-</article>
-				</div>
-			
 		</div>
 	</main>
 	
 <div class="pagination block">
 				<a class="pagination__item pagination__item--desktop" href="/posts/">1</a>
 				<a class="pagination__item pagination__item--desktop" href="/posts/page/2/">2</a>
-				<span class="pagination__item pagination__item--active" data-total="5">3</span>
+				<span class="pagination__item pagination__item--active" data-total="6">3</span>
 				<a class="pagination__item pagination__item--desktop" href="/posts/page/4/">4</a>
-				<a class="pagination__item pagination__item--desktop" href="/posts/page/5/">5</a>
+			<span class="pagination__item pagination__item--gap">&hellip;</span>
+				<a class="pagination__item pagination__item--desktop" href="/posts/page/6/">6</a>
 </div>
 
 	</div>

@@ -3,12 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2025-08-31T11:39:35+05:30</lastmod>
+    <lastmod>2025-09-01T22:46:46+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/ics-asset-inventory/</loc>
-    <lastmod>2025-08-31T11:39:35+05:30</lastmod>
+    <loc>//localhost:1313/posts/human-errors-and-solutions/</loc>
+    <lastmod>2025-09-01T22:46:46+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/</loc>
+    <lastmod>2025-09-01T22:46:46+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/ics-ntwk-sec-monitoring-collection/</loc>
+    <lastmod>2025-09-01T22:42:25+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/industrial-control-network-protocols/</loc>
+    <lastmod>2025-09-01T22:35:30+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/ics-asset-inventory/</loc>
     <lastmod>2025-08-31T11:39:35+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/sliding-scale-of-cyber-security/</loc>
