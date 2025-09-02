@@ -6,8 +6,22 @@
     <description>Recent content on Colonialbiker Blog Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Sep 2025 22:46:46 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 02 Sep 2025 22:14:45 +0530</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MITRE ATT&amp;CK Introduction</title>
+      <link>//localhost:1313/posts/mitre-introduction/</link>
+      <pubDate>Tue, 02 Sep 2025 22:14:45 +0530</pubDate>
+      <guid>//localhost:1313/posts/mitre-introduction/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Threat informed defence&lt;/li&gt;&#xA;&lt;li&gt;David -Bianco’s pyramid of pain: TTPs&lt;/li&gt;&#xA;&lt;li&gt;Adversary group: G&lt;/li&gt;&#xA;&lt;li&gt;Campaign: C&lt;/li&gt;&#xA;&lt;li&gt;Software: S&lt;/li&gt;&#xA;&lt;li&gt;Data source: DS&lt;/li&gt;&#xA;&lt;li&gt;Tactic: TA&lt;/li&gt;&#xA;&lt;li&gt;Sub-technique: T&lt;/li&gt;&#xA;&lt;li&gt;Mitigation: M&lt;/li&gt;&#xA;&lt;li&gt;MITRE is informed by what has been seen in operational use by the broader community&lt;/li&gt;&#xA;&lt;li&gt;Tactic: Goals of an adversary during intrusion. Help us understand why an adversary performs each action&lt;/li&gt;&#xA;&lt;li&gt;Technique: Means by which adversaries achieve their tactical goals&lt;/li&gt;&#xA;&lt;li&gt;Procedure: Specific implementation&lt;/li&gt;&#xA;&lt;li&gt;Common knowledge: CTI analysts, Red team and SOC analysts, executives etc&lt;/li&gt;&#xA;&lt;li&gt;Quantitative scorecard&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Documenting priorities&lt;/li&gt;&#xA;&lt;li&gt;Identify gaps&lt;/li&gt;&#xA;&lt;li&gt;Informed decision making&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Threat informed defence: systematic application of a deep understanding of adversary tradecraft and technology to prevent, detect and/or respond to cyber attacks&lt;/li&gt;&#xA;&lt;li&gt;Threat emulation: Offensive assessment mimicking particular adversary behaviours such as those in ATT&amp;amp;CK&lt;/li&gt;&#xA;&lt;li&gt;Threat driven security engineering&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>User Behaviour Centric System</title>
+      <link>//localhost:1313/posts/user-behaviour-centric-system/</link>
+      <pubDate>Tue, 02 Sep 2025 22:11:20 +0530</pubDate>
+      <guid>//localhost:1313/posts/user-behaviour-centric-system/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Capture data from various devices, apps, web services where an employee is creating an outbound connection&lt;/li&gt;&#xA;&lt;li&gt;Time spent of web/ apps by an employee&lt;/li&gt;&#xA;&lt;li&gt;General time window when employee accesses work application&lt;/li&gt;&#xA;&lt;li&gt;Time spent on business/ non-business applications&lt;/li&gt;&#xA;&lt;li&gt;Virtual footprint on business apps during working hours&lt;/li&gt;&#xA;&lt;li&gt;Specific searches made on Search Engine, chat, social media.&lt;/li&gt;&#xA;&lt;li&gt;Look at BCC and draft note exchanges&lt;/li&gt;&#xA;&lt;li&gt;Elevate surveillance on data movement controls: USB, dropbox&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Human Errors and Solutions</title>
       <link>//localhost:1313/posts/human-errors-and-solutions/</link>

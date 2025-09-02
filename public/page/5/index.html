@@ -24,6 +24,122 @@
 			<div class="cards">
 					<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/electric-power-industry/">Electric Power Industry</a></h1>
+	<div class="entry__content"><h2 id="introduction">Introduction</h2>
+<h3 id="few-typical-components">Few typical components</h3>
+<ul>
+<li>Generating station</li>
+<li>Generator step up transformer</li>
+<li>Transmission lines</li>
+<li>Substration step down transformer</li>
+<li>Customer (subtransmission/ primary/ secondary)</li>
+</ul>
+<h3 id="types-of-power-sources">Types of Power Sources</h3>
+<p>Renewable: wind, solar, hydro
+Non-renewable: coal, natural gas</p>
+<h3 id="why-is-electricity-difficult-to-manage">Why is Electricity difficult to manage?</h3>
+<ul>
+<li>Electricity cannot be routed/ controlled</li>
+<li>Power flows via the path of least resistance</li>
+</ul>
+<h3 id="elements-of-substation">Elements of substation</h3>
+<ul>
+<li>Primary power line</li>
+<li>Ground wire</li>
+<li>Transformer for measuring electric voltage</li>
+<li>Disconnect switch</li>
+<li>Circuit breaker</li>
+<li>Current transformer</li>
+<li>Lightning arrester</li>
+<li>Main transformer</li>
+<li>Control building</li>
+<li>Security fence</li>
+<li>Secondary power line</li>
+</ul>
+<h3 id="distribution-line-devices">Distribution line devices</h3>
+<ul>
+<li>Voltage regulator</li>
+<li>Capacitor bank</li>
+<li>Gang operated switch</li>
+<li>Reclosers: automatic</li>
+<li>Fused disconnect</li>
+<li>Distribution transformer</li>
+</ul>
+<h2 id="smart-grid">Smart Grid</h2>
+<p>An example of a use case of smart grid is where E-vehicles which are battery powered also are compatible to 2 way power distribution i.e Power from a vehicle can be used to power a site in case of main grid failure and at other times, be used as it was intended to.</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-05T21:49:53&#43;05:30">August 05, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/power-utility/" rel="category">Power Utility</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/introduction-to-control-systems/">Introduction to Control Systems</a></h1>
+	<div class="entry__content"><h2 id="introduction">Introduction</h2>
+<p>System: Collection of interconnected parts that form a larger more complex whole</p>
+<p>3 different problems</p>
+<ol>
+<li>System identification problem</li>
+</ol>
+<ul>
+<li>Determine mathematical problem</li>
+<li>Ask following questions:
+<ul>
+<li>How can I model the system that I’m trying to control ?</li>
+<li>What are the relevant dynamics/</li>
+<li>What equation will convent known inputs to measured outputs?</li>
+<li>i. Black box method</li>
+<li>ii. White box method</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>Simulation problem</li>
+</ol>
+<ul>
+<li>Predicting how outputs change</li>
+<li>Ask the following questions:
+<ul>
+<li>Does my system model match my test data?</li>
+<li>Will my system work in all operating environments?</li>
+<li>How my system behaves with potentially destructive commands?</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>Control problem</li>
+</ol>
+<ul>
+<li>How do we generate the appropriate system input that will produce the desired output?</li>
+<li>Ask the following questions:
+<ul>
+<li>How can I get my system to meet my performance requirements?</li>
+<li>How can I automate a process that currently involves humans in the loop?</li>
+<li>How can my system operate in a dynamic and noisy environment?</li>
+</ul>
+</li>
+</ul>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<ul>
+<li>
+<p>Open Loop System</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-04T22:32:27&#43;05:30">August 04, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/ics/" rel="category">ICS</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/threat-hunting/">Threat Hunting</a></h1>
 	<div class="entry__content"><h2 id="introduction">Introduction</h2>
 <ul>
@@ -392,105 +508,6 @@
 	<span class="meta-categories__list">Categories:
 		<a class="meta-categories__link" href="/categories/api/" rel="category">API</a>, 
 		<a class="meta-categories__link" href="/categories/api-security/" rel="category">API Security</a>
-	</span>
-</div>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/owasp-llm-top-10/">OWASP LLM Top 10</a></h1>
-	<div class="entry__content"><h2 id="1-prompt-injection">1. Prompt Injection</h2>
-<ul>
-<li>Direct / Jailbreak</li>
-<li>Indirect : Summarise webpage, upload resume</li>
-<li>Previlige control, trust boundaries</li>
-</ul>
-<h2 id="2-insecure-output-handling">2. Insecure output handling</h2>
-<ul>
-<li>Apps with LLM privileges beyond user requirement</li>
-<li>Example: LLM output interpreted by browser resulting in XSS</li>
-</ul>
-<h2 id="3-training-data-poisoning">3. Training data poisoning</h2>
-<ul>
-<li>Supply chain of training data, ML-BOM, sandboxing, MLSecOps, biased opinions (leading to Hate crimes etc.)</li>
-</ul>
-<h2 id="4-model-denial-of-service">4. Model Denial of Service</h2>
-<ul>
-<li>Continuous input overflow, repetitive long input, recursive context expansion, variable length input flooding, DoS etc.</li>
-</ul>
-<h2 id="5-supply-chain-vulnerabilities">5. Supply chain vulnerabilities</h2>
-<ul>
-<li>Poisoned crowd-sourced data, outdated models, model and code signing, PyPi package registry, AI-BOM</li>
-</ul>
-<h2 id="6-sensitive-information-discourse">6. Sensitive Information Discourse</h2>
-<ul>
-<li>Memorisation of training data (sensitive data), unintended disclosure of confidential information due to LLM misinterpretation</li>
-</ul>
-<h2 id="7-insecure-plugin-design">7. Insecure plugin design</h2>
-<h2 id="8-excessive-agency">8. Excessive agency</h2>
-<ul>
-<li>Eliminate excessive functionality/ permissions/ autonomy.</li>
-</ul>
-<h2 id="9-overreliance">9. Overreliance</h2>
-<ul>
-<li>Hallucination, confabulation, plagiarism, disinformation, Parameters Efficient Tuning (PET), chain of thought prompting</li>
-</ul>
-<h2 id="10-model-theft">10. Model theft</h2>
-<ul>
-<li>Shadow model, ML model registry, side channel attacks, self-instruct (generate synthetic training data)</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-02T12:44:04&#43;05:30">August 02, 2025</time>
-<div class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/llm-security/" rel="category">LLM Security</a>
-	</span>
-</div>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/cyber-threat-intelligence-introduction/">Cyber Threat Intelligence Introduction</a></h1>
-	<div class="entry__content"><h2 id="intelligence">Intelligence</h2>
-<ol>
-<li>Strategic</li>
-</ol>
-<ul>
-<li>Information related to CXO level members</li>
-<li>Main threat capabilities, motivations, probability, consequences etc. (disruption, theft, financial gain etc)</li>
-</ul>
-<ol start="2">
-<li>Operational</li>
-</ol>
-<ul>
-<li>Those who are involved in day-to-day decisions, which groups may target, which groups are active, CIEs, tactics used etc.</li>
-</ul>
-<ol start="3">
-<li>Tactical</li>
-</ol>
-<ul>
-<li>To those in need of instantaneous information IP addresses, domains, URLs, hashes, registry keys, email artifacts etc.</li>
-</ul>
-<h2 id="areas-of-interest">Areas of interest</h2>
-<ul>
-<li>Cybercrime</li>
-<li>Cyberterrorism</li>
-<li>Hactivism</li>
-<li>Cyberespionage</li>
-</ul>
-<h2 id="advanced-persistent-threats">Advanced Persistent Threats</h2>
-<ul>
-<li>APT = Threat actor + high operational security + low detection rate + high success level</li>
-</ul>
-<h2 id="stix--structured-threat-information-expression">STIX : Structured threat information expression</h2>
-<p>Any threat actor can be defined by:</p></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-07-23T19:52:25&#43;05:30">July 23, 2025</time>
-<div class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/cyber-threat-intel/" rel="category">Cyber Threat Intel</a>
 	</span>
 </div>
 	</div>
