@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>MITRE ATT&amp;CK - Enterprise - Reconnaissance | Colonialbiker Blog Site</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+</head>
+<body class="body kind-page">
+	<header class="header">
+	<a class="logo" href="/">Colonialbiker Blog Site</a>
+	
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		
+		<div class="single block">
+			<article class="entry">
+	<div class="entry__meta meta mb">
+	<time class="entry__meta-published meta-published" datetime="2025-09-03T19:21:54&#43;05:30">September 03, 2025</time>
+	</div>
+				<h1 class="entry__title">MITRE ATT&amp;CK - Enterprise - Reconnaissance</h1>
+<details class="entry__toc toc" open>
+	<summary class="toc__title">Table of Contents</summary>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#active-scanning">Active Scanning</a></li>
+    <li><a href="#gather-victim-host-information">Gather Victim host information</a></li>
+    <li><a href="#gather-victim-identity-information">Gather victim identity information</a></li>
+    <li><a href="#gather-victim-network-information">Gather victim network information</a></li>
+    <li><a href="#gather-victim-organization-information">Gather victim organization information</a></li>
+    <li><a href="#phishing-for-information">Phishing for information</a></li>
+    <li><a href="#search-closed-sources">Search closed sources</a></li>
+    <li><a href="#search-open-technical-databases">Search open technical databases</a></li>
+    <li><a href="#search-open-websites-domains">Search open websites/ domains</a></li>
+    <li><a href="#search-victim-owned-websites">Search victim owned websites</a></li>
+  </ul>
+</nav>
+</details>
+				<div class="entry__content"><ul>
+<li>Actively or passively gather information of victim organization/ infrastructure/ staff etc.</li>
+</ul>
+<h2 id="active-scanning">Active Scanning</h2>
+<ul>
+<li>Probe victim infrastructure via network traffic</li>
+<li>Scanning IP blocks: public IPs</li>
+<li>Vulnerability Scanning: Configurations of target host/ applications, versions etc</li>
+<li>Wordlist Scanning: Bruteforcing, Crawling, to identify content and infrastructure (like if an SQLDB is MySQL, Oracle, Ppostgress etc).</li>
+</ul>
+<h2 id="gather-victim-host-information">Gather Victim host information</h2>
+<ul>
+<li>Administrative data, configs, etc</li>
+<li>Hardware: Types, versions, additional components etc</li>
+<li>Software: Types, versions, additional components, etc (AV, SIEM, etc)</li>
+<li>Firmware: Types, versions, configurtions, age, patch-level etc</li>
+<li>Client Configuration: Settings, OS, versions, architecture, language, virtualisation</li>
+</ul>
+<h2 id="gather-victim-identity-information">Gather victim identity information</h2>
+<ul>
+<li>PII, credentials, MFA configurations etc</li>
+<li>Credentials: User tendency to use same passwords across accounts</li>
+<li>Emails: Organizations having public facing email infrastructure and addresses of employees</li>
+<li>Employee names: To derive emails, craft more believable lures</li>
+</ul>
+<h2 id="gather-victim-network-information">Gather victim network information</h2>
+<ul>
+<li>Administration data, topology, operations etc</li>
+<li>Domain: What domains, their owners, administrative data, nameservers etc</li>
+<li>DNS: Registered Nameservers, mailserver, DNS, MX, TXT, SPF records etc</li>
+<li>Network topology: Physical/ logical, gateways, routers etc</li>
+<li>IP addresses: To derive organization size, physical location, ISP etc</li>
+<li>Network trust dependencies: 3rd party organizations, ISP, contractors etc</li>
+<li>Network security applications: Firewalls, filters, proxies, NIDs etc</li>
+</ul>
+<h2 id="gather-victim-organization-information">Gather victim organization information</h2>
+<ul>
+<li>Divisions, departments, business operations, roles, responsibility</li>
+<li>Gather physical locations: Key resources, Infrasrucure, authorities, victims etc</li>
+<li>Identify roles: PII, data resources</li>
+<li>Business relationships: 3rd party organizations, domains, contracts, network access</li>
+<li>Identify business tempo: Operational working hours, purchases, shipments etc</li>
+</ul>
+<h2 id="phishing-for-information">Phishing for information</h2>
+<ul>
+<li>Objective is to gather data from victim</li>
+<li>Spear phishing service: Social engineering, credentials, actionable information</li>
+<li>Spear phishing attachment/ link/ voice: Posing as a source with a reason to collect information like establish or compromise accounts, send urgent messages etc</li>
+</ul>
+<h2 id="search-closed-sources">Search closed sources</h2>
+<ul>
+<li>Available for purchase from private sources, databases, paid subscriptions, feeds of threat intel, dark web, cyber blackmarkets</li>
+<li>Threat intel vendors: Target industries, attribution claims, successful TTPs/ countermeasures etc from paid feeds/ portals from threat intel</li>
+<li>Purchase technical data: From private sources, databases, darkweb etc</li>
+</ul>
+<h2 id="search-open-technical-databases">Search open technical databases</h2>
+<ul>
+<li>Databases, repositories, domains, network, artifacts etc</li>
+<li>DNS/ passive DNS: Records like nameservers, subdomains, mailservers etc</li>
+<li>WHOIS: Assigned IP blocks, contact info, DNS nameservers</li>
+<li>Digital certificates: Contain information of company name, location</li>
+<li>CDN: Gain data about victim</li>
+<li>Scan DBs: Internet scans/ surveys, IPs, hostnames, ports, certificates, server banners</li>
+</ul>
+<h2 id="search-open-websites-domains">Search open websites/ domains</h2>
+<ul>
+<li>From Social Media, news, hirings, contracts awarded etc</li>
+<li>Social media: Victim organization, business announcements, roles, locations, staff</li>
+<li>Search engines</li>
+<li>Code repositories: GitHub, GitLab, Sourceforge, BitBucket etc</li>
+</ul>
+<h2 id="search-victim-owned-websites">Search victim owned websites</h2>
+<ul>
+<li>Departments/ divisions, locations, names, roles, contact info, business operations, relationships etc</li>
+</ul>
+</div>
+				
+				<footer class="entry__footer">
+					
+					
+<div class="entry__share share">
+	<a class="share__link btn" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=%2f%2flocalhost%3a1313%2fposts%2fattack-enterprise-reconnaissance%2f&title=MITRE%20ATT%26CK%20-%20Enterprise%20-%20Reconnaissance" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on LinkedIn', 'width=640,height=480,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+<div class="authorbox block">
+	<div class="author">
+		<div class="author__body">
+			<div class="author__name">
+				
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="mailto:colonialbiker123@gmail.com">
+			<svg class="social__icon" aria-label="Email" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M299 268l124 106c-4 4-10 7-17 7H106c-7 0-13-3-17-7l124-106 43 38 43-38zm-43 13L89 138c4-4 10-7 17-7h300c7 0 13 3 17 7L256 281zm54-23l121-105v208L310 258zM81 153l121 105L81 361V153z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/sumukh-kesarla">
+			<svg class="social__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2025 Colonialbiker Blog Site. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+</body>
+</html>
