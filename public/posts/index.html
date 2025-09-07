@@ -29,6 +29,194 @@
 			
 				<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-ics-execution/">ATT&amp;CK MITRE - ICS - Execution</a></h1>
+	<div class="entry__content"><ul>
+<li>Run code/ manipulate systems, functions/ parameter/ data in unauthorised way</li>
+</ul>
+<h2 id="autorun-image">AutoRun Image</h2>
+<ul>
+<li>Execute code by mounting removable media to device</li>
+</ul>
+<h2 id="change-operating-mode">Change Operating Mode</h2>
+<ul>
+<li>Of controllers to gain additional access to engineering functions like program download</li>
+</ul>
+<h2 id="command-line-interface">Command line interface</h2>
+<ul>
+<li>To install and run malware over course of operation</li>
+</ul>
+<h2 id="execution-through-api">Execution through API</h2>
+<ul>
+<li>Command between control software and hardware</li>
+</ul>
+<h2 id="gui">GUI</h2>
+<ul>
+<li>Malware can move cursors, click on keyboard keys etc</li>
+</ul>
+<h2 id="hooking">Hooking</h2>
+<ul>
+<li>Hook into API functions used by processes to redirect calls for execution and privilege escalation means</li>
+</ul>
+<h2 id="modify-controller-tasking">Modify controller tasking</h2>
+<ul>
+<li>To manipulate execution flow and controller behaviour</li>
+</ul>
+<h2 id="native-api">Native API</h2>
+<ul>
+<li>Interact with Native OS API to access system functions</li>
+</ul>
+<h2 id="scripting">Scripting</h2>
+<h2 id="user-execution">User Execution</h2>
+<ul>
+<li>Rely on user interaction for execution of malware</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-07T22:58:25&#43;05:30">September 07, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-mobile-execution/">ATT&amp;ACK MITRE - Mobile - Execution</a></h1>
+	<div class="entry__content"><ul>
+<li>Adversary is trying to run malicious code</li>
+</ul>
+<h2 id="command-and-scripting-interpreter">Command and scripting interpreter</h2>
+<ul>
+<li>Android is a UNIX-like OS and includes basic UNIX shell accessed via Android debug bridge (ADB) or Java’s Runtime Package
+<ul>
+<li>Unix shell: Underlying command prompts on Android and iOS devices</li>
+</ul>
+</li>
+</ul>
+<h2 id="exploitation-for-client-execution">Exploitation for client execution</h2>
+<ul>
+<li>Exploit software vulnerabilities in client apps</li>
+</ul>
+<h2 id="native-api">Native API</h2>
+<ul>
+<li>Use Android’s native devevelopment Kit (NDK) to write native functions to achieve execution of binaries of functions</li>
+</ul>
+<h2 id="scheduled-task-job">Scheduled task/ job</h2>
+<ul>
+<li>Abuses task scheduling functionalities</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-07T22:56:05&#43;05:30">September 07, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-enterprise-execution/">MITRE ATT&amp;CK - Enterprise - Execution</a></h1>
+	<div class="entry__content"><ul>
+<li>Adversary is trying to run malicious code on local/remote system</li>
+</ul>
+<h2 id="cloud-administration-command">Cloud Administration Command</h2>
+<ul>
+<li>Abuse cloud management services like AWS systems manager/ Azure run command to remotely run scripts in VMs</li>
+</ul>
+<h2 id="command--scripting-interpreter">Command &amp; Scripting Interpreter</h2>
+<ul>
+<li>Unix shell, Windows CMD, PowerShell etc
+<ul>
+<li>PowerShell: Info-discovery, code execution, start process cmdlet etc</li>
+<li>AppleScript: macOS scripting language, AppleEvent messages can locate open windows, send keystrokes, interact locally/ remotely etc</li>
+<li>Windows command shell: Command can be invoked remotely by SSH etc</li>
+<li>Unix Shell: Primary command prompt on Linux/ MacOS systems</li>
+<li>Visual Basic: Has interoperability with many windows technologies like native API and component object model, Supported in .NET framework etc</li>
+<li>Python</li>
+<li>JavaScript: JS can be executed in runtime environment even outside the browser</li>
+<li>Network device CLI: To execute payloads</li>
+<li>CloudAPI: CLIs in browser shells, SDKs, Azure for PowerShell etc</li>
+<li>AutoHotKey &amp; AutoIT: Scripting language to automate windows tasks</li>
+</ul>
+</li>
+</ul>
+<h2 id="container-administration-command">Container Administration Command</h2>
+<ul>
+<li>Docker daemon, Kubelet etc</li>
+</ul>
+<h2 id="deploy-container">Deploy container</h2>
+<ul>
+<li>Deploy a new container to execute/ download malware, configured without network rules, user limitations etc to bypass defences</li>
+<li>Example: Attempt to deploy privileged/ vulnerable container, escape host and access other control.</li>
+</ul>
+<h2 id="exploitation-for-client-execution">Exploitation for client execution</h2>
+<ul>
+<li>Exploit software vulnerabilities in client environment</li>
+</ul>
+<h2 id="interprocess-communication">Interprocess Communication</h2>
+<ul>
+<li>Abuse IPC mechanism for local code execution
+<ul>
+<li>Component Object Model: Use Windows COM for local code execution</li>
+<li>Dynamic data exchange: Use Windows DDE to execute arbitrary commands</li>
+<li>XCP services : by MacOS</li>
+</ul>
+</li>
+</ul>
+<h2 id="native-api">Native API</h2>
+<ul>
+<li>Interact with native OS API to execute behaviours</li>
+</ul>
+<h2 id="scheduled-tasks-jobs">Scheduled tasks/ jobs</h2>
+<ul>
+<li>Scheduling tasks in local/ remote systems
+<ul>
+<li>At: Executable in Windows/ Mac/ Linux to perform task scheduling</li>
+<li>Cron: Time based job scheduler for unix-like OS</li>
+<li>Scheduled task: Windows task scheduler for initial/ recurring code execution</li>
+<li>Systemd timers: Alternatives to cron. Can be remotely activated</li>
+<li>Container orchestration job: kubernetes etc</li>
+</ul>
+</li>
+</ul>
+<h2 id="serverless-execution">Serverless Execution</h2>
+<ul>
+<li>Compute engines, application integration services etc</li>
+</ul>
+<h2 id="shared-modules">Shared Modules</h2>
+<ul>
+<li>Executable files loaded into processes to provide access to reusable code like custom functions, invoke OS API functions etc</li>
+</ul>
+<h2 id="software-deployment-tools">Software deployment tools</h2>
+<ul>
+<li>SCCM, HBSS, Altiris, AWS system Manager etc</li>
+</ul>
+<h2 id="system-services">System Services</h2>
+<ul>
+<li>Abuse services for one-time or temporary execution
+<ul>
+<li>Launctl: Interfaces with Launchd, server management framework for MacOS</li>
+<li>Service execution: Abuse Windows Service Control Manager (services.exe)</li>
+</ul>
+</li>
+</ul>
+<h2 id="user-execution">User Execution</h2>
+<ul>
+<li>Rely on actions by user to gain execution
+<ul>
+<li>Malicious link: link leading to code executions</li>
+<li>Malicious file: .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, .cpl</li>
+<li>Malicious image: AWS amazon machine images, GCP images etc</li>
+</ul>
+</li>
+</ul>
+<h2 id="windows-management-instrumentation">Windows Management Instrumentation</h2>
+<ul>
+<li>Admin feature to access Windows system components</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-07T22:44:18&#43;05:30">September 07, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-ics-initial-access/">MITRE ATT&amp;CK - ICS - Initial Access</a></h1>
 	<div class="entry__content"><ul>
 <li>Adversary is trying to get into your ICS environment</li>
@@ -223,232 +411,15 @@
 </article>
 				</div>
 			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-enterprise-resource-development/">MITRE ATT&amp;CK - Enterprise - Resource Development</a></h1>
-	<div class="entry__content"><ul>
-<li>Adversaries creating, purchasing, compromising, stealing resources like infrastructure, accounts, capabilities etc</li>
-</ul>
-<h2 id="acquire-access">Acquire Access</h2>
-<ul>
-<li>Purchase/ acquire existing access to target system/ network via brokers who sell previously compromised systems</li>
-</ul>
-<h2 id="acquire-infrastructure">Acquire Infrastructure</h2>
-<ul>
-<li>Buy/ lease/ rent/ physical or cloud/ domains/ web services etc
-<ul>
-<li>Domains: Domain names</li>
-<li>DNS server: For post-compromise activity, C&amp;C etc</li>
-<li>Virtual Private Server: To rapidly provision, modify, shutdown infra etc</li>
-<li>Servers: To stage, launch, execute operations, water hole operations, C&amp;C, phishing etc</li>
-<li>Botnet: Subscription from botnet, booter/ stresser service</li>
-<li>Web services: Abused for C&amp;C, phishing, exfiltration over web etc</li>
-<li>Serverless: Cloudflare workers, AWS lambda etc</li>
-<li>Malvertising: Using ads to distribute malware to victims</li>
-</ul>
-</li>
-</ul>
-<h2 id="compromise-accounts">Compromise Accounts</h2>
-<ul>
-<li>Rather than creating/ establishing accounts as utilising an existing persona has level of trust in potential victim</li>
-<li>Social media accounts: Compromise existing accounts</li>
-<li>Email accounts: To conduct phishing, spam email campaigns, acquire infrastructure</li>
-<li>Cloud accounts: Dropbox, S3, to upload tools, exfiltration to cloud storage</li>
-</ul>
-<h2 id="compromise-infra">Compromise infra</h2>
-<ul>
-<li>Physical, cloud, domain, network, infrastructure, web, DNS etc
-<ul>
-<li>Domains: Domain registration hijacking, social engineering, A domain registration help desk, advantage of renewal process gaps etc</li>
-<li>DNS server: Compromise 3rd party DNS, servers for C&amp;C etc</li>
-<li>Virtual Private Server</li>
-<li>Server</li>
-<li>Botnet</li>
-<li>Web services</li>
-<li>Serverless</li>
-<li>Network devices: Small office/ home office routers etc</li>
-</ul>
-</li>
-</ul>
-<h2 id="develop-capabilities">Develop capabilities</h2>
-<ul>
-<li>Malwares, exploits ,self-signed certificates etc
-<ul>
-<li>Malware: Payloads, droppers, post-compromise tools, backdoors etc</li>
-<li>Code signing certificates: Create self-signed code signing certificates</li>
-<li>Digital certificates: Adversaries create self-signed SSL/TLS certificates</li>
-<li>Exploits: Through fuzzing, patch analysis etc</li>
-</ul>
-</li>
-</ul>
-<h2 id="establish-accounts">Establish Accounts</h2>
-<ul>
-<li>To create persona for public information, presence, history affiliations for social media, website, to scrutinize for legitimacy</li>
-<li>Social media accounts</li>
-<li>Email accounts: To conduct phishing, acquire infra, etc</li>
-<li>Cloud accounts</li>
-</ul>
-<h2 id="obtain-capabilities">Obtain Capabilities</h2>
-<ul>
-<li>Purchase, freely download or steal
-<ul>
-<li>Malware: To support operations, maintain control, evade defences etc</li>
-<li>Tool: Procure commercial software licenses (cobalt strike, PsExec etc)</li>
-<li>Code signing certificates</li>
-<li>Digital certificates</li>
-<li>Exploits</li>
-<li>Vulnerabilities: Gain information via open/ closed vulnerability databases</li>
-<li>AI: To aid various techniques, to inform bolster, enable tasks, conduct recon, create scripts, create payloads, assist social engineering etc</li>
-</ul>
-</li>
-</ul>
-<h2 id="stage-capabilities">Stage capabilities</h2>
-<ul>
-<li>Upload, install, stage capabilities on infra
-<ul>
-<li>Upload Malware: To support operations, to enable ingress tool transfer</li>
-<li>Upload tool: Making it available to victim network</li>
-<li>Install digital certificate</li>
-<li>Drive by target: Prepare operational environemnt to infect systems</li>
-<li>Link target: Put in place resources which can be referenced by a link</li>
-<li>SEO poisoning</li>
-</ul>
-</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-09-03T19:52:52&#43;05:30">September 03, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-enterprise-reconnaissance/">MITRE ATT&amp;CK - Enterprise - Reconnaissance</a></h1>
-	<div class="entry__content"><ul>
-<li>Actively or passively gather information of victim organization/ infrastructure/ staff etc.</li>
-</ul>
-<h2 id="active-scanning">Active Scanning</h2>
-<ul>
-<li>Probe victim infrastructure via network traffic</li>
-<li>Scanning IP blocks: public IPs</li>
-<li>Vulnerability Scanning: Configurations of target host/ applications, versions etc</li>
-<li>Wordlist Scanning: Bruteforcing, Crawling, to identify content and infrastructure (like if an SQLDB is MySQL, Oracle, Ppostgress etc).</li>
-</ul>
-<h2 id="gather-victim-host-information">Gather Victim host information</h2>
-<ul>
-<li>Administrative data, configs, etc</li>
-<li>Hardware: Types, versions, additional components etc</li>
-<li>Software: Types, versions, additional components, etc (AV, SIEM, etc)</li>
-<li>Firmware: Types, versions, configurtions, age, patch-level etc</li>
-<li>Client Configuration: Settings, OS, versions, architecture, language, virtualisation</li>
-</ul>
-<h2 id="gather-victim-identity-information">Gather victim identity information</h2>
-<ul>
-<li>PII, credentials, MFA configurations etc</li>
-<li>Credentials: User tendency to use same passwords across accounts</li>
-<li>Emails: Organizations having public facing email infrastructure and addresses of employees</li>
-<li>Employee names: To derive emails, craft more believable lures</li>
-</ul>
-<h2 id="gather-victim-network-information">Gather victim network information</h2>
-<ul>
-<li>Administration data, topology, operations etc</li>
-<li>Domain: What domains, their owners, administrative data, nameservers etc</li>
-<li>DNS: Registered Nameservers, mailserver, DNS, MX, TXT, SPF records etc</li>
-<li>Network topology: Physical/ logical, gateways, routers etc</li>
-<li>IP addresses: To derive organization size, physical location, ISP etc</li>
-<li>Network trust dependencies: 3rd party organizations, ISP, contractors etc</li>
-<li>Network security applications: Firewalls, filters, proxies, NIDs etc</li>
-</ul>
-<h2 id="gather-victim-organization-information">Gather victim organization information</h2>
-<ul>
-<li>Divisions, departments, business operations, roles, responsibility</li>
-<li>Gather physical locations: Key resources, Infrasrucure, authorities, victims etc</li>
-<li>Identify roles: PII, data resources</li>
-<li>Business relationships: 3rd party organizations, domains, contracts, network access</li>
-<li>Identify business tempo: Operational working hours, purchases, shipments etc</li>
-</ul>
-<h2 id="phishing-for-information">Phishing for information</h2>
-<ul>
-<li>Objective is to gather data from victim</li>
-<li>Spear phishing service: Social engineering, credentials, actionable information</li>
-<li>Spear phishing attachment/ link/ voice: Posing as a source with a reason to collect information like establish or compromise accounts, send urgent messages etc</li>
-</ul>
-<h2 id="search-closed-sources">Search closed sources</h2>
-<ul>
-<li>Available for purchase from private sources, databases, paid subscriptions, feeds of threat intel, dark web, cyber blackmarkets</li>
-<li>Threat intel vendors: Target industries, attribution claims, successful TTPs/ countermeasures etc from paid feeds/ portals from threat intel</li>
-<li>Purchase technical data: From private sources, databases, darkweb etc</li>
-</ul>
-<h2 id="search-open-technical-databases">Search open technical databases</h2>
-<ul>
-<li>Databases, repositories, domains, network, artifacts etc</li>
-<li>DNS/ passive DNS: Records like nameservers, subdomains, mailservers etc</li>
-<li>WHOIS: Assigned IP blocks, contact info, DNS nameservers</li>
-<li>Digital certificates: Contain information of company name, location</li>
-<li>CDN: Gain data about victim</li>
-<li>Scan DBs: Internet scans/ surveys, IPs, hostnames, ports, certificates, server banners</li>
-</ul>
-<h2 id="search-open-websites-domains">Search open websites/ domains</h2>
-<ul>
-<li>From Social Media, news, hirings, contracts awarded etc</li>
-<li>Social media: Victim organization, business announcements, roles, locations, staff</li>
-<li>Search engines</li>
-<li>Code repositories: GitHub, GitLab, Sourceforge, BitBucket etc</li>
-</ul>
-<h2 id="search-victim-owned-websites">Search victim owned websites</h2>
-<ul>
-<li>Departments/ divisions, locations, names, roles, contact info, business operations, relationships etc</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-09-03T19:21:54&#43;05:30">September 03, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/mitre-introduction/">MITRE ATT&amp;CK Introduction</a></h1>
-	<div class="entry__content"><ul>
-<li>Threat informed defence</li>
-<li>David -Bianco’s pyramid of pain: TTPs</li>
-<li>Adversary group: G</li>
-<li>Campaign: C</li>
-<li>Software: S</li>
-<li>Data source: DS</li>
-<li>Tactic: TA</li>
-<li>Sub-technique: T</li>
-<li>Mitigation: M</li>
-<li>MITRE is informed by what has been seen in operational use by the broader community</li>
-<li>Tactic: Goals of an adversary during intrusion. Help us understand why an adversary performs each action</li>
-<li>Technique: Means by which adversaries achieve their tactical goals</li>
-<li>Procedure: Specific implementation</li>
-<li>Common knowledge: CTI analysts, Red team and SOC analysts, executives etc</li>
-<li>Quantitative scorecard
-<ul>
-<li>Documenting priorities</li>
-<li>Identify gaps</li>
-<li>Informed decision making</li>
-</ul>
-</li>
-<li>Threat informed defence: systematic application of a deep understanding of adversary tradecraft and technology to prevent, detect and/or respond to cyber attacks</li>
-<li>Threat emulation: Offensive assessment mimicking particular adversary behaviours such as those in ATT&amp;CK</li>
-<li>Threat driven security engineering</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-09-02T22:14:45&#43;05:30">September 02, 2025</time>
-	</div>
-</article>
-				</div>
-			
 		</div>
 	</main>
 	
 <div class="pagination block">
-				<span class="pagination__item pagination__item--active" data-total="7">1</span>
+				<span class="pagination__item pagination__item--active" data-total="8">1</span>
 				<a class="pagination__item pagination__item--desktop" href="/posts/page/2/">2</a>
 				<a class="pagination__item pagination__item--desktop" href="/posts/page/3/">3</a>
 			<span class="pagination__item pagination__item--gap">&hellip;</span>
-				<a class="pagination__item pagination__item--desktop" href="/posts/page/7/">7</a>
+				<a class="pagination__item pagination__item--desktop" href="/posts/page/8/">8</a>
 </div>
 
 	</div>

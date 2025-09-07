@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>MITRE ATT&amp;CK - Enterprise - Execution | Colonialbiker Blog Site</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+</head>
+<body class="body kind-page">
+	<header class="header">
+	<a class="logo" href="/">Colonialbiker Blog Site</a>
+	
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		
+		<div class="single block">
+			<article class="entry">
+	<div class="entry__meta meta mb">
+	<time class="entry__meta-published meta-published" datetime="2025-09-07T22:44:18&#43;05:30">September 07, 2025</time>
+	</div>
+				<h1 class="entry__title">MITRE ATT&amp;CK - Enterprise - Execution</h1>
+<details class="entry__toc toc" open>
+	<summary class="toc__title">Table of Contents</summary>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#cloud-administration-command">Cloud Administration Command</a></li>
+    <li><a href="#command--scripting-interpreter">Command &amp; Scripting Interpreter</a></li>
+    <li><a href="#container-administration-command">Container Administration Command</a></li>
+    <li><a href="#deploy-container">Deploy container</a></li>
+    <li><a href="#exploitation-for-client-execution">Exploitation for client execution</a></li>
+    <li><a href="#interprocess-communication">Interprocess Communication</a></li>
+    <li><a href="#native-api">Native API</a></li>
+    <li><a href="#scheduled-tasks-jobs">Scheduled tasks/ jobs</a></li>
+    <li><a href="#serverless-execution">Serverless Execution</a></li>
+    <li><a href="#shared-modules">Shared Modules</a></li>
+    <li><a href="#software-deployment-tools">Software deployment tools</a></li>
+    <li><a href="#system-services">System Services</a></li>
+    <li><a href="#user-execution">User Execution</a></li>
+    <li><a href="#windows-management-instrumentation">Windows Management Instrumentation</a></li>
+  </ul>
+</nav>
+</details>
+				<div class="entry__content"><ul>
+<li>Adversary is trying to run malicious code on local/remote system</li>
+</ul>
+<h2 id="cloud-administration-command">Cloud Administration Command</h2>
+<ul>
+<li>Abuse cloud management services like AWS systems manager/ Azure run command to remotely run scripts in VMs</li>
+</ul>
+<h2 id="command--scripting-interpreter">Command &amp; Scripting Interpreter</h2>
+<ul>
+<li>Unix shell, Windows CMD, PowerShell etc
+<ul>
+<li>PowerShell: Info-discovery, code execution, start process cmdlet etc</li>
+<li>AppleScript: macOS scripting language, AppleEvent messages can locate open windows, send keystrokes, interact locally/ remotely etc</li>
+<li>Windows command shell: Command can be invoked remotely by SSH etc</li>
+<li>Unix Shell: Primary command prompt on Linux/ MacOS systems</li>
+<li>Visual Basic: Has interoperability with many windows technologies like native API and component object model, Supported in .NET framework etc</li>
+<li>Python</li>
+<li>JavaScript: JS can be executed in runtime environment even outside the browser</li>
+<li>Network device CLI: To execute payloads</li>
+<li>CloudAPI: CLIs in browser shells, SDKs, Azure for PowerShell etc</li>
+<li>AutoHotKey &amp; AutoIT: Scripting language to automate windows tasks</li>
+</ul>
+</li>
+</ul>
+<h2 id="container-administration-command">Container Administration Command</h2>
+<ul>
+<li>Docker daemon, Kubelet etc</li>
+</ul>
+<h2 id="deploy-container">Deploy container</h2>
+<ul>
+<li>Deploy a new container to execute/ download malware, configured without network rules, user limitations etc to bypass defences</li>
+<li>Example: Attempt to deploy privileged/ vulnerable container, escape host and access other control.</li>
+</ul>
+<h2 id="exploitation-for-client-execution">Exploitation for client execution</h2>
+<ul>
+<li>Exploit software vulnerabilities in client environment</li>
+</ul>
+<h2 id="interprocess-communication">Interprocess Communication</h2>
+<ul>
+<li>Abuse IPC mechanism for local code execution
+<ul>
+<li>Component Object Model: Use Windows COM for local code execution</li>
+<li>Dynamic data exchange: Use Windows DDE to execute arbitrary commands</li>
+<li>XCP services : by MacOS</li>
+</ul>
+</li>
+</ul>
+<h2 id="native-api">Native API</h2>
+<ul>
+<li>Interact with native OS API to execute behaviours</li>
+</ul>
+<h2 id="scheduled-tasks-jobs">Scheduled tasks/ jobs</h2>
+<ul>
+<li>Scheduling tasks in local/ remote systems
+<ul>
+<li>At: Executable in Windows/ Mac/ Linux to perform task scheduling</li>
+<li>Cron: Time based job scheduler for unix-like OS</li>
+<li>Scheduled task: Windows task scheduler for initial/ recurring code execution</li>
+<li>Systemd timers: Alternatives to cron. Can be remotely activated</li>
+<li>Container orchestration job: kubernetes etc</li>
+</ul>
+</li>
+</ul>
+<h2 id="serverless-execution">Serverless Execution</h2>
+<ul>
+<li>Compute engines, application integration services etc</li>
+</ul>
+<h2 id="shared-modules">Shared Modules</h2>
+<ul>
+<li>Executable files loaded into processes to provide access to reusable code like custom functions, invoke OS API functions etc</li>
+</ul>
+<h2 id="software-deployment-tools">Software deployment tools</h2>
+<ul>
+<li>SCCM, HBSS, Altiris, AWS system Manager etc</li>
+</ul>
+<h2 id="system-services">System Services</h2>
+<ul>
+<li>Abuse services for one-time or temporary execution
+<ul>
+<li>Launctl: Interfaces with Launchd, server management framework for MacOS</li>
+<li>Service execution: Abuse Windows Service Control Manager (services.exe)</li>
+</ul>
+</li>
+</ul>
+<h2 id="user-execution">User Execution</h2>
+<ul>
+<li>Rely on actions by user to gain execution
+<ul>
+<li>Malicious link: link leading to code executions</li>
+<li>Malicious file: .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, .cpl</li>
+<li>Malicious image: AWS amazon machine images, GCP images etc</li>
+</ul>
+</li>
+</ul>
+<h2 id="windows-management-instrumentation">Windows Management Instrumentation</h2>
+<ul>
+<li>Admin feature to access Windows system components</li>
+</ul>
+</div>
+				
+				<footer class="entry__footer">
+					
+					
+<div class="entry__share share">
+	<a class="share__link btn" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=%2f%2flocalhost%3a1313%2fposts%2fattack-enterprise-execution%2f&title=MITRE%20ATT%26CK%20-%20Enterprise%20-%20Execution" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on LinkedIn', 'width=640,height=480,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+<div class="authorbox block">
+	<div class="author">
+		<div class="author__body">
+			<div class="author__name">
+				
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="mailto:colonialbiker123@gmail.com">
+			<svg class="social__icon" aria-label="Email" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M299 268l124 106c-4 4-10 7-17 7H106c-7 0-13-3-17-7l124-106 43 38 43-38zm-43 13L89 138c4-4 10-7 17-7h300c7 0 13 3 17 7L256 281zm54-23l121-105v208L310 258zM81 153l121 105L81 361V153z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/sumukh-kesarla">
+			<svg class="social__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2025 Colonialbiker Blog Site. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+</body>
+</html>
