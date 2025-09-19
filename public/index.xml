@@ -6,8 +6,15 @@
     <description>Recent content on Colonialbiker Blog Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Sep 2025 22:58:25 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 19 Sep 2025 20:03:01 +0530</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ATT&amp;CK MITRE - ICS - Persistence</title>
+      <link>//localhost:1313/posts/attack-ics-persistence/</link>
+      <pubDate>Fri, 19 Sep 2025 20:03:01 +0530</pubDate>
+      <guid>//localhost:1313/posts/attack-ics-persistence/</guid>
+      <description>&lt;p&gt;Adversary trying to maintain foothold in your ICS environment&lt;/p&gt;&#xA;&lt;h2 id=&#34;hardcoded-credentials&#34;&gt;Hardcoded credentials&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Passwords, Certificates, API tokens, crypto-keys etc&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;modify-program&#34;&gt;Modify program&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;On controllers using program download etc&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;module-firmware&#34;&gt;Module firmware&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Install malware into modular hardware devices&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;project-file-infection&#34;&gt;Project File Infection&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Infect project files (objects, program organisation units, tags, documentation, configs etc) with malware&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;system-firmware&#34;&gt;System Firmware&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Exploit firmware update to upload malicious or out-of-date firmware&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;valid-accounts&#34;&gt;Valid Accounts&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Default credentials/ compromised credentials etc&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>ATT&amp;CK MITRE - ICS - Execution</title>
       <link>//localhost:1313/posts/attack-ics-execution/</link>

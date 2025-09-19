@@ -29,6 +29,47 @@
 			
 				<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/assessment-techniques-and-patching-in-ics/">Assessment Techniques and Patching in ICS</a></h1>
+	<div class="entry__content"><h2 id="assessment-techniques-for-ics">Assessment techniques for ICS</h2>
+<ul>
+<li>Asset discovery/ identification</li>
+<li>Asset Management</li>
+<li>Vulnerability Management</li>
+<li>Cadence : first time / one-time/ periodic/ ongoing</li>
+<li>Work with operational personnel to understand impact: system-level/ network-level/ device-level</li>
+<li>Physical walkthrough: Infrastructure, Protocols, Media, age of systems, etc</li>
+<li>Routine, scheduled scanning</li>
+<li>Common Techniques:
+<ul>
+<li>Authenticated/ credentialed scanning : Ports and services, software inventory, patch auditing (OS and app), light weight scanning</li>
+<li>Configuration auditing : Identify known good state or optimal configuration and compare it against it</li>
+<li>Native OS commands: Check network config, installed patches, ports nad services , user accounts, etc.</li>
+<li>Native ICS protocols and tools</li>
+</ul>
+</li>
+</ul>
+<h2 id="patching-in-ics">Patching in ICS</h2>
+<ul>
+<li>Cyber maintenance</li>
+<li>Create an intelligent process that fits the context of system</li>
+<li>Automate and leverage virtualisation where possible</li>
+<li>Remove unneeded ports and services</li>
+<li>Change default or easily-guessed credentials</li>
+<li>Opt for SSH over telnet for infrastructure devices</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-06T19:52:28&#43;05:30">August 06, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/ot-security/" rel="category">OT Security</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/know-your-industrial-control-systems/">Know Your Industrial Control Systems</a></h1>
 	<div class="entry__content"><h2 id="common-terminologies">Common Terminologies</h2>
 <ul>
@@ -383,92 +424,6 @@ Non-renewable: coal, natural gas</p>
 <p><em>Check project Helk and Project Mordor and Threat Hunter Playbook</em></p></div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2025-08-04T20:54:31&#43;05:30">August 04, 2025</time>
-<div class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/cyber-threat-intel/" rel="category">Cyber Threat Intel</a>
-	</span>
-</div>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/the-intelligence-cycle/">The Intelligence Cycle</a></h1>
-	<div class="entry__content"><h2 id="stages">Stages</h2>
-<ol>
-<li>Planning and targeting</li>
-</ol>
-<ul>
-<li>Identify intelligence requirements</li>
-<li>Identify key assets, security concerns, etc</li>
-<li>Identify potential threats and corresponding mitigations</li>
-</ul>
-<ol start="2">
-<li>Preparation and Collection</li>
-</ol>
-<ul>
-<li>Defining and developing collection methods to obtain information regarding requirements</li>
-</ul>
-<ol start="3">
-<li>Processing and Exploitation</li>
-<li>Analysis and Production</li>
-<li>Dissemination and integration</li>
-</ol>
-<ul>
-<li>What are the most pressing issues?</li>
-<li>How urgent is the intel? How much detail recipient needs?</li>
-</ul>
-<ol start="6">
-<li>Evaluation and Feedback</li>
-</ol>
-<h2 id="defining-intelligence-requirements-ir">Defining Intelligence Requirements (IR)</h2>
-<ul>
-<li>IR is any subject, general or specific, upon which there is a need for collection of information</li>
-<li>IR is a requirement for intelligence to fill a gap in the command’s knowledge or understanding of the battlespace or threat forces</li>
-<li>What’s the mission of my organisation?</li>
-<li>What threat actors are interested in my industry?</li>
-<li>What threat actors are known for targeting my area of operation?</li>
-<li>What asset does my organisation protect?</li>
-<li>What threat actors could target my organization in order to reach another company I supply for?</li>
-<li>Had my organisation been targeted previously?</li>
-<li>To validate the priority for any IR,
-<ul>
-<li>Specificity of question</li>
-<li>Necessity of question</li>
-<li>Feasibility of collection</li>
-<li>Timelines of intelligence</li>
-</ul>
-</li>
-</ul>
-<h2 id="collection-process">Collection process</h2>
-<ul>
-<li>Internal: networks, endpoints etc</li>
-<li>External : Blogs, public DB, forums, Threat Intel feeds</li>
-<li>Collection Management Framework (CMF)</li>
-<li>IoC: Indicator of compromise: hashes, URLs, domains, IPs, paths, filenames, registry keys, malware files
-<ul>
-<li>Quality over quantity of IoC becomes crucial</li>
-</ul>
-</li>
-<li>Dropper : installs malware</li>
-<li>C2: attacker controlled computer server
-<ul>
-<li>For C2 communications, threat actors use cloud-based services, emails, blogs, comments, github repos, DNS queries etc.</li>
-</ul>
-</li>
-<li>Honeypots: Decoy which imitates possible target of attacks
-<ul>
-<li>Low interaction: transport layer, limited access to OS</li>
-<li>Medium interaction: Application layer</li>
-<li>High interaction: Involve real OS and apps to imitate</li>
-</ul>
-</li>
-</ul>
-<h2 id="processing-and-exploitation">Processing and exploitation</h2>
-<p>3 commonly used frameworks are as follows:</p></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-03T21:51:09&#43;05:30">August 03, 2025</time>
 <div class="entry__meta-categories meta-categories">
 	<span class="meta-categories__list">Categories:
 		<a class="meta-categories__link" href="/categories/cyber-threat-intel/" rel="category">Cyber Threat Intel</a>

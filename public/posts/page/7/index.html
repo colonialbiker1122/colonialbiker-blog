@@ -29,6 +29,92 @@
 			
 				<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/the-intelligence-cycle/">The Intelligence Cycle</a></h1>
+	<div class="entry__content"><h2 id="stages">Stages</h2>
+<ol>
+<li>Planning and targeting</li>
+</ol>
+<ul>
+<li>Identify intelligence requirements</li>
+<li>Identify key assets, security concerns, etc</li>
+<li>Identify potential threats and corresponding mitigations</li>
+</ul>
+<ol start="2">
+<li>Preparation and Collection</li>
+</ol>
+<ul>
+<li>Defining and developing collection methods to obtain information regarding requirements</li>
+</ul>
+<ol start="3">
+<li>Processing and Exploitation</li>
+<li>Analysis and Production</li>
+<li>Dissemination and integration</li>
+</ol>
+<ul>
+<li>What are the most pressing issues?</li>
+<li>How urgent is the intel? How much detail recipient needs?</li>
+</ul>
+<ol start="6">
+<li>Evaluation and Feedback</li>
+</ol>
+<h2 id="defining-intelligence-requirements-ir">Defining Intelligence Requirements (IR)</h2>
+<ul>
+<li>IR is any subject, general or specific, upon which there is a need for collection of information</li>
+<li>IR is a requirement for intelligence to fill a gap in the command’s knowledge or understanding of the battlespace or threat forces</li>
+<li>What’s the mission of my organisation?</li>
+<li>What threat actors are interested in my industry?</li>
+<li>What threat actors are known for targeting my area of operation?</li>
+<li>What asset does my organisation protect?</li>
+<li>What threat actors could target my organization in order to reach another company I supply for?</li>
+<li>Had my organisation been targeted previously?</li>
+<li>To validate the priority for any IR,
+<ul>
+<li>Specificity of question</li>
+<li>Necessity of question</li>
+<li>Feasibility of collection</li>
+<li>Timelines of intelligence</li>
+</ul>
+</li>
+</ul>
+<h2 id="collection-process">Collection process</h2>
+<ul>
+<li>Internal: networks, endpoints etc</li>
+<li>External : Blogs, public DB, forums, Threat Intel feeds</li>
+<li>Collection Management Framework (CMF)</li>
+<li>IoC: Indicator of compromise: hashes, URLs, domains, IPs, paths, filenames, registry keys, malware files
+<ul>
+<li>Quality over quantity of IoC becomes crucial</li>
+</ul>
+</li>
+<li>Dropper : installs malware</li>
+<li>C2: attacker controlled computer server
+<ul>
+<li>For C2 communications, threat actors use cloud-based services, emails, blogs, comments, github repos, DNS queries etc.</li>
+</ul>
+</li>
+<li>Honeypots: Decoy which imitates possible target of attacks
+<ul>
+<li>Low interaction: transport layer, limited access to OS</li>
+<li>Medium interaction: Application layer</li>
+<li>High interaction: Involve real OS and apps to imitate</li>
+</ul>
+</li>
+</ul>
+<h2 id="processing-and-exploitation">Processing and exploitation</h2>
+<p>3 commonly used frameworks are as follows:</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-03T21:51:09&#43;05:30">August 03, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/cyber-threat-intel/" rel="category">Cyber Threat Intel</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/more-about-apis/">More About APIs</a></h1>
 	<div class="entry__content"><h2 id="common-http-methods">Common HTTP methods</h2>
 <ul>
@@ -391,58 +477,6 @@
 <div class="entry__meta-categories meta-categories">
 	<span class="meta-categories__list">Categories:
 		<a class="meta-categories__link" href="/categories/api-security/" rel="category">API Security</a>
-	</span>
-</div>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/nmap-basics/">Nmap Basics</a></h1>
-	<div class="entry__content"><h2 id="1-network-discovery">1. Network discovery</h2>
-<ul>
-<li>Find out IP address ranges</li>
-<li>Determine estimated services offered by a host</li>
-<li>Figure out general network topology</li>
-<li>Check for Firewall filtering policies</li>
-<li>sL : List scan</li>
-<li>A : Advanced / Aggressive</li>
-<li>Finding an organization&rsquo;s IP address :
-<ul>
-<li>host -t ns target.com</li>
-<li>host -t a target.com</li>
-<li>host -t aaaa target.com</li>
-<li>host -t mx target.com</li>
-<li>host -t soa target.com</li>
-<li>nmap -Pn -T4 –-traceroute target.com</li>
-<li>whois &lt;x.x.x.x&gt;</li>
-</ul>
-</li>
-</ul>
-<h2 id="2-host-discovery">2. Host discovery</h2>
-<ul>
-<li>nmap -sL abc.com</li>
-<li>nmap -sn -t4 abc.com : Ping scan</li>
-<li>nmap -Pn -t4 abc.com : Disable Ping</li>
-<li>nmap -sn -PS8O -v abc.com : TCP SYN Ping</li>
-<li>nmap -sn -PA8O -v abc.com: TCP ACK Ping</li>
-<li>nmap -sn -PU -v abc.com : UDP Ping</li>
-<li>nmap -sn -PE -v abc.com : ICMP Ping (8/echo)</li>
-<li>nmap -sn -PR -v abc.com : ARP Scan</li>
-<li>nmap -sn -PE -PS443 -PA80 -PP abc.com : Default</li>
-</ul>
-<h2 id="3-port-scanning">3. Port Scanning</h2>
-<ul>
-<li>Open : accepting TCP connections</li>
-<li>Closed : Accessible but no application listening</li>
-<li>Filtered : Not able to determine if port is open ( Firewall )</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-07-20T23:56:44&#43;05:30">July 20, 2025</time>
-<div class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/vulnerability-assessment/" rel="category">Vulnerability Assessment</a>
 	</span>
 </div>
 	</div>

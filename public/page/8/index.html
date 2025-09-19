@@ -24,6 +24,57 @@
 			<div class="cards">
 					<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/nmap-basics/">Nmap Basics</a></h1>
+	<div class="entry__content"><h2 id="1-network-discovery">1. Network discovery</h2>
+<ul>
+<li>Find out IP address ranges</li>
+<li>Determine estimated services offered by a host</li>
+<li>Figure out general network topology</li>
+<li>Check for Firewall filtering policies</li>
+<li>sL : List scan</li>
+<li>A : Advanced / Aggressive</li>
+<li>Finding an organization&rsquo;s IP address :
+<ul>
+<li>host -t ns target.com</li>
+<li>host -t a target.com</li>
+<li>host -t aaaa target.com</li>
+<li>host -t mx target.com</li>
+<li>host -t soa target.com</li>
+<li>nmap -Pn -T4 –-traceroute target.com</li>
+<li>whois &lt;x.x.x.x&gt;</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-host-discovery">2. Host discovery</h2>
+<ul>
+<li>nmap -sL abc.com</li>
+<li>nmap -sn -t4 abc.com : Ping scan</li>
+<li>nmap -Pn -t4 abc.com : Disable Ping</li>
+<li>nmap -sn -PS8O -v abc.com : TCP SYN Ping</li>
+<li>nmap -sn -PA8O -v abc.com: TCP ACK Ping</li>
+<li>nmap -sn -PU -v abc.com : UDP Ping</li>
+<li>nmap -sn -PE -v abc.com : ICMP Ping (8/echo)</li>
+<li>nmap -sn -PR -v abc.com : ARP Scan</li>
+<li>nmap -sn -PE -PS443 -PA80 -PP abc.com : Default</li>
+</ul>
+<h2 id="3-port-scanning">3. Port Scanning</h2>
+<ul>
+<li>Open : accepting TCP connections</li>
+<li>Closed : Accessible but no application listening</li>
+<li>Filtered : Not able to determine if port is open ( Firewall )</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-07-20T23:56:44&#43;05:30">July 20, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/vulnerability-assessment/" rel="category">Vulnerability Assessment</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/my-first-post/">My First Post</a></h1>
 	<div class="entry__content"><h2 id="introduction">Introduction</h2>
 <p>Welcome to Colonialbiker&rsquo;s blog. I just want to share whatever little I know to everyone on the internet. The content might be boring but I assure you that as time passes by, the quality of content will also improve.</p>

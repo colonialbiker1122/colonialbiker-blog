@@ -24,6 +24,108 @@
 			<div class="cards">
 					<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-enterprise-initial-access/">MITRE ATT&amp;CK - Enterprise - Initial Access</a></h1>
+	<div class="entry__content"><ul>
+<li>Attacker is trying to get into your network. To gain a foothold.</li>
+</ul>
+<h2 id="content-injection">Content Injection</h2>
+<ul>
+<li>Inject malicious content into systems through compromised data-transfer channels, online network channels etc</li>
+</ul>
+<h2 id="drive-by-compromise">Drive-by Compromise</h2>
+<ul>
+<li>Gain access to the system through a user visiting a website over the normal course of browsing. Web browsers are typically targeted. May also use compromised websites</li>
+</ul>
+<h2 id="exploit-public-facing-applications">Exploit Public-facing Applications</h2>
+<ul>
+<li>Software bug, glitches, misconfigurations etc</li>
+</ul>
+<h2 id="external-remote-services">External remote services</h2>
+<ul>
+<li>VPNs, Critix, Access mechanisms, VNC, Windows remote management, remote service gateways</li>
+</ul>
+<h2 id="hardware-additions">Hardware Additions</h2>
+<ul>
+<li>Accessories, network hardware, removable drives etc</li>
+</ul>
+<h2 id="phishing">Phishing</h2>
+<ul>
+<li>Electronically delivered social engineering</li>
+<li>Spearphishing Attachment
+<ul>
+<li>Malicious attachment, user execution to gain access</li>
+</ul>
+</li>
+<li>Spearphishing Link
+<ul>
+<li>Links to download malwares in mails etc</li>
+</ul>
+</li>
+<li>Spearphishing via service
+<ul>
+<li>3rd party services to gain access</li>
+</ul>
+</li>
+<li>Spearphishing Voice
+<ul>
+<li>Phone calls, voice communications, sense of urgency/ alarm</li>
+</ul>
+</li>
+</ul>
+<h2 id="replication-through-removable-media">Replication through removable media</h2>
+<ul>
+<li>Manual modification of media, modification of systems to format media, modification of media firmware</li>
+</ul>
+<h2 id="supply-chain-compromise">Supply Chain Compromise</h2>
+<ul>
+<li>Manipulate products/ product delivery mechanism</li>
+<li>Compromise soft dependencies &amp; development tools
+<ul>
+<li>Popular open source projects</li>
+</ul>
+</li>
+<li>Compromise soft supply chain
+<ul>
+<li>Manipulating source ocde, update/ distribution mechanisms, replace compiled releases with modifications etc</li>
+</ul>
+</li>
+<li>Compromise hardware supply chain
+<ul>
+<li>Hardware/ firmware, backdoors via servers, workstations, network infrastructure, peripherals etc</li>
+</ul>
+</li>
+</ul>
+<h2 id="trusted-relationship">Trusted relationship</h2>
+<h2 id="valid-accounts">Valid accounts</h2>
+<ul>
+<li>Default Accounts
+<ul>
+<li>Guest/ Admin accounts in systems, softwares, devices etc</li>
+</ul>
+</li>
+<li>Domain accounts
+<ul>
+<li>Managed by AD domain services, users etc</li>
+</ul>
+</li>
+<li>Local accounts
+<ul>
+<li>Accounts configured by an organization for use by users, remote support, services, administration on system or service</li>
+</ul>
+</li>
+<li>Cloud Accounts
+<ul>
+<li>Cloud service providers, SaaS apps etc</li>
+</ul>
+</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-05T22:48:12&#43;05:30">September 05, 2025</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-enterprise-resource-development/">MITRE ATT&amp;CK - Enterprise - Resource Development</a></h1>
 	<div class="entry__content"><ul>
 <li>Adversaries creating, purchasing, compromising, stealing resources like infrastructure, accounts, capabilities etc</li>
@@ -328,35 +430,6 @@
 </ol></div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2025-09-01T22:46:46&#43;05:30">September 01, 2025</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/ics-ntwk-sec-monitoring-collection/">ICS Network Security Monitoring Collection</a></h1>
-	<div class="entry__content"><ul>
-<li>Comms network collection points: edge of internal zone industrial firewalls or on core control network switches</li>
-<li>For SPAN config: Fully managed network switches</li>
-<li>For TAP config: Dedicated hardware TAP device</li>
-<li>5-tuple capture
-<ul>
-<li>Source IP</li>
-<li>Destination IP</li>
-<li>Source Port</li>
-<li>Destination Port</li>
-<li>Protocol</li>
-</ul>
-</li>
-<li>Full-packet capture
-<ul>
-<li>Full packet payload  + 5-tuple capture</li>
-</ul>
-</li>
-<li>Collect 5-tuple data at minimum at firewalls at perimeters to identify malicious remote connections, network pivoting from IT to ICS through trusted connections, adversary C2 connection etc.</li>
-<li>Collect full packet captures inside control network from ICS DMZ down to level 1/0 to ensure Industrial protocol commands and data streams are captured for analysis/ baselining etc</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-09-01T22:42:25&#43;05:30">September 01, 2025</time>
 	</div>
 </article>
 					</div>
