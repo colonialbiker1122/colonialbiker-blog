@@ -6,8 +6,29 @@
     <description>Recent content on Colonialbiker Blog Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Sep 2025 20:03:01 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 21 Sep 2025 13:04:16 +0530</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OT Security Myths</title>
+      <link>//localhost:1313/posts/ot-security-myths/</link>
+      <pubDate>Sun, 21 Sep 2025 13:04:16 +0530</pubDate>
+      <guid>//localhost:1313/posts/ot-security-myths/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;OT systems are air-gapped &amp;amp; secured&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Stuxnet: From USB to centrifuge&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Hackers focus on IT not OT&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Triton targeted safety instrmented systems&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;IDS is sufficient&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Industroyer bypassed IDS, ukraine power grid affected&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Compliance = security&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Colonial pipeline ransomware disrupted fuel supplies despite regulatory compliance&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;OT cyberattacks are rare&lt;/li&gt;&#xA;&lt;li&gt;OT systems are too complex for hackers&#xA;&lt;ul&gt;&#xA;&lt;li&gt;BlackEnergy&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Ransomeware won’t target OT systems&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ryuk ransomware&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;OT legacy systems cannot be secured&#xA;&lt;ul&gt;&#xA;&lt;li&gt;NoTPetya&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Only large enterprises face OT threats&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Oldsmar water plant hack&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Palo Alto Networks Cyber Security Portfolio</title>
+      <link>//localhost:1313/posts/palo-alto-networks-cyber-security-portfolio/</link>
+      <pubDate>Sun, 21 Sep 2025 12:58:25 +0530</pubDate>
+      <guid>//localhost:1313/posts/palo-alto-networks-cyber-security-portfolio/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;Strata: Enterprise Security&lt;/li&gt;&#xA;&lt;li&gt;Prisma: Cloud Security&lt;/li&gt;&#xA;&lt;li&gt;Cortex: Security Operations&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;1-strata&#34;&gt;1. Strata&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;NGFW (Next Generation Firewall)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ML powered, application/ user/ content-based policies.&lt;/li&gt;&#xA;&lt;li&gt;Physical/ virtualised/ cloud-based appliance&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;PA-series: Physical Firewall&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;VM-series&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Network Security Management: Panorama&lt;/li&gt;&#xA;&lt;li&gt;Policy management, centralised visibility, network security insights, automated threat response, reporting and administration&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-prisma&#34;&gt;2. Prisma&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Complete security across the development lifecycle on cloud.&lt;/li&gt;&#xA;&lt;li&gt;Prisma cloud: Cloud security posture management and cloud workload protection platform, comprehensive-cloud native security&lt;/li&gt;&#xA;&lt;li&gt;Prisma access:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;SASE: Secure Access Service Edge. Converges capabilities in WAN, Software-Defined WAN (SD-WAN), Secure Web Gateways, Cloud Access Security Brokers (CASB). Software defined perimeters, DNS protection, firewall as a service.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Prisma SaaS: Multimode CASB service&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;3-cortex&#34;&gt;3. Cortex&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Cortex XDR&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Extended Detection and Response platform, complete network visibility , user behaviour, endpoint activity, proactively define IoCs and Behavioural IoCs&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Cortex XSOAR&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Native Threat Intel Management, with SOAR&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Cortex data lake&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Simplify log infrastructure, automate log management, normalize security data, run AI/ML &amp;amp; learn to evolve defences&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Autofocus&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>MODBUS</title>
+      <link>//localhost:1313/posts/modbus/</link>
+      <pubDate>Fri, 19 Sep 2025 20:07:59 +0530</pubDate>
+      <guid>//localhost:1313/posts/modbus/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;One master many slaves&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Master broadcast to all devices. Only assigned recipient will read, other slaves will reject the message&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;MODBUS commands can instruct an RTU to change a value in its registers, control or read an I/O port and commanding device to send back one or more values contained in its registers&lt;/p&gt;</description>
+    </item>
     <item>
       <title>ATT&amp;CK MITRE - ICS - Persistence</title>
       <link>//localhost:1313/posts/attack-ics-persistence/</link>

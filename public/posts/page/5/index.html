@@ -29,6 +29,203 @@
 			
 				<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/bridging-it-ot-divide/">Bridging IT-OT Divide</a></h1>
+	<div class="entry__content"><ul>
+<li>Cultural differences</li>
+<li>Cross training</li>
+<li>Continuous Audit</li>
+<li>Unified convergent IT-OT team is required</li>
+<li>Settle periodic conflicts, budgeting, technical advisory etc</li>
+<li>IT-OT integration has led to increased attack surface</li>
+<li>Technological disparity: Legacy technology in OT domain</li>
+<li>Top-Down rationalisation is requireed from Board/ CXO to downwards</li>
+<li>Organizations don’t have OT security policies</li>
+<li>Don’t divide IT/OT. Treat security as a whole (Informational + Operational)</li>
+<li>Risk assessment + management is needed at granular level</li>
+<li>Skillsets and knowledge gap: White collar blue-brown collar jobs</li>
+<li>Upskilling from OT roles to OT-security roles is comparatively easy</li>
+<li>Mechanism to test patches is required</li>
+<li>How to deal with legacy OT systems?</li>
+<li>OT needs quality validations (CSV, GXP)</li>
+<li>How to quantify risk in OT environments?</li>
+<li>Deal with future threats?</li>
+<li>Have visibility, deal with social engineering, find vulnerabilities, supply chain issues (crowdstrikes, etc), regulatory changes</li>
+<li>Microsegmentation reduces impact (DCS/ SIS)</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-24T21:19:32&#43;05:30">August 24, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/linux-from-scratch/">Linux From Scratch</a></h1>
+	<div class="entry__content"><h2 id="introduction">Introduction</h2>
+<ul>
+<li>New partition
+<ul>
+<li>Root partition: /root</li>
+<li>Swap partition: 2xRAM capacity</li>
+<li>Grub BIOS: GUID partition table (GPT), IMB</li>
+<li>/boot: kernel + booting info</li>
+</ul>
+</li>
+<li>New file system: ext4 etc</li>
+<li>Consists of labels, directory blocks, data blocks, indexing</li>
+<li>Mount new partition: Mount the file system embedded in partition</li>
+<li>Create basic directory layout: /etc, /var, /bin, /lib, /sbin, /lib64, /tools, /usr, /usr/bin, /usr/lib, /usr/sbin</li>
+<li>Cross-compilation: Build compiler for different machine
+<ul>
+<li>Build: Machine where we build programs</li>
+<li>Host: Machine where built programs will run</li>
+<li>Target: Machine that compiler produces code for</li>
+</ul>
+</li>
+<li>Binutils: Contains linker, assembler, etc for handling object files</li>
+<li>GCC : GNU compiler collection. C and C++ compilers</li>
+<li>API headers: Expose kernel’s API for use by Glibc</li>
+<li>Glibc: Main C library which provides basic routines for allocating memory, searching directories, opening and closing files, pattern matching, arithmetic etc.</li>
+<li>libstdc++: Standard C++ library. Needed to compile the part of GCC which is written in C++</li>
+<li>M4: Macro processor</li>
+<li>Ncurses: Library for terminal independent character screens</li>
+<li>Bash: Bourne-again shell</li>
+<li>Coreutils: Basic utility programs needed by every OS</li>
+<li>Diffutils: Programs which show differences between files/ directories.</li>
+<li>File: Determine type of a given file(s)</li>
+<li>Findutils: programs to find files</li>
+<li>Gawk: Programs for manipulating text files</li>
+<li>Grep: Programs for searching through contents of files</li>
+<li>Gzip: Programs for compressing/ decompressing files</li>
+<li>Make: Program for controlling the generation of executables and other files of a package from source files</li>
+<li>Patch: Program for modify/ create files by applying a patch file typically created by diff program</li>
+<li>Sed: Stream editor</li>
+<li>Tar: To create tar archives and other archive manipulation</li>
+<li>xz: Compress/ decompress files. lzma, xz schemes.</li>
+<li>Binutils pass2:</li>
+<li>GCC Pass2:</li>
+<li>Prepare virtual kernel file systems: /dev, /proc, /sys, /run</li>
+<li>Mounting and populating /dev: In case of normal boot, kernel automatically mounts devtmpfs file system on /dev. Bind mount host system’s /dev directory</li>
+<li>Entering chroot environment</li>
+<li>Create root level directories: /boot, /home, /mnt, /opt, /srv</li>
+<li>Create essential files and symlinks
+<ul>
+<li>Mounted file systems : /etc/mtab —&mdash;-&gt; /proc</li>
+<li>Create /etc/hosts</li>
+<li>Root entries in /etc/passwd, /etc/group</li>
+</ul>
+</li>
+<li>Gettext: Utilities for internationalisation and localisation</li>
+<li>Bison: Parser generator</li>
+<li>Perl: Practical extraction and report language</li>
+<li>Python3:</li>
+<li>Texinfo: Read, write, convert info pages</li>
+<li>Util-linux: Miscellaneous utility programs</li>
+<li>Installing basic system softwares:
+<ul>
+<li>Package manager</li>
+<li>Man pages</li>
+<li>Iana-etc: /etc/protocols, /etc/services&hellip;</li>
+</ul>
+</li>
+<li>System V boot process
+<ul>
+<li>init program sets up basic processes such as login (via getty) and runs a script. The script named rc executes additional scripts to initialize. Init program controlled by /etc/inittab file.</li>
+</ul>
+</li>
+<li>Run levels
+<ul>
+<li>0 - Halt</li>
+<li>1 - Single user</li>
+<li>2 - User definable or 3</li>
+<li>3 - Full multiuser (network)</li>
+<li>4 - User definable or 3</li>
+<li>5 - Full multiuser (display)</li>
+<li>6 - Reboot</li>
+</ul>
+</li>
+<li>lfsbootscripts: /etc/rc.d, /etc/init.d, /etc/sysconfig, /lib/services, /lib/lsb</li>
+</ul>
+<h2 id="device-handling">Device handling</h2>
+<ul>
+<li>Traditionally static device creation method was used. Many device nodes were created in /dev where actual device connected or not</li>
+<li>udev method: Device nodes created only for those devices which are detected by kernel. Stored in /devtmpfs</li>
+<li>devfs: Had issues with naming conventions and race conditions</li>
+<li>sysfs: Provide information about system’s hardware configuration to userspace processes</li>
+<li>Device node creation
+<ul>
+<li>Drivers compiled in kernel register objects in sysfs(devtmpfs)</li>
+<li>sysfs filesystem is mounted on /sys</li>
+<li>Device files are created by kernel in devtmpfs file system.</li>
+<li>Kernel sents uevent to udevd</li>
+</ul>
+</li>
+<li>Network devices
+<ul>
+<li>Old: eth0, eth1</li>
+<li>New: enp5s0, wlp3s0</li>
+</ul>
+</li>
+<li>General network configuration:
+<ul>
+<li>/etc/sysconfig/: which interfaces are up and down</li>
+<li>One file each named ifconfig.xyz —-&gt;xyz = network card</li>
+<li>Create /etc/resolv.conf file</li>
+<li>Customise /etc/hosts file</li>
+</ul>
+</li>
+</ul>
+<h2 id="system-v-bootscript">System V bootscript</h2>
+<ul>
+<li>During kernel initialisation, first program to run is init</li>
+<li>init reads initialisation files: /etc/inittab</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-24T20:54:01&#43;05:30">August 24, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/microservices-paterrns/">Microservices Paterrns</a></h1>
+	<div class="entry__content"><h3 id="1-single-page-application">1. Single Page application</h3>
+<ul>
+<li>Updates dynamically using backend calls to REST services</li>
+</ul>
+<h3 id="2-backend-for-frontend">2. Backend for frontend</h3>
+<ul>
+<li>Customised UI for different channels</li>
+<li>One backend types per user interface</li>
+</ul>
+<h3 id="3-strangler-pattern">3. Strangler pattern</h3>
+<ul>
+<li>Transform: Create new parallel site</li>
+<li>Coexist: Incrementally redirect for new functionalities</li>
+<li>Eliminate: Remove old functionality</li>
+</ul>
+<h3 id="4-service-discovery-pattern">4. Service discovery pattern</h3>
+<ul>
+<li>Provides flexibility</li>
+</ul>
+<h3 id="5-entity-and-aggregate-pattern">5. Entity and aggregate pattern</h3>
+<ul>
+<li>E-commerce sites</li>
+</ul>
+<h3 id="6-adapter-patterns">6. Adapter patterns</h3></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-10T08:50:35&#43;05:30">August 10, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/devops/" rel="category">DevOps</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/12-factor-app-methodology/">12 Factor App Methodology</a></h1>
 	<div class="entry__content"><h3 id="1-codebbase">1. Codebbase</h3>
 <ul>
@@ -250,130 +447,6 @@
 <div class="entry__meta-categories meta-categories">
 	<span class="meta-categories__list">Categories:
 		<a class="meta-categories__link" href="/categories/devops/" rel="category">DevOps</a>
-	</span>
-</div>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/container-orchestration/">Container Orchestration</a></h1>
-	<div class="entry__content"><h2 id="container-orchestration">Container Orchestration</h2>
-<ul>
-<li>Container lifecycle: (automation of lifecycle is orchestration)
-<ul>
-<li>Deployment</li>
-<li>Management</li>
-<li>Scaling</li>
-<li>Networking</li>
-<li>Availability</li>
-</ul>
-</li>
-<li>Configuration files: YAML/JSON. Stores resources, network, logs etc</li>
-<li>Deployment scheduling : Finds the right host based on predefined settings</li>
-<li>Manage container lifecycle: System parameters, file parameters</li>
-<li>Scaling and productivity</li>
-</ul>
-<h2 id="tools">Tools</h2>
-<ul>
-<li>Docker swarm</li>
-<li>Kubernetes</li>
-</ul>
-<h2 id="benefits">Benefits</h2>
-<ul>
-<li>Increased production</li>
-<li>Faster deployment</li>
-<li>Reduced costs</li>
-<li>Stronger security</li>
-<li>Easier scaling</li>
-<li>Faster recovery</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-09T09:38:03&#43;05:30">August 09, 2025</time>
-<div class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/devops/" rel="category">DevOps</a>
-	</span>
-</div>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/docker/">Introduction to Docker</a></h1>
-	<div class="entry__content"><h2 id="container-characteristics">Container characteristics</h2>
-<ul>
-<li>Container engine virtualises OS</li>
-<li>Container is light-weight, fast, isolated, portable and secure</li>
-<li>Binaries, libraries within container enable apps to run</li>
-<li>Platform independent: cloud/ on-premises etc</li>
-<li>OS independent: Windows/ Linux</li>
-<li>Language independent</li>
-</ul>
-<h2 id="container-vendors">Container vendors</h2>
-<ul>
-<li>Docker: Robust</li>
-<li>Podman: More-secure</li>
-<li>LXC: data-intensive</li>
-<li>Vagrant: High isolation-level</li>
-</ul>
-<h2 id="docker">Docker</h2>
-<ul>
-<li>
-<p>Build: create container image from dockerfile</p></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-09T09:03:43&#43;05:30">August 09, 2025</time>
-<div class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/devops/" rel="category">DevOps</a>
-	</span>
-</div>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/safety-instrumented-systems/">Safety Instrumented Systems</a></h1>
-	<div class="entry__content"><h2 id="safety-on-the-whole-combines">Safety on the whole combines</h2>
-<ul>
-<li>Physical Infrastructure and Safeguards</li>
-<li>Process control logic (soft interlocks)</li>
-<li>Physical safeguards (burst disks, mechanical trips, 1-way valve)</li>
-<li>Safety Instrumented systems</li>
-</ul>
-<h2 id="failure-modes-for-ics">Failure modes for ICS</h2>
-<ul>
-<li>Intermittent failures:
-<ul>
-<li>Corrected by logic conditions in the system</li>
-<li>Minimal to no process interruption</li>
-</ul>
-</li>
-<li>Nuisance trips:
-<ul>
-<li>Logic interlocks, fail safes</li>
-</ul>
-</li>
-<li>Unplanned outages:
-<ul>
-<li>Sustained process failures</li>
-</ul>
-</li>
-<li>Dangerous failures:
-<ul>
-<li>Kinetic and safety impacts</li>
-<li>Extended outages</li>
-</ul>
-</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-06T19:55:14&#43;05:30">August 06, 2025</time>
-<div class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/ics/" rel="category">ICS</a>
 	</span>
 </div>
 	</div>

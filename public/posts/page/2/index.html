@@ -29,6 +29,206 @@
 			
 				<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-enterprise-execution/">MITRE ATT&amp;CK - Enterprise - Execution</a></h1>
+	<div class="entry__content"><ul>
+<li>Adversary is trying to run malicious code on local/remote system</li>
+</ul>
+<h2 id="cloud-administration-command">Cloud Administration Command</h2>
+<ul>
+<li>Abuse cloud management services like AWS systems manager/ Azure run command to remotely run scripts in VMs</li>
+</ul>
+<h2 id="command--scripting-interpreter">Command &amp; Scripting Interpreter</h2>
+<ul>
+<li>Unix shell, Windows CMD, PowerShell etc
+<ul>
+<li>PowerShell: Info-discovery, code execution, start process cmdlet etc</li>
+<li>AppleScript: macOS scripting language, AppleEvent messages can locate open windows, send keystrokes, interact locally/ remotely etc</li>
+<li>Windows command shell: Command can be invoked remotely by SSH etc</li>
+<li>Unix Shell: Primary command prompt on Linux/ MacOS systems</li>
+<li>Visual Basic: Has interoperability with many windows technologies like native API and component object model, Supported in .NET framework etc</li>
+<li>Python</li>
+<li>JavaScript: JS can be executed in runtime environment even outside the browser</li>
+<li>Network device CLI: To execute payloads</li>
+<li>CloudAPI: CLIs in browser shells, SDKs, Azure for PowerShell etc</li>
+<li>AutoHotKey &amp; AutoIT: Scripting language to automate windows tasks</li>
+</ul>
+</li>
+</ul>
+<h2 id="container-administration-command">Container Administration Command</h2>
+<ul>
+<li>Docker daemon, Kubelet etc</li>
+</ul>
+<h2 id="deploy-container">Deploy container</h2>
+<ul>
+<li>Deploy a new container to execute/ download malware, configured without network rules, user limitations etc to bypass defences</li>
+<li>Example: Attempt to deploy privileged/ vulnerable container, escape host and access other control.</li>
+</ul>
+<h2 id="exploitation-for-client-execution">Exploitation for client execution</h2>
+<ul>
+<li>Exploit software vulnerabilities in client environment</li>
+</ul>
+<h2 id="interprocess-communication">Interprocess Communication</h2>
+<ul>
+<li>Abuse IPC mechanism for local code execution
+<ul>
+<li>Component Object Model: Use Windows COM for local code execution</li>
+<li>Dynamic data exchange: Use Windows DDE to execute arbitrary commands</li>
+<li>XCP services : by MacOS</li>
+</ul>
+</li>
+</ul>
+<h2 id="native-api">Native API</h2>
+<ul>
+<li>Interact with native OS API to execute behaviours</li>
+</ul>
+<h2 id="scheduled-tasks-jobs">Scheduled tasks/ jobs</h2>
+<ul>
+<li>Scheduling tasks in local/ remote systems
+<ul>
+<li>At: Executable in Windows/ Mac/ Linux to perform task scheduling</li>
+<li>Cron: Time based job scheduler for unix-like OS</li>
+<li>Scheduled task: Windows task scheduler for initial/ recurring code execution</li>
+<li>Systemd timers: Alternatives to cron. Can be remotely activated</li>
+<li>Container orchestration job: kubernetes etc</li>
+</ul>
+</li>
+</ul>
+<h2 id="serverless-execution">Serverless Execution</h2>
+<ul>
+<li>Compute engines, application integration services etc</li>
+</ul>
+<h2 id="shared-modules">Shared Modules</h2>
+<ul>
+<li>Executable files loaded into processes to provide access to reusable code like custom functions, invoke OS API functions etc</li>
+</ul>
+<h2 id="software-deployment-tools">Software deployment tools</h2>
+<ul>
+<li>SCCM, HBSS, Altiris, AWS system Manager etc</li>
+</ul>
+<h2 id="system-services">System Services</h2>
+<ul>
+<li>Abuse services for one-time or temporary execution
+<ul>
+<li>Launctl: Interfaces with Launchd, server management framework for MacOS</li>
+<li>Service execution: Abuse Windows Service Control Manager (services.exe)</li>
+</ul>
+</li>
+</ul>
+<h2 id="user-execution">User Execution</h2>
+<ul>
+<li>Rely on actions by user to gain execution
+<ul>
+<li>Malicious link: link leading to code executions</li>
+<li>Malicious file: .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, .cpl</li>
+<li>Malicious image: AWS amazon machine images, GCP images etc</li>
+</ul>
+</li>
+</ul>
+<h2 id="windows-management-instrumentation">Windows Management Instrumentation</h2>
+<ul>
+<li>Admin feature to access Windows system components</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-07T22:44:18&#43;05:30">September 07, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-ics-initial-access/">MITRE ATT&amp;CK - ICS - Initial Access</a></h1>
+	<div class="entry__content"><ul>
+<li>Adversary is trying to get into your ICS environment</li>
+</ul>
+<h2 id="drive-by-compromise">Drive-by compromise</h2>
+<ul>
+<li>Visit compromised website —&gt; compromise browser.</li>
+</ul>
+<h2 id="exploit-public-facing-application">Exploit public facing application</h2>
+<ul>
+<li>User apps, network, assets in operating system, etc</li>
+</ul>
+<h2 id="exploitation-of-remote-services">Exploitation of remote services</h2>
+<ul>
+<li>Enable remote service abuse by taking advantage of programming errors in programs, services within OS, kernel etc</li>
+</ul>
+<h2 id="external-remote-services">External remote services</h2>
+<ul>
+<li>VPNs, Critix, Other access mechanisms etc</li>
+</ul>
+<h2 id="internet-accessible-devices">Internet accessible devices</h2>
+<ul>
+<li>Exposed to internet for remote access</li>
+</ul>
+<h2 id="remote-services">Remote services</h2>
+<ul>
+<li>RDP, SMB, SSH etc</li>
+</ul>
+<h2 id="replication-through-removable-media">Replication through removable media</h2>
+<h2 id="rogue-master">Rogue master</h2>
+<ul>
+<li>Send legitimate control messages to control devices, impersonate a master and disrupt network communications</li>
+</ul>
+<h2 id="spearphishing-attachment">Spearphishing attachment</h2>
+<h2 id="supply-chain-compromise">Supply chain compromise</h2>
+<ul>
+<li>Infected products, software, workflows etc</li>
+</ul>
+<h2 id="transient-cyber-asset">Transient cyber asset</h2>
+<ul>
+<li>Assets needed to support mgagement functions</li>
+</ul>
+<h2 id="wireless-compromise">Wireless compromise</h2>
+<ul>
+<li>Radios, other wireless devices etc</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-05T23:04:23&#43;05:30">September 05, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-mobile-initial-access/">MITRE ATT&amp;CK - Mobile - Initial Access</a></h1>
+	<div class="entry__content"><ul>
+<li>Adversary is trying to get into your device</li>
+</ul>
+<h2 id="application-versioning">Application Versioning</h2>
+<ul>
+<li>Adversary pushes an update to previously benign app with malicious code and pushes to play store etc</li>
+</ul>
+<h2 id="drive-by-compromise">Drive by compromise</h2>
+<ul>
+<li>Web browser is typically targeted for exploitations</li>
+</ul>
+<h2 id="exploitation-for-initial-access">Exploitation for Initial Access</h2>
+<ul>
+<li>Exploit software vulnerabilities to gain access</li>
+</ul>
+<h2 id="lockscreen-bypass">Lockscreen Bypass</h2>
+<ul>
+<li>By physically accessing using biometric spoofing, unlock code exploit, vulnerability exploit etc</li>
+</ul>
+<h2 id="phishing">Phishing</h2>
+<ul>
+<li>Electronically delivered social engineering</li>
+</ul>
+<h2 id="replication-through-removable-media">Replication through removable media</h2>
+<h2 id="supply-chain-compromise">Supply chain compromise</h2>
+<ul>
+<li>Compromise software dependencies and development tools</li>
+<li>Compromise hardware supply chain</li>
+<li>Compromise software supply chain</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-05T23:00:48&#43;05:30">September 05, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-enterprise-initial-access/">MITRE ATT&amp;CK - Enterprise - Initial Access</a></h1>
 	<div class="entry__content"><ul>
 <li>Attacker is trying to get into your network. To gain a foothold.</li>
@@ -308,138 +508,6 @@
 </ul></div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2025-09-03T19:21:54&#43;05:30">September 03, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/mitre-introduction/">MITRE ATT&amp;CK Introduction</a></h1>
-	<div class="entry__content"><ul>
-<li>Threat informed defence</li>
-<li>David -Bianco’s pyramid of pain: TTPs</li>
-<li>Adversary group: G</li>
-<li>Campaign: C</li>
-<li>Software: S</li>
-<li>Data source: DS</li>
-<li>Tactic: TA</li>
-<li>Sub-technique: T</li>
-<li>Mitigation: M</li>
-<li>MITRE is informed by what has been seen in operational use by the broader community</li>
-<li>Tactic: Goals of an adversary during intrusion. Help us understand why an adversary performs each action</li>
-<li>Technique: Means by which adversaries achieve their tactical goals</li>
-<li>Procedure: Specific implementation</li>
-<li>Common knowledge: CTI analysts, Red team and SOC analysts, executives etc</li>
-<li>Quantitative scorecard
-<ul>
-<li>Documenting priorities</li>
-<li>Identify gaps</li>
-<li>Informed decision making</li>
-</ul>
-</li>
-<li>Threat informed defence: systematic application of a deep understanding of adversary tradecraft and technology to prevent, detect and/or respond to cyber attacks</li>
-<li>Threat emulation: Offensive assessment mimicking particular adversary behaviours such as those in ATT&amp;CK</li>
-<li>Threat driven security engineering</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-09-02T22:14:45&#43;05:30">September 02, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/user-behaviour-centric-system/">User Behaviour Centric System</a></h1>
-	<div class="entry__content"><ul>
-<li>Capture data from various devices, apps, web services where an employee is creating an outbound connection</li>
-<li>Time spent of web/ apps by an employee</li>
-<li>General time window when employee accesses work application</li>
-<li>Time spent on business/ non-business applications</li>
-<li>Virtual footprint on business apps during working hours</li>
-<li>Specific searches made on Search Engine, chat, social media.</li>
-<li>Look at BCC and draft note exchanges</li>
-<li>Elevate surveillance on data movement controls: USB, dropbox</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-09-02T22:11:20&#43;05:30">September 02, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/human-errors-and-solutions/">Human Errors and Solutions</a></h1>
-	<div class="entry__content"><ul>
-<li>Commonsense security practices: Awareness, Alertness, Belongingness, Accountability, Penalty for ignorance</li>
-<li>Reasons for insider threats: greed, blackmail, destructive behaviour,  rebel, ego , intolerance to criticism, frustration, disappointment</li>
-<li>General deterrence theory: Person commits crime of expected benefits cost of action</li>
-<li>Social bond theory: Person commits crime if social bonds of attachment, commitment, involvement, belief are weak</li>
-<li>Social learning theory: Person commits crime if associated with felonious peers</li>
-<li>Situational crime theory: Crime occurs when motive and opportunity both exist</li>
-</ul>
-<ol>
-<li>Not renewing digital signature certificate or SSL certificate etc</li>
-<li>Alert handling process: Avoid human fatigue</li>
-<li>Patch updation: Automate, reduce delay, verify process of patching</li>
-<li>Antivirus definition updation</li>
-<li>Enforcement of password policy: Complex Passwords, MFA</li>
-<li>Third-party vulnerability: Contract must mention liabilities etc</li>
-<li>Network segmentation</li>
-<li>Shadow IT: Existing of IT devices without knowledge of IT department</li>
-<li>Identification of unknown, missing, malfunctioning devices</li>
-<li>Timely renewal of subscribed services and licences</li>
-<li>Employee awareness programs: Security awareness in annual appraisal</li>
-<li>Formalised insider threat programme: Design and implement policies and procedures</li>
-<li>Asset management: Identify and rate risks, functions of asset owners, types of data on systems, document configurations, assets etc. Identify Behaviours</li>
-<li>Social media awareness training</li>
-<li>Hiring process: Conduct background checks, suspicious behaviour</li>
-<li>Communication to personnel</li>
-<li>Access control</li>
-<li>Notice-period surveillance</li>
-<li>Off boarding procedures: Termination, change password, remove access etc</li>
-<li>Separation and rotation of duties</li>
-<li>Notice and consent for acceptable use policy</li>
-<li>Maintain employee morale</li>
-<li>Implement access rights based on least privilege principle</li>
-<li>Implement change management control</li>
-<li>Implement controls around data to prevent exfiltration, manipulation etc</li>
-<li>Behaviour anomaly detection: Network/ Application monitoring tools</li>
-<li>Cyber Vetting: Monitor digital footprint/ activities on internet</li>
-<li>Monitor audit logs/ remote access</li>
-<li>Endpoint surveillance</li>
-<li>Multi - level supervision</li>
-<li>USB restriction: Encryption, autorun, safe storage, disclosure of loss</li>
-<li>Vendor risk management and security policy</li>
-<li>Secure remote access</li>
-<li>Strengthen authentication/ authorisation controls</li>
-<li>Detailed SLAs</li>
-<li>Authenticated collection of printouts</li>
-<li>Restricted internal connection to printers</li>
-<li>Print encryption</li>
-<li>Password protection for documents</li>
-<li>Strict policies to prevent privacy breach due to CCTV</li>
-<li>Strict policies to tackle privacy breach due to hidden camera</li>
-<li>Safe storage and disposal of documents/ data carrier devices</li>
-<li>Classification of document</li>
-<li>Intellectual property rights</li>
-<li>Reporting of loss of document/data carrier devices</li>
-<li>Non disclosure clause</li>
-<li>Avoid spam mails: never respond, don’t click ‘unsubscribe’</li>
-<li>Freeware use policy: TRUSTe logo</li>
-<li>Acceptable use policy</li>
-<li>Supervisory checks: Implement 2nd layer, random sampling etc</li>
-<li>Reduce attack surface: disable USB , filter web and mail content</li>
-<li>Download latest patches</li>
-<li>Create offsite backups</li>
-<li>Isolate networks</li>
-<li>Use of software restriction policy integrated with active directory</li>
-<li>Agent based application whitelisting</li>
-<li>Enforce separation of duties</li>
-<li>Monitor system administrators</li>
-<li>Implement strong backups and recovery process</li>
-</ol></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-09-01T22:46:46&#43;05:30">September 01, 2025</time>
 	</div>
 </article>
 				</div>

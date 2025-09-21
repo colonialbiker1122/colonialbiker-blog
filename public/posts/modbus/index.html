@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>MODBUS | Colonialbiker Blog Site</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+</head>
+<body class="body kind-page">
+	<header class="header">
+	<a class="logo" href="/">Colonialbiker Blog Site</a>
+	
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		
+		<div class="single block">
+			<article class="entry">
+	<div class="entry__meta meta mb">
+	<time class="entry__meta-published meta-published" datetime="2025-09-19T20:07:59&#43;05:30">September 19, 2025</time>
+	</div>
+				<h1 class="entry__title">MODBUS</h1>
+<details class="entry__toc toc" open>
+	<summary class="toc__title">Table of Contents</summary>
+	<nav id="TableOfContents"></nav>
+</details>
+				<div class="entry__content"><ul>
+<li>
+<p>One master many slaves</p>
+</li>
+<li>
+<p>Master broadcast to all devices. Only assigned recipient will read, other slaves will reject the message</p>
+</li>
+<li>
+<p>MODBUS commands can instruct an RTU to change a value in its registers, control or read an I/O port and commanding device to send back one or more values contained in its registers</p>
+</li>
+<li>
+<p>MODBUS defines a protocol data unit (PDU) which is independent of the underlying communication layers</p>
+</li>
+<li>
+<p>MODBUS RTU: Addressing before PDU. CRC appended at the end.</p>
+</li>
+<li>
+<p>MODBUS ASCII: Representation of PDU in all printable characters</p>
+</li>
+<li>
+<p>MODBUS TCP: Addressing before PDU. CRC left upto TCP layer to deal with</p>
+</li>
+<li>
+<p>MODBUS Serial: RS232, RS485, serial line between master and slave</p>
+</li>
+<li>
+<p>MODBUS plus: RS485, HDLC (high level data link control)</p>
+</li>
+<li>
+<p>MODBUS TCP : Ethernet physical layer. Ethernet data link layer, etc</p>
+</li>
+<li>
+<p>Information in slave device is stored in 4 different tables</p>
+</li>
+<li>
+<p>Each table has 9999 data points storing different values</p>
+</li>
+<li>
+<p>Each coil is 1 bit and given data address between x0000 &amp; x9999</p>
+</li>
+<li>
+<p>Each register = 2 bytes = 1 word and also has data address between x0000 and x9999</p>
+</li>
+<li>
+<p>Each device in a network is assigned a byte value from 0 to 255</p>
+</li>
+<li>
+<p>When master requests for data, first byte it sends is Slave ID</p>
+</li>
+<li>
+<p>MODBUS map (list) should have following information:</p>
+<ul>
+<li>What kind of data the device reads and stores (temperature, pressure etc)</li>
+<li>At what address the data is stored (voltage at 40001)</li>
+<li>Format in which the data is stored (bits, UINT16, SINT16)</li>
+<li>Device is ADU addressing or PDU addressing</li>
+</ul>
+</li>
+<li>
+<p>Modbus Error Checking</p>
+<ul>
+<li>Parity checking: Even parity, Odd parity, No parity</li>
+<li>Frame checking: Cyclical redundancy check in RTU mode. Longitudinal redundancy in ASCIT mode</li>
+</ul>
+</li>
+<li>
+<p>First byte sent : slave ID : : Second byte sent : function code</p>
+</li>
+<li>
+<p>Function codes:</p>
+<ul>
+<li>x01 : Read : Discrete output coils</li>
+<li>x02 : Read : Discrete input contacts</li>
+<li>x03 : Read : Analog output holding registers</li>
+<li>x04 : Read : Analog input registers</li>
+<li>x05 : Write (single) : Discrete output coil</li>
+<li>x06 : Write (single) : Analog output holding registers</li>
+<li>x10 : Write (multiple) : Analog output holding registers</li>
+<li>x0F : Write (multiple) : Discrete output coils</li>
+</ul>
+</li>
+<li>
+<p>Coils are single bit. 0s : OFF :: 1s : ON</p>
+</li>
+<li>
+<p>Coils represent the state of discrete input/output (is the light on or off)</p>
+</li>
+<li>
+<p>Input Registers: Report state of an external value. eg: Voltage or Temperature will get assigned a value between 0 to 65535</p>
+</li>
+<li>
+<p>Holding Registers: Temporarily store program data for Modbus devices</p>
+</li>
+<li>
+<p>Third byte sent: Starting address which is the index into the data area in the modbus device</p>
+</li>
+<li>
+<p>Bit length specifies how many point to read or write</p>
+</li>
+<li>
+<p>Word count specifies how many registers to read or write</p>
+</li>
+<li>
+<p>Byte count: No of bytes included in request/response</p>
+</li>
+<li>
+<p>Response code: Indicates completion of request</p>
+</li>
+</ul>
+</div>
+				
+				<footer class="entry__footer">
+					
+					
+<div class="entry__share share">
+	<a class="share__link btn" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=%2f%2flocalhost%3a1313%2fposts%2fmodbus%2f&title=MODBUS" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on LinkedIn', 'width=640,height=480,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+<div class="authorbox block">
+	<div class="author">
+		<div class="author__body">
+			<div class="author__name">
+				
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="mailto:colonialbiker123@gmail.com">
+			<svg class="social__icon" aria-label="Email" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M299 268l124 106c-4 4-10 7-17 7H106c-7 0-13-3-17-7l124-106 43 38 43-38zm-43 13L89 138c4-4 10-7 17-7h300c7 0 13 3 17 7L256 281zm54-23l121-105v208L310 258zM81 153l121 105L81 361V153z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/sumukh-kesarla">
+			<svg class="social__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2025 Colonialbiker Blog Site. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+</body>
+</html>
