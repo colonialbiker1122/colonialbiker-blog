@@ -6,8 +6,29 @@
     <description>Recent content on Colonialbiker Blog Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Sep 2025 22:03:02 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 25 Sep 2025 21:22:58 +0530</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web 2.0</title>
+      <link>//localhost:1313/posts/web-20/</link>
+      <pubDate>Thu, 25 Sep 2025 21:22:58 +0530</pubDate>
+      <guid>//localhost:1313/posts/web-20/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Apps are available as SaaS, web, mobile&lt;/li&gt;&#xA;&lt;li&gt;File sync and sharing services&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Manage, distribute, access online content&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Instant messaging&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Short messages in real time like WhatsApp, Snapchat etc&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Micro-blogging&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Broadcast short messages to subscribers. Twitter tumbler&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Office productivity suites: Office 365, Google Apps, word, excel, PowerPoint&lt;/li&gt;&#xA;&lt;li&gt;Remote Access&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Remote sharing and control for collaboration or troubleshooting. Teamviewer, Anydesk etc&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Remote team meetings: Audio/ Video/ screen share. Teams, Adobe Connect etc&lt;/li&gt;&#xA;&lt;li&gt;Social Curation: Pinterest, Instagram, Reddit&lt;/li&gt;&#xA;&lt;li&gt;Social Networks&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Share contact with business or personal. Facebook, Instagram, Linkedin&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Web based email: Gmail, outlook, Yahoo&lt;/li&gt;&#xA;&lt;li&gt;Wiki: contribute, collab, edit contents&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>MITRE ATT&amp;CK - ICS - Evasion</title>
+      <link>//localhost:1313/posts/attack-ics-evasion/</link>
+      <pubDate>Thu, 25 Sep 2025 21:19:43 +0530</pubDate>
+      <guid>//localhost:1313/posts/attack-ics-evasion/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Adversary is trying to avoid security defences&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Change operating model: Of programmable controllers&lt;/li&gt;&#xA;&lt;li&gt;Exploitation for Evasion&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Open software vulnerability which can be used to disable or circumvent security features&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;Indicator removal on host&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Override or delete or cover up changes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;Masquerading&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;To disguise malicious application as another file like vendor executables or common config files etc&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;5&#34;&gt;&#xA;&lt;li&gt;Rootkit&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Intercept and modify OS API calls that supply system information&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;6&#34;&gt;&#xA;&lt;li&gt;Spoof reporting message&lt;/li&gt;&#xA;&lt;li&gt;System binary proxy execution&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>ATT&amp;CK MITRE - ICS - Privilege Escalation</title>
+      <link>//localhost:1313/posts/attack-ics-privilege-escalation/</link>
+      <pubDate>Thu, 25 Sep 2025 21:15:22 +0530</pubDate>
+      <guid>//localhost:1313/posts/attack-ics-privilege-escalation/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Adversary is trying to gain high level privileges&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Exploitation for Privilege Escalation: Software Exploitation&lt;/li&gt;&#xA;&lt;li&gt;Hooking: Hook into API frameworks used by processes to redirect calls for execution and privilege escalation means&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
     <item>
       <title>Security Zones in Palo Alto Networks Firewall</title>
       <link>//localhost:1313/posts/security-zones-in-pa-firewall/</link>

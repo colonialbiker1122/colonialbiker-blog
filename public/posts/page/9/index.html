@@ -29,6 +29,174 @@
 			
 				<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/cyber-threat-intelligence-introduction/">Cyber Threat Intelligence Introduction</a></h1>
+	<div class="entry__content"><h2 id="intelligence">Intelligence</h2>
+<ol>
+<li>Strategic</li>
+</ol>
+<ul>
+<li>Information related to CXO level members</li>
+<li>Main threat capabilities, motivations, probability, consequences etc. (disruption, theft, financial gain etc)</li>
+</ul>
+<ol start="2">
+<li>Operational</li>
+</ol>
+<ul>
+<li>Those who are involved in day-to-day decisions, which groups may target, which groups are active, CIEs, tactics used etc.</li>
+</ul>
+<ol start="3">
+<li>Tactical</li>
+</ol>
+<ul>
+<li>To those in need of instantaneous information IP addresses, domains, URLs, hashes, registry keys, email artifacts etc.</li>
+</ul>
+<h2 id="areas-of-interest">Areas of interest</h2>
+<ul>
+<li>Cybercrime</li>
+<li>Cyberterrorism</li>
+<li>Hactivism</li>
+<li>Cyberespionage</li>
+</ul>
+<h2 id="advanced-persistent-threats">Advanced Persistent Threats</h2>
+<ul>
+<li>APT = Threat actor + high operational security + low detection rate + high success level</li>
+</ul>
+<h2 id="stix--structured-threat-information-expression">STIX : Structured threat information expression</h2>
+<p>Any threat actor can be defined by:</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-07-23T19:52:25&#43;05:30">July 23, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/cyber-threat-intel/" rel="category">Cyber Threat Intel</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/owasp-api-security-top-10/">OWASP API Security Top 10</a></h1>
+	<div class="entry__content"><h2 id="1-broken-object-level-authorisation">1. Broken Object level Authorisation</h2>
+<ul>
+<li>Access data / objects belonging to other users.</li>
+<li>Attacker authenticates as user A and retrieves data of B</li>
+<li>Enforce data access controls at application logic layer</li>
+<li>Define data access policies and implement controls</li>
+</ul>
+<h2 id="2-broken-authentication">2. Broken authentication</h2>
+<ul>
+<li>Due to poorly implemented or missing security controls</li>
+<li>Weak password requirements, credential stuffing, authentication information in URLs, absence of token expiry validation, insecure password storage, no captcha/ rate limiting / lockout</li>
+</ul>
+<h2 id="3-broken-object-property-level-authorisation">3. Broken object property level authorisation</h2>
+<ul>
+<li>Mass assignment : Ability to update object elements</li>
+<li>Excessive data exposure : reeling unnecessary sensitive data</li>
+<li>Eg. set account-type=premium</li>
+</ul>
+<h2 id="4-unrestricted-resource-consumption">4. Unrestricted resource consumption</h2>
+<ul>
+<li>Risk : DoS, performance impact, mass data harvesting.</li>
+<li>Missing / inadequate rate controls, execution timeouts, max-allocation memory/ files / upload size, excessive operations or records returned in a single request</li>
+</ul>
+<h2 id="5-broken-function-level-authentication">5. Broken function level authentication</h2>
+<ul>
+<li>Improperly modify objects (create/ update / delete) to escalate privileges, replace GET → PUT / DELETE</li>
+<li>Modify parameters : role=admin, delete an invoice, set account balance = 0</li>
+</ul>
+<h2 id="6-unrestricted-access-to-sensitive-business-flows">6. Unrestricted access to sensitive business flows</h2>
+<ul>
+<li>Application logic flow</li>
+<li>Implement fraudulent traffic detection and control</li>
+</ul>
+<h2 id="7-server-side-request-forgery">7. Server side request forgery</h2>
+<ul>
+<li>Exploiting URL inputs to make request to 3rd party server</li>
+<li>Eg. LFI , Malware downloaded from malicious sites</li>
+<li>Validate and sanitise all user-supplied info (URL params)</li>
+<li>Ensure communication only permitted with trusted resources</li>
+</ul>
+<h2 id="8-security-misconfiguration">8. Security misconfiguration</h2>
+<ul>
+<li>Lack of security hardening, improperly configured permissions, missing security patches, CORS policy missing, use of bots to scan, detect and exploit misconfigurations</li>
+<li>Implement hardening procedures.</li>
+</ul>
+<h2 id="9-improper-inventory-management">9. Improper inventory management</h2>
+<ul>
+<li>Unauthorised API access via old/unused versions or through trusted 3rd parties</li>
+<li>Unpatched endpoints, outdated documentation, deploy/manage all APIs in gatewa</li>
+</ul>
+<h2 id="10-unsafe-consumption-of-apis">10. Unsafe consumption of APIs</h2>
+<ul>
+<li>3rd party APIs are exploited and then used to attack legitimate APIs relying on them.</li>
+<li>Validate data and evaluate security controls of 3rd APIs , encrypt API communication.</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-07-23T19:39:40&#43;05:30">July 23, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/api-security/" rel="category">API Security</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/nmap-basics/">Nmap Basics</a></h1>
+	<div class="entry__content"><h2 id="1-network-discovery">1. Network discovery</h2>
+<ul>
+<li>Find out IP address ranges</li>
+<li>Determine estimated services offered by a host</li>
+<li>Figure out general network topology</li>
+<li>Check for Firewall filtering policies</li>
+<li>sL : List scan</li>
+<li>A : Advanced / Aggressive</li>
+<li>Finding an organization&rsquo;s IP address :
+<ul>
+<li>host -t ns target.com</li>
+<li>host -t a target.com</li>
+<li>host -t aaaa target.com</li>
+<li>host -t mx target.com</li>
+<li>host -t soa target.com</li>
+<li>nmap -Pn -T4 –-traceroute target.com</li>
+<li>whois &lt;x.x.x.x&gt;</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-host-discovery">2. Host discovery</h2>
+<ul>
+<li>nmap -sL abc.com</li>
+<li>nmap -sn -t4 abc.com : Ping scan</li>
+<li>nmap -Pn -t4 abc.com : Disable Ping</li>
+<li>nmap -sn -PS8O -v abc.com : TCP SYN Ping</li>
+<li>nmap -sn -PA8O -v abc.com: TCP ACK Ping</li>
+<li>nmap -sn -PU -v abc.com : UDP Ping</li>
+<li>nmap -sn -PE -v abc.com : ICMP Ping (8/echo)</li>
+<li>nmap -sn -PR -v abc.com : ARP Scan</li>
+<li>nmap -sn -PE -PS443 -PA80 -PP abc.com : Default</li>
+</ul>
+<h2 id="3-port-scanning">3. Port Scanning</h2>
+<ul>
+<li>Open : accepting TCP connections</li>
+<li>Closed : Accessible but no application listening</li>
+<li>Filtered : Not able to determine if port is open ( Firewall )</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-07-20T23:56:44&#43;05:30">July 20, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/vulnerability-assessment/" rel="category">Vulnerability Assessment</a>
+	</span>
+</div>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/my-first-post/">My First Post</a></h1>
 	<div class="entry__content"><h2 id="introduction">Introduction</h2>
 <p>Welcome to Colonialbiker&rsquo;s blog. I just want to share whatever little I know to everyone on the internet. The content might be boring but I assure you that as time passes by, the quality of content will also improve.</p>

@@ -3,10 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2025-09-24T22:03:02+05:30</lastmod>
+    <lastmod>2025-09-25T21:22:58+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/</loc>
-    <lastmod>2025-09-24T22:03:02+05:30</lastmod>
+    <lastmod>2025-09-25T21:22:58+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/web-20/</loc>
+    <lastmod>2025-09-25T21:22:58+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/attack-ics-evasion/</loc>
+    <lastmod>2025-09-25T21:19:43+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/attack-ics-privilege-escalation/</loc>
+    <lastmod>2025-09-25T21:15:22+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/security-zones-in-pa-firewall/</loc>
     <lastmod>2025-09-24T22:03:02+05:30</lastmod>
