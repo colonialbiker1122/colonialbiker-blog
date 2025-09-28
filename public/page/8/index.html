@@ -24,6 +24,213 @@
 			<div class="cards">
 					<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/know-your-industrial-control-systems/">Know Your Industrial Control Systems</a></h1>
+	<div class="entry__content"><h2 id="common-terminologies">Common Terminologies</h2>
+<ul>
+<li>SCADA: Supervisory control and data acquisition system. It grew out of telemetry systems developed for space program. Initially, all the components were hard wired, then came the role of microprocessor based digital telemetry systems.</li>
+<li>DCS: Distributed control systems. These are typically installed within the plant premises.</li>
+<li>SCADA systems also support remote functionalities.</li>
+<li>2 basic components of SCADA:
+<ul>
+<li>RTU: Remote Terminal Unit or smart devices. These devices provide local control.</li>
+</ul>
+</li>
+<li>Central station computer</li>
+<li>MODBUS: Serial communications</li>
+<li>IEC 61850: Electric Utility Substation Communications</li>
+<li>HMI: Human-machine interface : Window</li>
+<li>Distributed control system (DCS): Process control (continuous/batch)</li>
+<li>Programmable logic controller (PLC): Discrete/ sequence control</li>
+<li>SCADA: Remote monitoring and dispatch</li>
+<li>SIS: Safety instrumental system : Life safety/ personnel protection</li>
+<li>OT: Operational technology = ICS (Industrial Control Systems) + CPS(Cyber Physical Systems) + others</li>
+<li>Purdue model: Structural / segmentation model for ICS security</li>
+<li>DCS topology:
+<ul>
+<li>Smart transmitters and valves: HART / Bus protocol</li>
+<li>Ladder logic</li>
+</ul>
+</li>
+<li>SCADA implementation in geographically dispersed areas</li>
+<li>Common SCADA mode communications: Microwave, satellite, cellular, dial-up mod</li>
+</ul>
+<h2 id="ics-protocols">ICS Protocols</h2>
+<ul>
+<li>Traditional ICS protocols acquire measurement values via polling. Periodically request the state. Period determined by throughput/ latency requirements.</li>
+<li>MODBUS
+<ul>
+<li>Added features beyond basic capabilities in MODBUS</li>
+<li>Define more data types to enhance inter-operability</li>
+<li>Bandwidth minimization for SCADA systems: send only deltas.</li>
+</ul>
+</li>
+<li>Publisher-subscriber based protocols: IEC 61805 GOOSE or UDP multicast in IP</li>
+<li>Industry  specific models:
+<ul>
+<li>ODVA’s CIP: Motion control, synchronization etc</li>
+<li>IEC 61850: Electric Power Industry</li>
+</ul>
+</li>
+<li>DCS protocols: OPC, Siemens S7, MODBUS, HART, Profibus, IP</li>
+<li>SCADA protocols: DNP3, ICCP, IEC 60870-5-104</li>
+<li>Issues with major ICS Protocols:
+<ul>
+<li>Insecure by design</li>
+<li>Insecure by implementation</li>
+</ul>
+</li>
+<li>Can be secured by using techniques such as TLS etc.</li>
+<li>Modern Wrappers: SSP21</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-06T19:22:45&#43;05:30">August 06, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/ics/" rel="category">ICS</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/scada-in-electric-power-industry/">SCADA in Electric Power Industry</a></h1>
+	<div class="entry__content"><h2 id="scada-system-capabilities">SCADA system capabilities</h2>
+<ul>
+<li>Access quantitative measurements of important processes both immediately and over time</li>
+<li>Detect and correct problems as soon as they happen</li>
+<li>Measure trends over tine</li>
+<li>Discover and eliminate bottlenecks and inefficiencies</li>
+<li>Control larger and more complex processes</li>
+<li>Information can be meter readings, current quality, power outages etc.</li>
+</ul>
+<h2 id="stages">Stages</h2>
+<ul>
+<li>Data acquisition
+<ul>
+<li>Sensors (digital/ analog)</li>
+<li>Control relays</li>
+</ul>
+</li>
+<li>Data collectors
+<ul>
+<li>Remote Terminal Unit (RTU): Small computerised units deployed in fields at specific sites. RTUs serve as local collection points for gathering reports from sensors and delivering commands to control relays</li>
+</ul>
+</li>
+<li>Data communication
+<ul>
+<li>Network which connects SCADA master unit to RTU</li>
+</ul>
+</li>
+<li>Data Presentation and Control
+<ul>
+<li>SCADA master units: Large computer consoles that serve as the central processor for SCADA system. Master units provide a human interface to the system and automatically regulate the manages system in response to sensor inputs</li>
+</ul>
+</li>
+</ul>
+<h2 id="rtu-connections">RTU Connections</h2>
+<ul>
+<li>RJ45 serial ports (terminal server)</li>
+<li>RJ45 10/100 Ethernet ports</li>
+<li>RJ11 Telco jack</li>
+<li>50 pin connectors for discretes and relays</li>
+<li>4 pin screw plugs for analogs</li>
+</ul>
+<h2 id="electric-scada-measurements">Electric SCADA measurements</h2>
+<ul>
+<li>Voltage , current, reactance</li>
+<li>Status of line devices: Switches, Breakers, Reclosers, cap banks, voltage regulators etc</li>
+<li>Status of customer serving devices: Transformers, street lights</li>
+<li>Electric usage data (metering)</li>
+<li>Outage data from all devices</li>
+<li>50 Hz waveform</li>
+<li>Substation switch house equipment</li>
+</ul>
+<h2 id="risks">Risks</h2>
+<ul>
+<li>Physical threats</li>
+<li>Insider threats</li>
+<li>Antiquated systems</li>
+<li>Incompetence</li>
+<li>Malwares</li>
+<li>Denial of service</li>
+</ul>
+<h2 id="impacts">Impacts</h2>
+<ul>
+<li>Property damage</li>
+<li>Asset damage</li>
+<li>Blackouts</li>
+<li>Meter data security</li>
+<li>Loss of billing data</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-05T22:01:51&#43;05:30">August 05, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/ics/" rel="category">ICS</a>, 
+		<a class="meta-categories__link" href="/categories/power-utility/" rel="category">Power Utility</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/electric-power-industry/">Electric Power Industry</a></h1>
+	<div class="entry__content"><h2 id="introduction">Introduction</h2>
+<h3 id="few-typical-components">Few typical components</h3>
+<ul>
+<li>Generating station</li>
+<li>Generator step up transformer</li>
+<li>Transmission lines</li>
+<li>Substration step down transformer</li>
+<li>Customer (subtransmission/ primary/ secondary)</li>
+</ul>
+<h3 id="types-of-power-sources">Types of Power Sources</h3>
+<p>Renewable: wind, solar, hydro
+Non-renewable: coal, natural gas</p>
+<h3 id="why-is-electricity-difficult-to-manage">Why is Electricity difficult to manage?</h3>
+<ul>
+<li>Electricity cannot be routed/ controlled</li>
+<li>Power flows via the path of least resistance</li>
+</ul>
+<h3 id="elements-of-substation">Elements of substation</h3>
+<ul>
+<li>Primary power line</li>
+<li>Ground wire</li>
+<li>Transformer for measuring electric voltage</li>
+<li>Disconnect switch</li>
+<li>Circuit breaker</li>
+<li>Current transformer</li>
+<li>Lightning arrester</li>
+<li>Main transformer</li>
+<li>Control building</li>
+<li>Security fence</li>
+<li>Secondary power line</li>
+</ul>
+<h3 id="distribution-line-devices">Distribution line devices</h3>
+<ul>
+<li>Voltage regulator</li>
+<li>Capacitor bank</li>
+<li>Gang operated switch</li>
+<li>Reclosers: automatic</li>
+<li>Fused disconnect</li>
+<li>Distribution transformer</li>
+</ul>
+<h2 id="smart-grid">Smart Grid</h2>
+<p>An example of a use case of smart grid is where E-vehicles which are battery powered also are compatible to 2 way power distribution i.e Power from a vehicle can be used to power a site in case of main grid failure and at other times, be used as it was intended to.</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-05T21:49:53&#43;05:30">August 05, 2025</time>
+<div class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/categories/power-utility/" rel="category">Power Utility</a>
+	</span>
+</div>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/introduction-to-control-systems/">Introduction to Control Systems</a></h1>
 	<div class="entry__content"><h2 id="introduction">Introduction</h2>
 <p>System: Collection of interconnected parts that form a larger more complex whole</p>
@@ -260,257 +467,6 @@
 	</div>
 </article>
 					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/more-about-apis/">More About APIs</a></h1>
-	<div class="entry__content"><h2 id="common-http-methods">Common HTTP methods</h2>
-<ul>
-<li>GET: Retrieve data</li>
-<li>POST: Create records</li>
-<li>PUT: Update resource</li>
-<li>PATCH: Partially update</li>
-<li>DELETE: Delete a resource</li>
-</ul>
-<h2 id="http-request-components">HTTP Request Components</h2>
-<ul>
-<li>Version</li>
-<li>URL</li>
-<li>Method</li>
-<li>Request header: Cookies, user-agent, refers, etc</li>
-<li>Body (optional) : form data  (JSON/ Form encoded)</li>
-</ul>
-<h2 id="http-response-components">HTTP Response Components</h2>
-<ul>
-<li>Requested resource</li>
-<li>Content length</li>
-<li>Content type</li>
-<li>Headers</li>
-<li>Time last modified</li>
-<li>HTTP status codes</li>
-</ul>
-<h2 id="http-status-codes">HTTP Status codes</h2>
-<ul>
-<li>100 series: Informational</li>
-<li>200 series: Successful</li>
-<li>300 series: Redirection</li>
-<li>400 series: Client error: Bad API request, Resource not on server etc</li>
-<li>500 series: Server error: Configuration mismatch, Error check issues, Package dependency issue</li>
-<li>Examples:
-<ul>
-<li>102: Processing</li>
-<li>200: Successful</li>
-<li>201: Created (POST)</li>
-<li>301: Permanently moved</li>
-<li>404: Not found</li>
-<li>400: Bad request</li>
-<li>401: Unauthorised</li>
-<li>403: Forbidden</li>
-</ul>
-</li>
-</ul>
-<h2 id="api-restfulness">API Restfulness</h2>
-<ol>
-<li>Client-Server architecture</li>
-<li>Stateless</li>
-<li>Cacheable: Responses can be saved by browser/server, Reduce server load, Resuse API results.</li>
-<li>Layered</li>
-<li>Uniform interface: Unique URLs for each resource. Unified procedures to modify/other action for each resource</li>
-<li>Code on demand: API can deliver code/ business logic</li>
-</ol>
-<h2 id="miscellaneous-points">Miscellaneous points</h2>
-<ul>
-<li>Caching</li>
-<li>Versioning</li>
-<li>KISS: Keep It Simple Stupid</li>
-<li>Filter, order, paginate</li>
-<li>Rate Limiting</li>
-<li>Monitoring</li>
-<li>Standard API naming conventions</li>
-<li>Consistent naming strategy</li>
-<li>Query parameters</li>
-<li>No trailing slash</li>
-<li>No file names</li>
-<li>Nouns, not verbs</li>
-<li>Forward slashes for hierarchy</li>
-<li>Lower case letter</li>
-<li>Tools:
-<ul>
-<li>Insomnia</li>
-<li>Postman</li>
-<li>cURL</li>
-</ul>
-</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-03T21:38:51&#43;05:30">August 03, 2025</time>
-<div class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/api/" rel="category">API</a>
-	</span>
-</div>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/3-pillars-of-api-security/">3 Pillars of API Security</a></h1>
-	<div class="entry__content"><h2 id="1-governance">1. Governance</h2>
-<ul>
-<li>Know your APIs
-<ul>
-<li>Get full inventory of APIs : Purpose, owner, documentation etc.</li>
-<li>Standardise and enforce API deployment process</li>
-<li>Check for existence of shadow/ rogue APIs, proper validation, governance at gateway and marketplace.</li>
-<li>API Documentation : Mandatory</li>
-<li>API development standards: style guides, authentication requirements, versioning, PII tracking</li>
-</ul>
-</li>
-<li>Threat modelling:
-<ul>
-<li>Identify APIs, business flows, data access paths</li>
-<li>Assess: vulnerabilities, logic flows, access controls, 3rd party risks</li>
-<li>Probability:</li>
-<li>Impact: Understand the damage/ loss/ consequences</li>
-<li>Mitigation: Develop plans to assess the risk and mitigation strategies</li>
-</ul>
-</li>
-<li>OpenAPI specification AKA Swagger</li>
-<li>Design guides:
-<ul>
-<li>Authentication: Type (token/ certificate etc.), how to implement.</li>
-<li>Authorisation: Who has access to what</li>
-<li>Naming conventions: URIs as nouns, methods as verbs, pluralisation, hierarchy, case, language</li>
-<li>Error codes: status code, reference ID , human readable</li>
-<li>Versioning: when to increment, when not to</li>
-<li>Units/ formats/ standards: date/time, timezone</li>
-</ul>
-</li>
-</ul>
-<h2 id="2-testing">2. Testing</h2>
-<ul>
-<li>Data security:
-<ul>
-<li>Access Control</li>
-<li>Excessive/ Sensitive Data Exposure</li>
-<li>File / directory exposure</li>
-<li>Encryption at rest</li>
-</ul>
-</li>
-<li>Business logic:
-<ul>
-<li>Cross-account access</li>
-<li>API function abuse</li>
-<li>RBAC: Role-based Access Control</li>
-<li>Pen-testing</li>
-</ul>
-</li>
-<li>API security
-<ul>
-<li>Unsecured endpoints</li>
-<li>Authentication exploits</li>
-<li>Enumeration</li>
-<li>Application DoS, Rate Limiting</li>
-<li>Missing SSL/ TLS issues</li>
-<li>Injection, fuzzing</li>
-<li>Server Side Request Forgery</li>
-</ul>
-</li>
-</ul>
-<h2 id="3-monitoring">3. Monitoring</h2>
-<ul>
-<li>Runtime protection
-<ul>
-<li>Policy enforcement</li>
-<li>Authentication</li>
-<li>Traffic filtering</li>
-</ul>
-</li>
-<li>Threat detection
-<ul>
-<li>Fraudulent traffic</li>
-<li>Distributed attacks</li>
-<li>Incident Response</li>
-</ul>
-</li>
-<li>Control validation
-<ul>
-<li>Verify API controls</li>
-<li>Uncover anomalies</li>
-</ul>
-</li>
-<li>API Discovery sources
-<ul>
-<li>API gateway</li>
-<li>Web Application Firewall</li>
-<li>Code repository</li>
-<li>Application crawling</li>
-</ul>
-</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-02T12:56:34&#43;05:30">August 02, 2025</time>
-<div class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/api/" rel="category">API</a>, 
-		<a class="meta-categories__link" href="/categories/api-security/" rel="category">API Security</a>
-	</span>
-</div>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/owasp-llm-top-10/">OWASP LLM Top 10</a></h1>
-	<div class="entry__content"><h2 id="1-prompt-injection">1. Prompt Injection</h2>
-<ul>
-<li>Direct / Jailbreak</li>
-<li>Indirect : Summarise webpage, upload resume</li>
-<li>Previlige control, trust boundaries</li>
-</ul>
-<h2 id="2-insecure-output-handling">2. Insecure output handling</h2>
-<ul>
-<li>Apps with LLM privileges beyond user requirement</li>
-<li>Example: LLM output interpreted by browser resulting in XSS</li>
-</ul>
-<h2 id="3-training-data-poisoning">3. Training data poisoning</h2>
-<ul>
-<li>Supply chain of training data, ML-BOM, sandboxing, MLSecOps, biased opinions (leading to Hate crimes etc.)</li>
-</ul>
-<h2 id="4-model-denial-of-service">4. Model Denial of Service</h2>
-<ul>
-<li>Continuous input overflow, repetitive long input, recursive context expansion, variable length input flooding, DoS etc.</li>
-</ul>
-<h2 id="5-supply-chain-vulnerabilities">5. Supply chain vulnerabilities</h2>
-<ul>
-<li>Poisoned crowd-sourced data, outdated models, model and code signing, PyPi package registry, AI-BOM</li>
-</ul>
-<h2 id="6-sensitive-information-discourse">6. Sensitive Information Discourse</h2>
-<ul>
-<li>Memorisation of training data (sensitive data), unintended disclosure of confidential information due to LLM misinterpretation</li>
-</ul>
-<h2 id="7-insecure-plugin-design">7. Insecure plugin design</h2>
-<h2 id="8-excessive-agency">8. Excessive agency</h2>
-<ul>
-<li>Eliminate excessive functionality/ permissions/ autonomy.</li>
-</ul>
-<h2 id="9-overreliance">9. Overreliance</h2>
-<ul>
-<li>Hallucination, confabulation, plagiarism, disinformation, Parameters Efficient Tuning (PET), chain of thought prompting</li>
-</ul>
-<h2 id="10-model-theft">10. Model theft</h2>
-<ul>
-<li>Shadow model, ML model registry, side channel attacks, self-instruct (generate synthetic training data)</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-02T12:44:04&#43;05:30">August 02, 2025</time>
-<div class="entry__meta-categories meta-categories">
-	<span class="meta-categories__list">Categories:
-		<a class="meta-categories__link" href="/categories/llm-security/" rel="category">LLM Security</a>
-	</span>
-</div>
-	</div>
-</article>
-					</div>
 			</div>
 	</main>
 	
@@ -520,8 +476,9 @@
 				<a class="pagination__item pagination__item--desktop" href="/page/3/">3</a>
 			<span class="pagination__item pagination__item--gap">&hellip;</span>
 				<a class="pagination__item pagination__item--desktop" href="/page/7/">7</a>
-				<span class="pagination__item pagination__item--active" data-total="9">8</span>
+				<span class="pagination__item pagination__item--active" data-total="10">8</span>
 				<a class="pagination__item pagination__item--desktop" href="/page/9/">9</a>
+				<a class="pagination__item pagination__item--desktop" href="/page/10/">10</a>
 </div>
 
 	</div>

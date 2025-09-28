@@ -24,6 +24,139 @@
 			<div class="cards">
 					<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/security-zones-in-pa-firewall/">Security Zones in Palo Alto Networks Firewall</a></h1>
+	<div class="entry__content"><h2 id="zone">Zone</h2>
+<ul>
+<li>Designates a network segment in which all nodes share similar network security requirements</li>
+<li>Zone is a logical way to group physical and virtual interfaces</li>
+<li>Zones control and lock traffic that traverse through the interfaces</li>
+<li>All defined interfaces must be assigned a zone that marks all the traffic coming to or from the interface</li>
+<li>Zones are defined for specific interface types – tap, virtual wire, layer 2, layer 3 etc.</li>
+<li>An interface can be assigned only to a single zone.</li>
+<li>All sessions on the firewall are defined by source and destination zones</li>
+<li>Rules can use defined zones to allow or deny traffic, apply quality of service(QoS) policies, perform NAT etc.</li>
+<li>By default, all traffic can freely flow within zones in the case of intrazone traffic</li>
+<li>By default, traffic between zones is denied in case of interzone traffic</li>
+<li>All policies reference a source and destination zone to match traffic</li>
+<li>Policies are assessed in top down manner</li>
+<li>Security policy rules are used to create positive or negative enforcement model for traffic</li>
+<li>If logging enabled for matching policy, the action for that session is logged</li>
+<li>Multiple match conditions can be used to create a policy such as security zones, source IP, destination IP, devices, applications (App ID), source user (user ID), service (port), URL etc</li>
+</ul>
+<h2 id="sp3-single-pass-parallel-processing-architecture">SP3: Single Pass Parallel Processing Architecture</h2>
+<ul>
+<li>Enables packet evaluation, application identification, policy decision and content scanning in a single efficient processing pass.</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-24T22:03:02&#43;05:30">September 24, 2025</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/ics-protocol-vulnerabilities/">ICS Protocol Vulnerabilities</a></h1>
+	<div class="entry__content"><h2 id="profibus">Profibus</h2>
+<ul>
+<li>Eavesdropping</li>
+<li>Data tampering</li>
+<li>MitM attacks</li>
+</ul>
+<h2 id="modbus">Modbus</h2>
+<ul>
+<li>Lack of Authentication</li>
+<li>Lack of Encryption</li>
+<li>Unauthorized Access</li>
+<li>Data Manipulation</li>
+</ul>
+<h2 id="profinet-s7">Profinet/ S7</h2>
+<ul>
+<li>Unauthorized access</li>
+<li>Eavesdropping</li>
+<li>Data Tampering</li>
+</ul>
+<h2 id="dnp3">DNP3</h2>
+<ul>
+<li>Inadequate authentication</li>
+<li>Lack of encryption</li>
+<li>Susceptible to replay attacks</li>
+</ul>
+<h2 id="ethernetip">EtherNet/IP</h2>
+<ul>
+<li>Unauthorized Access</li>
+<li>Data Manipulation</li>
+<li>DoS attacks</li>
+</ul>
+<h2 id="opc-ua-unified-architecture">OPC UA (Unified Architecture)</h2>
+<ul>
+<li>Eavesdropping</li>
+<li>Unauthorized access without encryption</li>
+</ul>
+<h2 id="iec-61850">IEC 61850</h2>
+<ul>
+<li>DoS</li>
+<li>Injection</li>
+<li>Replay Attacks</li>
+<li>Password Cracking</li>
+<li>Eavesdropping</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-24T21:58:48&#43;05:30">September 24, 2025</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/ot-security-myths/">OT Security Myths</a></h1>
+	<div class="entry__content"><ul>
+<li>OT systems are air-gapped &amp; secured
+<ul>
+<li>Stuxnet: From USB to centrifuge</li>
+</ul>
+</li>
+<li>Hackers focus on IT not OT
+<ul>
+<li>Triton targeted safety instrmented systems</li>
+</ul>
+</li>
+<li>IDS is sufficient
+<ul>
+<li>Industroyer bypassed IDS, ukraine power grid affected</li>
+</ul>
+</li>
+<li>Compliance = security
+<ul>
+<li>Colonial pipeline ransomware disrupted fuel supplies despite regulatory compliance</li>
+</ul>
+</li>
+<li>OT cyberattacks are rare</li>
+<li>OT systems are too complex for hackers
+<ul>
+<li>BlackEnergy</li>
+</ul>
+</li>
+<li>Ransomeware won’t target OT systems
+<ul>
+<li>Ryuk ransomware</li>
+</ul>
+</li>
+<li>OT legacy systems cannot be secured
+<ul>
+<li>NoTPetya</li>
+</ul>
+</li>
+<li>Only large enterprises face OT threats
+<ul>
+<li>Oldsmar water plant hack</li>
+</ul>
+</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-21T13:04:16&#43;05:30">September 21, 2025</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/palo-alto-networks-cyber-security-portfolio/">Palo Alto Networks Cyber Security Portfolio</a></h1>
 	<div class="entry__content"><ol>
 <li>Strata: Enterprise Security</li>
@@ -136,200 +269,15 @@
 	</div>
 </article>
 					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-ics-execution/">ATT&amp;CK MITRE - ICS - Execution</a></h1>
-	<div class="entry__content"><ul>
-<li>Run code/ manipulate systems, functions/ parameter/ data in unauthorised way</li>
-</ul>
-<h2 id="autorun-image">AutoRun Image</h2>
-<ul>
-<li>Execute code by mounting removable media to device</li>
-</ul>
-<h2 id="change-operating-mode">Change Operating Mode</h2>
-<ul>
-<li>Of controllers to gain additional access to engineering functions like program download</li>
-</ul>
-<h2 id="command-line-interface">Command line interface</h2>
-<ul>
-<li>To install and run malware over course of operation</li>
-</ul>
-<h2 id="execution-through-api">Execution through API</h2>
-<ul>
-<li>Command between control software and hardware</li>
-</ul>
-<h2 id="gui">GUI</h2>
-<ul>
-<li>Malware can move cursors, click on keyboard keys etc</li>
-</ul>
-<h2 id="hooking">Hooking</h2>
-<ul>
-<li>Hook into API functions used by processes to redirect calls for execution and privilege escalation means</li>
-</ul>
-<h2 id="modify-controller-tasking">Modify controller tasking</h2>
-<ul>
-<li>To manipulate execution flow and controller behaviour</li>
-</ul>
-<h2 id="native-api">Native API</h2>
-<ul>
-<li>Interact with Native OS API to access system functions</li>
-</ul>
-<h2 id="scripting">Scripting</h2>
-<h2 id="user-execution">User Execution</h2>
-<ul>
-<li>Rely on user interaction for execution of malware</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-09-07T22:58:25&#43;05:30">September 07, 2025</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-mobile-execution/">ATT&amp;ACK MITRE - Mobile - Execution</a></h1>
-	<div class="entry__content"><ul>
-<li>Adversary is trying to run malicious code</li>
-</ul>
-<h2 id="command-and-scripting-interpreter">Command and scripting interpreter</h2>
-<ul>
-<li>Android is a UNIX-like OS and includes basic UNIX shell accessed via Android debug bridge (ADB) or Java’s Runtime Package
-<ul>
-<li>Unix shell: Underlying command prompts on Android and iOS devices</li>
-</ul>
-</li>
-</ul>
-<h2 id="exploitation-for-client-execution">Exploitation for client execution</h2>
-<ul>
-<li>Exploit software vulnerabilities in client apps</li>
-</ul>
-<h2 id="native-api">Native API</h2>
-<ul>
-<li>Use Android’s native devevelopment Kit (NDK) to write native functions to achieve execution of binaries of functions</li>
-</ul>
-<h2 id="scheduled-task-job">Scheduled task/ job</h2>
-<ul>
-<li>Abuses task scheduling functionalities</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-09-07T22:56:05&#43;05:30">September 07, 2025</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-enterprise-execution/">MITRE ATT&amp;CK - Enterprise - Execution</a></h1>
-	<div class="entry__content"><ul>
-<li>Adversary is trying to run malicious code on local/remote system</li>
-</ul>
-<h2 id="cloud-administration-command">Cloud Administration Command</h2>
-<ul>
-<li>Abuse cloud management services like AWS systems manager/ Azure run command to remotely run scripts in VMs</li>
-</ul>
-<h2 id="command--scripting-interpreter">Command &amp; Scripting Interpreter</h2>
-<ul>
-<li>Unix shell, Windows CMD, PowerShell etc
-<ul>
-<li>PowerShell: Info-discovery, code execution, start process cmdlet etc</li>
-<li>AppleScript: macOS scripting language, AppleEvent messages can locate open windows, send keystrokes, interact locally/ remotely etc</li>
-<li>Windows command shell: Command can be invoked remotely by SSH etc</li>
-<li>Unix Shell: Primary command prompt on Linux/ MacOS systems</li>
-<li>Visual Basic: Has interoperability with many windows technologies like native API and component object model, Supported in .NET framework etc</li>
-<li>Python</li>
-<li>JavaScript: JS can be executed in runtime environment even outside the browser</li>
-<li>Network device CLI: To execute payloads</li>
-<li>CloudAPI: CLIs in browser shells, SDKs, Azure for PowerShell etc</li>
-<li>AutoHotKey &amp; AutoIT: Scripting language to automate windows tasks</li>
-</ul>
-</li>
-</ul>
-<h2 id="container-administration-command">Container Administration Command</h2>
-<ul>
-<li>Docker daemon, Kubelet etc</li>
-</ul>
-<h2 id="deploy-container">Deploy container</h2>
-<ul>
-<li>Deploy a new container to execute/ download malware, configured without network rules, user limitations etc to bypass defences</li>
-<li>Example: Attempt to deploy privileged/ vulnerable container, escape host and access other control.</li>
-</ul>
-<h2 id="exploitation-for-client-execution">Exploitation for client execution</h2>
-<ul>
-<li>Exploit software vulnerabilities in client environment</li>
-</ul>
-<h2 id="interprocess-communication">Interprocess Communication</h2>
-<ul>
-<li>Abuse IPC mechanism for local code execution
-<ul>
-<li>Component Object Model: Use Windows COM for local code execution</li>
-<li>Dynamic data exchange: Use Windows DDE to execute arbitrary commands</li>
-<li>XCP services : by MacOS</li>
-</ul>
-</li>
-</ul>
-<h2 id="native-api">Native API</h2>
-<ul>
-<li>Interact with native OS API to execute behaviours</li>
-</ul>
-<h2 id="scheduled-tasks-jobs">Scheduled tasks/ jobs</h2>
-<ul>
-<li>Scheduling tasks in local/ remote systems
-<ul>
-<li>At: Executable in Windows/ Mac/ Linux to perform task scheduling</li>
-<li>Cron: Time based job scheduler for unix-like OS</li>
-<li>Scheduled task: Windows task scheduler for initial/ recurring code execution</li>
-<li>Systemd timers: Alternatives to cron. Can be remotely activated</li>
-<li>Container orchestration job: kubernetes etc</li>
-</ul>
-</li>
-</ul>
-<h2 id="serverless-execution">Serverless Execution</h2>
-<ul>
-<li>Compute engines, application integration services etc</li>
-</ul>
-<h2 id="shared-modules">Shared Modules</h2>
-<ul>
-<li>Executable files loaded into processes to provide access to reusable code like custom functions, invoke OS API functions etc</li>
-</ul>
-<h2 id="software-deployment-tools">Software deployment tools</h2>
-<ul>
-<li>SCCM, HBSS, Altiris, AWS system Manager etc</li>
-</ul>
-<h2 id="system-services">System Services</h2>
-<ul>
-<li>Abuse services for one-time or temporary execution
-<ul>
-<li>Launctl: Interfaces with Launchd, server management framework for MacOS</li>
-<li>Service execution: Abuse Windows Service Control Manager (services.exe)</li>
-</ul>
-</li>
-</ul>
-<h2 id="user-execution">User Execution</h2>
-<ul>
-<li>Rely on actions by user to gain execution
-<ul>
-<li>Malicious link: link leading to code executions</li>
-<li>Malicious file: .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, .cpl</li>
-<li>Malicious image: AWS amazon machine images, GCP images etc</li>
-</ul>
-</li>
-</ul>
-<h2 id="windows-management-instrumentation">Windows Management Instrumentation</h2>
-<ul>
-<li>Admin feature to access Windows system components</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-09-07T22:44:18&#43;05:30">September 07, 2025</time>
-	</div>
-</article>
-					</div>
 			</div>
 	</main>
 	
 <div class="pagination block">
 				<a class="pagination__item pagination__item--desktop" href="/">1</a>
-				<span class="pagination__item pagination__item--active" data-total="9">2</span>
+				<span class="pagination__item pagination__item--active" data-total="10">2</span>
 				<a class="pagination__item pagination__item--desktop" href="/page/3/">3</a>
 			<span class="pagination__item pagination__item--gap">&hellip;</span>
-				<a class="pagination__item pagination__item--desktop" href="/page/9/">9</a>
+				<a class="pagination__item pagination__item--desktop" href="/page/10/">10</a>
 </div>
 
 	</div>

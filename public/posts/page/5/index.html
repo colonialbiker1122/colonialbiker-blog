@@ -29,6 +29,120 @@
 			
 				<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/industrial-control-network-protocols/">Industrial Control Network Protocols</a></h1>
+	<div class="entry__content"><h2 id="1-modbus-tcp-mbtcp">1. MODBUS TCP (mbtcp)</h2>
+<ul>
+<li>Port 502</li>
+<li>TCP version of Serial Protocol - MODBUS</li>
+<li>Communicate with IP-connected fields to/from HMI, IEDs etc.</li>
+</ul>
+<h2 id="2-building-automation-controls-bacnet">2. Building Automation Controls (BACNET)</h2>
+<ul>
+<li>UDP 47808 port</li>
+<li>Building automation and controls for HVAC systems</li>
+</ul>
+<h2 id="3-open-platform-communications-opc">3. Open platform communications (OPC)</h2>
+<ul>
+<li>TCP 135/ DCE/ RPC ports</li>
+<li>Vendor neutral device communication</li>
+</ul>
+<h2 id="4-ethernet-ip">4. EtherNet IP</h2>
+<ul>
+<li>UDP 2222/ TCP 44818</li>
+<li>Manufacturing facilities, I/O data transfers, read/ set points etc</li>
+</ul>
+<h2 id="5-distributed-network-protocol-3-dnp3">5. Distributed network protocol 3 (DNP3)</h2>
+<ul>
+<li>TCP 20000</li>
+<li>Water/electricity sectors, gas pipeline ops</li>
+<li>Communication between control centers, field devices (RTU, IED, etc)</li>
+</ul>
+<h2 id="6-iec-60870-5-104">6. IEC 60870-5-104</h2>
+<ul>
+<li>TCP 2404/2405</li>
+<li>Electricity sector to monitor power systems</li>
+<li>Can restart devices, modify setpoints, directly interact with RTUs</li>
+</ul>
+<h2 id="7-iec-61850">7. IEC 61850</h2>
+<ul>
+<li>Port 102</li>
+<li>Communications between IEDs and electricity substations</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-01T22:35:30&#43;05:30">September 01, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/ics-asset-inventory/">ICS Asset Inventory</a></h1>
+	<div class="entry__content"><h2 id="physical-inspection">Physical Inspection</h2>
+<ul>
+<li>Physically walk through, document hardware seen in racks etc, inspect software and protocols etc.</li>
+<li>Time consuming, expensive, physical risks exists</li>
+</ul>
+<h2 id="configuration-analysis">Configuration Analysis</h2>
+<ul>
+<li>Access control systems and network devices</li>
+<li>Switch and firewall config can reveal IP and MAC address pairings through ARP tables to indicate devices allowed/denied in network</li>
+<li>Traffic and port information reveals general protocols in use.</li>
+<li>Configuartion settings from ICS, PLC, RTU, IED, etc</li>
+</ul>
+<h2 id="active-scanning">Active Scanning</h2>
+<ul>
+<li>Intrusive to ICS operations. Fast process.</li>
+<li>Unnatural representation of network communications</li>
+</ul>
+<h2 id="passive-network-traffic-analysis">Passive Network Traffic Analysis</h2>
+<ul>
+<li>Accurate representation of natural network control system communication</li>
+<li>Beneficial to capture and analyse during various modes of operation (startup, normal operations, emergency modes)</li>
+</ul>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<ul>
+<li>SPAN/ hardware TAP/ mirrored port configuration of fully managed switch</li>
+<li>LLDP: Link Layer Discovery Protocol</li>
+<li>Secure, searchable and scalable ICS asset inventory</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-31T11:39:35&#43;05:30">August 31, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/sliding-scale-of-cyber-security/">Sliding Scale of Cyber Security</a></h1>
+	<div class="entry__content"><h2 id="architecture">Architecture</h2>
+<ul>
+<li>Planning, establishment, maintenance of systems, supply chain, patching, network architecture with security and reliability as priority</li>
+</ul>
+<h2 id="passive-defence">Passive defence</h2>
+<ul>
+<li>Systems which provide reliable defence or insight into a subset of less-advanced threats</li>
+</ul>
+<h2 id="active-defence">Active defence</h2>
+<ul>
+<li>Human analysis being involved in proactive defence</li>
+<li>Use of ICS specific tools, monitoring for, actively responding to and learning from adversaries</li>
+</ul>
+<h2 id="intelligence">Intelligence</h2>
+<ul>
+<li>Collecting data, exploiting collected data, processing it to produce information, obtaining or adding context, producing actionable threat intel</li>
+</ul>
+<h2 id="offence">Offence</h2>
+<ul>
+<li>Partaking in legal countermeasures and self defence actions against the adversary</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-08-31T11:35:05&#43;05:30">August 31, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/control-system-engineering-assets/">Control System Engineering Assets</a></h1>
 	<div class="entry__content"><h2 id="scada---supervisory-control-and-data-aquisition">SCADA - Supervisory Control and Data Aquisition</h2>
 <ul>
@@ -161,359 +275,6 @@ Level 5 : Internet, Cloud services
 </article>
 				</div>
 			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/adapting-it-practices-to-protect-ics/">Adapting IT Practices to Protect ICS Facilities</a></h1>
-	<div class="entry__content"><h2 id="1-vulnerability-scanning">1. Vulnerability Scanning</h2>
-<ul>
-<li>Unpredictable and undesirable in ICS networks</li>
-<li>Best performed by testing in development environment</li>
-<li>Review passive network captures, asset inventories, configuration files, firmware versions against threat intel and vulnerability advisories</li>
-</ul>
-<h2 id="2-encryption">2. Encryption</h2>
-<h2 id="3-patching-in-industrial-environments">3. Patching in Industrial Environments</h2>
-<ul>
-<li>More availability of patches, patch testing by ICS vendors, Availability of standards</li>
-</ul>
-<h2 id="4-endpoint-security-for-control-system-assets">4. Endpoint security for Control System Assets</h2>
-<ul>
-<li>Application Whitelisting</li>
-<li>Endpoint Protection</li>
-</ul>
-<h2 id="5-firewalls-and-network-segmentation">5. Firewalls and Network Segmentation</h2>
-<ul>
-<li>For containment, as checkpoints for network security monitoring (NSM) data collection</li>
-<li>Segmenting network zones</li>
-<li>Control traffic via ACLs i.e Access Control Lists</li>
-<li>ICS firewalls must block all direct communications to/from the Internet</li>
-</ul>
-<h2 id="6-remote-access-for-maintenance--support">6. Remote access for Maintenance &amp; Support</h2>
-<ul>
-<li>Implement securely in multiple layers like MFA, strict access control etc.</li>
-</ul>
-<p>ICS Automation, Process Control, Access Control devices, System Accounts, Assets are very valuable to attackers.</p></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-28T23:00:51&#43;05:30">August 28, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/ddos/">DDoS (Distributed Denial of Service)</a></h1>
-	<div class="entry__content"><h2 id="introduction">Introduction</h2>
-<ul>
-<li>Overwhelm target (server/website etc) resources making it diffucult/ impossible for legitimate users to access the service.</li>
-<li>Impacts: Disrupt, cause downtime or degrade performance</li>
-</ul>
-<h2 id="common-ddos-attacks">Common DDoS Attacks</h2>
-<ul>
-<li>SYN flood</li>
-<li>HTTP flood</li>
-<li>UDP flood</li>
-<li>Ping of death: send IP packets greater than 65K bytes</li>
-<li>Smurf attack: Flood with ICMP packets</li>
-<li>Slowloris</li>
-<li>DNS flood</li>
-<li>Teardrop attack: Send fragmented packets. Server can’t reassemble</li>
-<li>DNS amplification</li>
-<li>SNMP amplification</li>
-<li>NTP amplification</li>
-<li>SNMP reflection</li>
-<li>SSDP</li>
-<li>Fraggle attack: Similar to smurf. Use UDP instead of ICMP</li>
-</ul>
-<h2 id="detailed-list-of-ddos-attacks">Detailed List of DDoS Attacks</h2>
-<h3 id="1-ddos-cldap-flood">1. DDOS CLDAP Flood</h3>
-<ul>
-<li>Servers running CLDAP (connectionless LDAP), UDP protocol.</li>
-<li>Amplification: Small requests but huge reply from server</li>
-<li>Exhaustion of target server’s resources</li>
-</ul>
-<h3 id="2-ddos-discard-flood">2. DDOS Discard Flood</h3>
-<ul>
-<li>Server running discard protocol (port 9). TCP or UDP. RFC 863</li>
-<li>Discard services used for testing/ debugging/ maintenance etc.</li>
-</ul>
-<h3 id="3-ddos-dns-flood">3. DDOS DNS flood</h3>
-<ul>
-<li>Servers running DNS query traffic
-<ul>
-<li>DNS Query Flood: Large number of queries (random/ specific)</li>
-<li>DNS Reflection Attack</li>
-<li>DNS Amplification Attack: Response size &gt; Query size</li>
-</ul>
-</li>
-<li>DNS rate limiting and traffic shaping
-<ul>
-<li>Traffic classification: A/ MX/ AAAA records, source IP etc.</li>
-<li>Prioritization and bandwidth allocation</li>
-<li>BIND, Unbound, Microsoft DNS</li>
-</ul>
-</li>
-<li>Anycast routing</li>
-<li>Open resolver protection: Prevention agaisnt amplification attacks</li>
-</ul>
-<h3 id="4-ddos-dns-reflect-attck">4. DDOS DNS Reflect-attck</h3>
-<ul>
-<li>Zombie machine sends DNS requests with source addresses spoofed to the target address to multiple open DNS resolvers. Resolvers then send reply to target machine.</li>
-</ul>
-<h3 id="5-ddos-dns-fragmented-reflection-flood">5. DDoS DNS Fragmented Reflection Flood</h3>
-<ul>
-<li>Send large response from DNS server to client</li>
-<li>Response is large enough to create fragmented UDP packets.</li>
-</ul>
-<h3 id="6-ddos-dns-fragmented-reflection-flood-dnskey">6. DDoS DNS Fragmented Reflection Flood (DNSKEY)</h3>
-<ul>
-<li>Large fragmented UDP datagram as response to small query</li>
-<li>Response would be DNS key records along with RRSIGs</li>
-<li>Fragmentation complicates detection and mitigation of attack</li>
-<li>Ensure DNSSEC</li>
-<li>Traffic analysis</li>
-</ul>
-<h3 id="7-ddos-dns-fragmented-reflection-flood-txt">7. DDoS DNS Fragmented Reflection Flood (TXT)</h3>
-<ul>
-<li>Large fragmented UDP datagram, as response to small query</li>
-<li>Response will be TXT records</li>
-</ul>
-<h3 id="8-ddos-http-get-post">8. DDoS HTTP GET POST</h3>
-<ul>
-<li>Excessive GETs and POSTs of files a DDoS attack [RFC 1945]</li>
-<li>Use WAF: Web pplication Firewall</li>
-<li>Use caching, load balancing, application hardening, IP whitelisting</li>
-</ul>
-<h3 id="9-ddos-http-multiverb">9. DDoS HTTP MultiVERB</h3>
-<ul>
-<li>Simulate multiple GETs within a single HTTP request.</li>
-<li>Used to create DoS condition on web server</li>
-<li>Multiple HTTP methods (VERBs) like GET/ POST/ PUT etc to overwhelm</li>
-<li>Complex traffic pattern</li>
-</ul>
-<h3 id="10-ddos-http-pipeline-flood">10. DDoS HTTP Pipeline Flood</h3>
-<ul>
-<li>Multiple requests within a single HTTP session</li>
-<li>HTTP Pipelining: Feature of HTTP/1.1</li>
-<li>Send multiple HTTP requests without waiting for response</li>
-<li>Connection handling, queueing and processing issues come up</li>
-</ul>
-<h3 id="11-ddos-http-rudy">11. DDoS HTTP RUDY</h3>
-<ul>
-<li>Low and slow attack</li>
-<li>A RUDY tool crawls the victim’s app looking for a form field</li>
-<li>Creates HTTP post request. Header mentions length content</li>
-<li>Tool breaks down packets as small as 1 byte each</li>
-<li>Tool sends packets at 10 sec interval each</li>
-</ul>
-<h3 id="12-ddos-http-slow-post">12. DDoS HTTP Slow Post</h3>
-<ul>
-<li>Exploit web server’s support for users with slow or intermittent connections</li>
-<li>Content-length header contains a message body size will be fulfilled over several TCP packets</li>
-</ul>
-<h3 id="13-ddos-http-slowloris">13. DDoS HTTP Slowloris</h3>
-<ul>
-<li>Opening and maintaining many simultaneous HTTP connections</li>
-<li>Uses up server resources (threads)</li>
-<li>Attacker periodically sends partial request headers to target to keep request alive</li>
-<li>Increase server availability and rate limit incoming requests</li>
-</ul>
-<h3 id="14-ddos-http-tcp-receive-window-size-0">14. DDoS HTTP TCP Receive Window Size 0</h3>
-<ul>
-<li>Retrieves a large webpage then slowly lowers the TCP receive window size to 0 bytes</li>
-<li>Server’s TCP stack is forced to pause data transmission</li>
-<li>Causes resource exhaustion and connection flooding</li>
-</ul>
-<h3 id="15-ddos-icmp-echo-reply-flood">15. DDoS ICMP Echo Reply Flood</h3>
-<ul>
-<li>Echo request packet directed at a broadcast/ multicast address with source address assigned to victim IP address</li>
-<li>Emulate reflected traffic directed at the victim</li>
-<li>Flooding with echo replies</li>
-</ul>
-<h3 id="16-ddos-icmp-fragment-flood">16. DDoS ICMP Fragment Flood</h3>
-<ul>
-<li>Send large amount of random ICMP request data larger than standard MTU of 1500 bytes</li>
-<li>ICMP messages need to be fragmented, overwhelming the victim with computationally expensive task of reassembling frames</li>
-<li>Causes network congestion, is complex and stealthy</li>
-</ul>
-<h3 id="17-ddos-icmp-ping-flood">17. DDoS ICMP Ping Flood</h3>
-<ul>
-<li>Send overwhelming amount of ICMP ping packets</li>
-</ul>
-<h3 id="18-ddos-loic-http">18. DDoS LOIC HTTP</h3>
-<ul>
-<li>Low Orbit Ion Cannon (LOIC): Tool developed by Praetox Technology</li>
-<li>Now open-sourced. JS LOIC and Low Orbit Web Cannon</li>
-<li>Flood target server with TCP, UDP, HTTP packets</li>
-<li>One attacker using LOIC is not serious impact</li>
-<li>In order to make co-ordinated attacks easier, users can use IRC chat channels to run a ‘Hivemind’ version of LOIC which lets one primary user several networked secondary computers, creating a voluntary botnet</li>
-</ul>
-<h3 id="19-ddos-loic-tcp-8080">19. DDoS LOIC TCP 8080</h3>
-<ul>
-<li>Simulate LOIC TCP DDoS traffic targeting port 8080</li>
-</ul>
-<h3 id="20-ddos-loic-udp-port-53">20. DDoS LOIC UDP Port 53</h3>
-<ul>
-<li>Simulate LOIC UDP DDoS traffic targeting port53</li>
-</ul>
-<h3 id="21-ddos-mdns-response-flood">21. DDoS mDNS Response Flood</h3>
-<ul>
-<li>Attacker redirects flood of mDNS reponses to victim</li>
-<li>mDNS
-<ul>
-<li>Primarily within LAN</li>
-<li>Serverless. Multicast approach</li>
-<li>Broadcast query ad response to all devices</li>
-</ul>
-</li>
-<li>Used in 0 config networking scenarios where devices can automatically discover each other and their services</li>
-</ul>
-<h3 id="22-ddos-ntpv2-moonlist-flood">22. DDoS NTPv2 Moonlist Flood</h3>
-<ul>
-<li>Attacker sends spoofed source moonlist request to NTP server</li>
-<li>Response of 44 KB to victim. Amplification factor : 233X</li>
-<li>NTP: Network Time Protocol. Synchronise clocks of devices</li>
-<li>Monlist: Returns list of last 600 IPs which queried NTP server</li>
-</ul>
-<h3 id="23-ddos-qotd-reflection-flood">23. DDoS QoTD Reflection Flood</h3>
-<ul>
-<li>Quote of the day protocol. UDP port 17</li>
-</ul>
-<h3 id="24-ddos-radius-flood">24. DDoS Radius Flood</h3>
-<ul>
-<li>RADIUS : Remote Authentication Dial-in User Service</li>
-<li>Used for Authentication, Authorisation, Accounting in network service</li>
-<li>UDP port 1812 (AA) and 1813 (Accounting)</li>
-<li>Client sends RADIUS requests to the server</li>
-</ul>
-<h3 id="25-ddos-recursive-get">25. DDoS Recursive GET</h3>
-<ul>
-<li>GET requests are used to traverse through different pages or images collected by attacker</li>
-<li>Cause server to generate excessive load</li>
-<li>May also recursively trigger other GET requests</li>
-</ul>
-<h3 id="26-ddos-rcp-portmapper-reflection-flood">26. DDoS RCP/ Portmapper Reflection Flood</h3>
-<ul>
-<li>Victim receives portmapper dump call responses</li>
-<li>RCP (Remote Procedure Call): Request service from another computer in the network. Executes remote procedures</li>
-<li>Portmapper (rpcbind): Used in Unix-like systems to map RPC program numbers to network port numbers</li>
-</ul>
-<h3 id="27-ddos-rtp-flood">27. DDoS RTP Flood</h3>
-<ul>
-<li>Backscatter traffic from a call center that has been flooded with spoofed SIP INVITE messages</li>
-<li>RTP: Real-Time Transport Protocol: Deliver audio/video over IP. VoIP calls, video conferencing, streaming media.</li>
-</ul>
-<h3 id="28-ddos-sip-invite-flood">28. DDoS SIP Invite Flood</h3>
-<ul>
-<li>Generate SIP invite messages with spoofed via and from header</li>
-<li>SIP: Session Initiation Protocol. Call setup, modification, teardown, etc. and management of multimedia communication sessions over IP networks</li>
-<li>SIP INVITE: Initiate new session or call</li>
-</ul>
-<h3 id="29-ddos-snmpv2-bulk-response-flood">29. DDoS SNMPv2 Bulk Response Flood</h3>
-<ul>
-<li>Flood UDP datagrams at target server</li>
-<li>Reflection attack caused by forged bulk Get requests requesting common OIDs repeatedly</li>
-<li>Simple Network Management Protocol</li>
-<li>GETBULK: Retrieve large info from network device</li>
-</ul>
-<h3 id="30-ddos-ssdp-flood">30. DDoS SSDP Flood</h3>
-<ul>
-<li>Victim receives flood of SSDP M-search responses directed to its IP from reflectors</li>
-<li>Simple Service Discovery Protocol: Discover services over LAN part of UPnP (Universal plug n play), UDP port 1900</li>
-</ul>
-<h3 id="31-ddos-ssl-http-post-flood">31. DDoS SSL HTTP POST Flood</h3>
-<ul>
-<li>Sends large amount of data via HTTP POST method over SSL</li>
-<li>Consumes CPU and memory as it decrypts the contents</li>
-</ul>
-<h3 id="32-ddos-ssl-key-exchange-flood">32. DDoS SSL Key Exchange Flood</h3>
-<ul>
-<li>Flood of SSL initial key exchange messages</li>
-<li>CPU use is exhausted</li>
-</ul>
-<h3 id="33-ddos-tcp-rst-flood">33. DDoS TCP RST Flood</h3>
-<ul>
-<li>Reflection attack that hides the source of the attack</li>
-<li>RST packets are sent in response to a TCP packet that is received out of a session in state</li>
-<li>Disrupt active connection. Can interrupt ongoing session, web transactions, file transfers, etc.</li>
-</ul>
-<h3 id="34-ddos-tcp-syn-flood">34. DDoS TCP SYN Flood</h3>
-<ul>
-<li>Uncomplicated version of SYN flood attack</li>
-</ul>
-<h3 id="35-ddos-tdl4-http-flood">35. DDoS TDL4 HTTP Flood</h3>
-<ul>
-<li>TDL4 DDoS initiated by instruction from a C&amp;C server to an infected bot</li>
-<li>TDL4 (Top Layer DDoS): Specific type of DDoS attack tool or vector that primarily targets layer 7 of OSI. Known for its ability to conduct sophisticated and high volume attacks</li>
-<li>TDL4 was most active and resilient botnets in 2011.</li>
-</ul>
-<h3 id="36-ddos-udp-application-flood">36. DDoS UDP Application Flood</h3>
-<ul>
-<li>Flood of UDP transport application traffic at a target service</li>
-</ul>
-<h3 id="37-ddos-udp-chargen-reply-flood-client-simulator">37. DDoS UDP Chargen Reply Flood (Client simulator):</h3>
-<ul>
-<li>Chargen service: Simply sends out a string of characters for purpose of basic troubleshooting</li>
-</ul>
-<h3 id="38-ddos-udp-flood">38. DDoS UDP Flood</h3>
-<h3 id="39-ddos-udp-fragmentation">39. DDoS UDP fragmentation</h3>
-<ul>
-<li>Overwhelming the reassembly process</li>
-</ul>
-<h3 id="40-high-orbit-ion-cannon">40. High Orbit Ion Cannon</h3>
-<ul>
-<li>Successor of LOIC. Open source</li>
-<li>Works via application layer. HTTP flood DDoS attack</li>
-<li>Can target 256 sites simultaneously</li>
-<li>Use Swedish proxies to obfuscate their location</li>
-<li>IP reputation filtering</li>
-</ul>
-<h3 id="41mirai-botnet">41.Mirai Botnet</h3>
-<ul>
-<li>Mirai malware affects smart devices running on APC processor turning them into network of remotely controlled bots</li>
-<li>If default username and password are not changed of IoT services, it can be infected with Mirai botnet</li>
-<li>Mirai is mutating. Has given both to Okiru, Satori, Masuta, Pure Masuta, OMG strain, IOTrooper, reaper</li>
-</ul>
-<h3 id="42-quic-flood-ddos">42. QUIC Flood DDoS</h3>
-<ul>
-<li>QUIC Protocol: Transport layer protocol theoretically replacing TCP and TLS. HTTP v3 runs on QUIC</li>
-<li>Flood QUIC traffic to overwhelm the server</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-26T19:23:41&#43;05:30">August 26, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/bridging-it-ot-divide/">Bridging IT-OT Divide</a></h1>
-	<div class="entry__content"><ul>
-<li>Cultural differences</li>
-<li>Cross training</li>
-<li>Continuous Audit</li>
-<li>Unified convergent IT-OT team is required</li>
-<li>Settle periodic conflicts, budgeting, technical advisory etc</li>
-<li>IT-OT integration has led to increased attack surface</li>
-<li>Technological disparity: Legacy technology in OT domain</li>
-<li>Top-Down rationalisation is requireed from Board/ CXO to downwards</li>
-<li>Organizations don’t have OT security policies</li>
-<li>Don’t divide IT/OT. Treat security as a whole (Informational + Operational)</li>
-<li>Risk assessment + management is needed at granular level</li>
-<li>Skillsets and knowledge gap: White collar blue-brown collar jobs</li>
-<li>Upskilling from OT roles to OT-security roles is comparatively easy</li>
-<li>Mechanism to test patches is required</li>
-<li>How to deal with legacy OT systems?</li>
-<li>OT needs quality validations (CSV, GXP)</li>
-<li>How to quantify risk in OT environments?</li>
-<li>Deal with future threats?</li>
-<li>Have visibility, deal with social engineering, find vulnerabilities, supply chain issues (crowdstrikes, etc), regulatory changes</li>
-<li>Microsegmentation reduces impact (DCS/ SIS)</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-24T21:19:32&#43;05:30">August 24, 2025</time>
-	</div>
-</article>
-				</div>
-			
 		</div>
 	</main>
 	
@@ -522,10 +283,10 @@ Level 5 : Internet, Cloud services
 				<a class="pagination__item pagination__item--desktop" href="/posts/page/2/">2</a>
 				<a class="pagination__item pagination__item--desktop" href="/posts/page/3/">3</a>
 				<a class="pagination__item pagination__item--desktop" href="/posts/page/4/">4</a>
-				<span class="pagination__item pagination__item--active" data-total="9">5</span>
+				<span class="pagination__item pagination__item--active" data-total="10">5</span>
 				<a class="pagination__item pagination__item--desktop" href="/posts/page/6/">6</a>
 			<span class="pagination__item pagination__item--gap">&hellip;</span>
-				<a class="pagination__item pagination__item--desktop" href="/posts/page/9/">9</a>
+				<a class="pagination__item pagination__item--desktop" href="/posts/page/10/">10</a>
 </div>
 
 	</div>

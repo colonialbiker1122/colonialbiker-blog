@@ -6,8 +6,29 @@
     <description>Recent content in Posts on Colonialbiker Blog Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Sep 2025 21:22:58 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 28 Sep 2025 23:30:44 +0530</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Attacker Profiles</title>
+      <link>//localhost:1313/posts/attacker-profiles/</link>
+      <pubDate>Sun, 28 Sep 2025 23:30:44 +0530</pubDate>
+      <guid>//localhost:1313/posts/attacker-profiles/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Cyber Criminals: Known for proliferation of bots and botnet attacks&lt;/li&gt;&#xA;&lt;li&gt;State Affiliated Groups: Nation-state sponsored actors having political motivation&lt;/li&gt;&#xA;&lt;li&gt;Hactivists: To generate attention for political or social cause&lt;/li&gt;&#xA;&lt;li&gt;Script Kiddies: Novice, use open source tools without realising the applications&lt;/li&gt;&#xA;&lt;li&gt;Cyber Terrorist: Cause damage and destruction&lt;/li&gt;&#xA;&lt;li&gt;Cyber crime vendors: Business email compromise, ransomware as a service etc.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>SaaS Security Challenges</title>
+      <link>//localhost:1313/posts/saas-security-challenges/</link>
+      <pubDate>Sun, 28 Sep 2025 23:26:47 +0530</pubDate>
+      <guid>//localhost:1313/posts/saas-security-challenges/</guid>
+      <description>&lt;h2 id=&#34;saas-security-challenges&#34;&gt;SaaS Security Challenges&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Malicious Outsiders&lt;/li&gt;&#xA;&lt;li&gt;Malicious Insiders: Disgruntled employees etc.&lt;/li&gt;&#xA;&lt;li&gt;Accident Data Exposure: Accidental share, promiscuous share, ghost share&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Accidental share: Accidentally shared with wrong persons or groups&lt;/li&gt;&#xA;&lt;li&gt;Promiscuous share: Person shares to another who again shares to another&lt;/li&gt;&#xA;&lt;li&gt;Ghost share: Share is active for a guy who is not working now&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;saas-application-risk&#34;&gt;SaaS Application Risk:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Exposure of confidential information: Data breach, data privacy, compliance&lt;/li&gt;&#xA;&lt;li&gt;Cloud based threats&lt;/li&gt;&#xA;&lt;li&gt;Unsanctioned SaaS apps: Lack of visibility into SaaS&lt;/li&gt;&#xA;&lt;li&gt;Lack of visibility and control&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Web 3.0</title>
+      <link>//localhost:1313/posts/web-30/</link>
+      <pubDate>Sun, 28 Sep 2025 23:24:36 +0530</pubDate>
+      <guid>//localhost:1313/posts/web-30/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Return the power of Internet to individual users&lt;/li&gt;&#xA;&lt;li&gt;AI &amp;amp; ML: Enable systems to understand and act on information like humans use&lt;/li&gt;&#xA;&lt;li&gt;Blockchain: Data structure containing transactional records. Decentralised&lt;/li&gt;&#xA;&lt;li&gt;Data Mining: Discover patterns in large data sets.&lt;/li&gt;&#xA;&lt;li&gt;Mixed Reality: AR, VR, XR, immersive, interactive, sensory experience&lt;/li&gt;&#xA;&lt;li&gt;Natural language search: Understand human spoken language to find information&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Web 2.0</title>
       <link>//localhost:1313/posts/web-20/</link>

@@ -29,6 +29,223 @@
 			
 				<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-enterprise-resource-development/">MITRE ATT&amp;CK - Enterprise - Resource Development</a></h1>
+	<div class="entry__content"><ul>
+<li>Adversaries creating, purchasing, compromising, stealing resources like infrastructure, accounts, capabilities etc</li>
+</ul>
+<h2 id="acquire-access">Acquire Access</h2>
+<ul>
+<li>Purchase/ acquire existing access to target system/ network via brokers who sell previously compromised systems</li>
+</ul>
+<h2 id="acquire-infrastructure">Acquire Infrastructure</h2>
+<ul>
+<li>Buy/ lease/ rent/ physical or cloud/ domains/ web services etc
+<ul>
+<li>Domains: Domain names</li>
+<li>DNS server: For post-compromise activity, C&amp;C etc</li>
+<li>Virtual Private Server: To rapidly provision, modify, shutdown infra etc</li>
+<li>Servers: To stage, launch, execute operations, water hole operations, C&amp;C, phishing etc</li>
+<li>Botnet: Subscription from botnet, booter/ stresser service</li>
+<li>Web services: Abused for C&amp;C, phishing, exfiltration over web etc</li>
+<li>Serverless: Cloudflare workers, AWS lambda etc</li>
+<li>Malvertising: Using ads to distribute malware to victims</li>
+</ul>
+</li>
+</ul>
+<h2 id="compromise-accounts">Compromise Accounts</h2>
+<ul>
+<li>Rather than creating/ establishing accounts as utilising an existing persona has level of trust in potential victim</li>
+<li>Social media accounts: Compromise existing accounts</li>
+<li>Email accounts: To conduct phishing, spam email campaigns, acquire infrastructure</li>
+<li>Cloud accounts: Dropbox, S3, to upload tools, exfiltration to cloud storage</li>
+</ul>
+<h2 id="compromise-infra">Compromise infra</h2>
+<ul>
+<li>Physical, cloud, domain, network, infrastructure, web, DNS etc
+<ul>
+<li>Domains: Domain registration hijacking, social engineering, A domain registration help desk, advantage of renewal process gaps etc</li>
+<li>DNS server: Compromise 3rd party DNS, servers for C&amp;C etc</li>
+<li>Virtual Private Server</li>
+<li>Server</li>
+<li>Botnet</li>
+<li>Web services</li>
+<li>Serverless</li>
+<li>Network devices: Small office/ home office routers etc</li>
+</ul>
+</li>
+</ul>
+<h2 id="develop-capabilities">Develop capabilities</h2>
+<ul>
+<li>Malwares, exploits ,self-signed certificates etc
+<ul>
+<li>Malware: Payloads, droppers, post-compromise tools, backdoors etc</li>
+<li>Code signing certificates: Create self-signed code signing certificates</li>
+<li>Digital certificates: Adversaries create self-signed SSL/TLS certificates</li>
+<li>Exploits: Through fuzzing, patch analysis etc</li>
+</ul>
+</li>
+</ul>
+<h2 id="establish-accounts">Establish Accounts</h2>
+<ul>
+<li>To create persona for public information, presence, history affiliations for social media, website, to scrutinize for legitimacy</li>
+<li>Social media accounts</li>
+<li>Email accounts: To conduct phishing, acquire infra, etc</li>
+<li>Cloud accounts</li>
+</ul>
+<h2 id="obtain-capabilities">Obtain Capabilities</h2>
+<ul>
+<li>Purchase, freely download or steal
+<ul>
+<li>Malware: To support operations, maintain control, evade defences etc</li>
+<li>Tool: Procure commercial software licenses (cobalt strike, PsExec etc)</li>
+<li>Code signing certificates</li>
+<li>Digital certificates</li>
+<li>Exploits</li>
+<li>Vulnerabilities: Gain information via open/ closed vulnerability databases</li>
+<li>AI: To aid various techniques, to inform bolster, enable tasks, conduct recon, create scripts, create payloads, assist social engineering etc</li>
+</ul>
+</li>
+</ul>
+<h2 id="stage-capabilities">Stage capabilities</h2>
+<ul>
+<li>Upload, install, stage capabilities on infra
+<ul>
+<li>Upload Malware: To support operations, to enable ingress tool transfer</li>
+<li>Upload tool: Making it available to victim network</li>
+<li>Install digital certificate</li>
+<li>Drive by target: Prepare operational environemnt to infect systems</li>
+<li>Link target: Put in place resources which can be referenced by a link</li>
+<li>SEO poisoning</li>
+</ul>
+</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-03T19:52:52&#43;05:30">September 03, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/attack-enterprise-reconnaissance/">MITRE ATT&amp;CK - Enterprise - Reconnaissance</a></h1>
+	<div class="entry__content"><ul>
+<li>Actively or passively gather information of victim organization/ infrastructure/ staff etc.</li>
+</ul>
+<h2 id="active-scanning">Active Scanning</h2>
+<ul>
+<li>Probe victim infrastructure via network traffic</li>
+<li>Scanning IP blocks: public IPs</li>
+<li>Vulnerability Scanning: Configurations of target host/ applications, versions etc</li>
+<li>Wordlist Scanning: Bruteforcing, Crawling, to identify content and infrastructure (like if an SQLDB is MySQL, Oracle, Ppostgress etc).</li>
+</ul>
+<h2 id="gather-victim-host-information">Gather Victim host information</h2>
+<ul>
+<li>Administrative data, configs, etc</li>
+<li>Hardware: Types, versions, additional components etc</li>
+<li>Software: Types, versions, additional components, etc (AV, SIEM, etc)</li>
+<li>Firmware: Types, versions, configurtions, age, patch-level etc</li>
+<li>Client Configuration: Settings, OS, versions, architecture, language, virtualisation</li>
+</ul>
+<h2 id="gather-victim-identity-information">Gather victim identity information</h2>
+<ul>
+<li>PII, credentials, MFA configurations etc</li>
+<li>Credentials: User tendency to use same passwords across accounts</li>
+<li>Emails: Organizations having public facing email infrastructure and addresses of employees</li>
+<li>Employee names: To derive emails, craft more believable lures</li>
+</ul>
+<h2 id="gather-victim-network-information">Gather victim network information</h2>
+<ul>
+<li>Administration data, topology, operations etc</li>
+<li>Domain: What domains, their owners, administrative data, nameservers etc</li>
+<li>DNS: Registered Nameservers, mailserver, DNS, MX, TXT, SPF records etc</li>
+<li>Network topology: Physical/ logical, gateways, routers etc</li>
+<li>IP addresses: To derive organization size, physical location, ISP etc</li>
+<li>Network trust dependencies: 3rd party organizations, ISP, contractors etc</li>
+<li>Network security applications: Firewalls, filters, proxies, NIDs etc</li>
+</ul>
+<h2 id="gather-victim-organization-information">Gather victim organization information</h2>
+<ul>
+<li>Divisions, departments, business operations, roles, responsibility</li>
+<li>Gather physical locations: Key resources, Infrasrucure, authorities, victims etc</li>
+<li>Identify roles: PII, data resources</li>
+<li>Business relationships: 3rd party organizations, domains, contracts, network access</li>
+<li>Identify business tempo: Operational working hours, purchases, shipments etc</li>
+</ul>
+<h2 id="phishing-for-information">Phishing for information</h2>
+<ul>
+<li>Objective is to gather data from victim</li>
+<li>Spear phishing service: Social engineering, credentials, actionable information</li>
+<li>Spear phishing attachment/ link/ voice: Posing as a source with a reason to collect information like establish or compromise accounts, send urgent messages etc</li>
+</ul>
+<h2 id="search-closed-sources">Search closed sources</h2>
+<ul>
+<li>Available for purchase from private sources, databases, paid subscriptions, feeds of threat intel, dark web, cyber blackmarkets</li>
+<li>Threat intel vendors: Target industries, attribution claims, successful TTPs/ countermeasures etc from paid feeds/ portals from threat intel</li>
+<li>Purchase technical data: From private sources, databases, darkweb etc</li>
+</ul>
+<h2 id="search-open-technical-databases">Search open technical databases</h2>
+<ul>
+<li>Databases, repositories, domains, network, artifacts etc</li>
+<li>DNS/ passive DNS: Records like nameservers, subdomains, mailservers etc</li>
+<li>WHOIS: Assigned IP blocks, contact info, DNS nameservers</li>
+<li>Digital certificates: Contain information of company name, location</li>
+<li>CDN: Gain data about victim</li>
+<li>Scan DBs: Internet scans/ surveys, IPs, hostnames, ports, certificates, server banners</li>
+</ul>
+<h2 id="search-open-websites-domains">Search open websites/ domains</h2>
+<ul>
+<li>From Social Media, news, hirings, contracts awarded etc</li>
+<li>Social media: Victim organization, business announcements, roles, locations, staff</li>
+<li>Search engines</li>
+<li>Code repositories: GitHub, GitLab, Sourceforge, BitBucket etc</li>
+</ul>
+<h2 id="search-victim-owned-websites">Search victim owned websites</h2>
+<ul>
+<li>Departments/ divisions, locations, names, roles, contact info, business operations, relationships etc</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-03T19:21:54&#43;05:30">September 03, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/mitre-introduction/">MITRE ATT&amp;CK Introduction</a></h1>
+	<div class="entry__content"><ul>
+<li>Threat informed defence</li>
+<li>David -Bianco’s pyramid of pain: TTPs</li>
+<li>Adversary group: G</li>
+<li>Campaign: C</li>
+<li>Software: S</li>
+<li>Data source: DS</li>
+<li>Tactic: TA</li>
+<li>Sub-technique: T</li>
+<li>Mitigation: M</li>
+<li>MITRE is informed by what has been seen in operational use by the broader community</li>
+<li>Tactic: Goals of an adversary during intrusion. Help us understand why an adversary performs each action</li>
+<li>Technique: Means by which adversaries achieve their tactical goals</li>
+<li>Procedure: Specific implementation</li>
+<li>Common knowledge: CTI analysts, Red team and SOC analysts, executives etc</li>
+<li>Quantitative scorecard
+<ul>
+<li>Documenting priorities</li>
+<li>Identify gaps</li>
+<li>Informed decision making</li>
+</ul>
+</li>
+<li>Threat informed defence: systematic application of a deep understanding of adversary tradecraft and technology to prevent, detect and/or respond to cyber attacks</li>
+<li>Threat emulation: Offensive assessment mimicking particular adversary behaviours such as those in ATT&amp;CK</li>
+<li>Threat driven security engineering</li>
+</ul></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2025-09-02T22:14:45&#43;05:30">September 02, 2025</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/user-behaviour-centric-system/">User Behaviour Centric System</a></h1>
 	<div class="entry__content"><ul>
 <li>Capture data from various devices, apps, web services where an employee is creating an outbound connection</li>
@@ -154,120 +371,6 @@
 </article>
 				</div>
 			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/industrial-control-network-protocols/">Industrial Control Network Protocols</a></h1>
-	<div class="entry__content"><h2 id="1-modbus-tcp-mbtcp">1. MODBUS TCP (mbtcp)</h2>
-<ul>
-<li>Port 502</li>
-<li>TCP version of Serial Protocol - MODBUS</li>
-<li>Communicate with IP-connected fields to/from HMI, IEDs etc.</li>
-</ul>
-<h2 id="2-building-automation-controls-bacnet">2. Building Automation Controls (BACNET)</h2>
-<ul>
-<li>UDP 47808 port</li>
-<li>Building automation and controls for HVAC systems</li>
-</ul>
-<h2 id="3-open-platform-communications-opc">3. Open platform communications (OPC)</h2>
-<ul>
-<li>TCP 135/ DCE/ RPC ports</li>
-<li>Vendor neutral device communication</li>
-</ul>
-<h2 id="4-ethernet-ip">4. EtherNet IP</h2>
-<ul>
-<li>UDP 2222/ TCP 44818</li>
-<li>Manufacturing facilities, I/O data transfers, read/ set points etc</li>
-</ul>
-<h2 id="5-distributed-network-protocol-3-dnp3">5. Distributed network protocol 3 (DNP3)</h2>
-<ul>
-<li>TCP 20000</li>
-<li>Water/electricity sectors, gas pipeline ops</li>
-<li>Communication between control centers, field devices (RTU, IED, etc)</li>
-</ul>
-<h2 id="6-iec-60870-5-104">6. IEC 60870-5-104</h2>
-<ul>
-<li>TCP 2404/2405</li>
-<li>Electricity sector to monitor power systems</li>
-<li>Can restart devices, modify setpoints, directly interact with RTUs</li>
-</ul>
-<h2 id="7-iec-61850">7. IEC 61850</h2>
-<ul>
-<li>Port 102</li>
-<li>Communications between IEDs and electricity substations</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-09-01T22:35:30&#43;05:30">September 01, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/ics-asset-inventory/">ICS Asset Inventory</a></h1>
-	<div class="entry__content"><h2 id="physical-inspection">Physical Inspection</h2>
-<ul>
-<li>Physically walk through, document hardware seen in racks etc, inspect software and protocols etc.</li>
-<li>Time consuming, expensive, physical risks exists</li>
-</ul>
-<h2 id="configuration-analysis">Configuration Analysis</h2>
-<ul>
-<li>Access control systems and network devices</li>
-<li>Switch and firewall config can reveal IP and MAC address pairings through ARP tables to indicate devices allowed/denied in network</li>
-<li>Traffic and port information reveals general protocols in use.</li>
-<li>Configuartion settings from ICS, PLC, RTU, IED, etc</li>
-</ul>
-<h2 id="active-scanning">Active Scanning</h2>
-<ul>
-<li>Intrusive to ICS operations. Fast process.</li>
-<li>Unnatural representation of network communications</li>
-</ul>
-<h2 id="passive-network-traffic-analysis">Passive Network Traffic Analysis</h2>
-<ul>
-<li>Accurate representation of natural network control system communication</li>
-<li>Beneficial to capture and analyse during various modes of operation (startup, normal operations, emergency modes)</li>
-</ul>
-<h2 id="miscellaneous">Miscellaneous</h2>
-<ul>
-<li>SPAN/ hardware TAP/ mirrored port configuration of fully managed switch</li>
-<li>LLDP: Link Layer Discovery Protocol</li>
-<li>Secure, searchable and scalable ICS asset inventory</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-31T11:39:35&#43;05:30">August 31, 2025</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/posts/sliding-scale-of-cyber-security/">Sliding Scale of Cyber Security</a></h1>
-	<div class="entry__content"><h2 id="architecture">Architecture</h2>
-<ul>
-<li>Planning, establishment, maintenance of systems, supply chain, patching, network architecture with security and reliability as priority</li>
-</ul>
-<h2 id="passive-defence">Passive defence</h2>
-<ul>
-<li>Systems which provide reliable defence or insight into a subset of less-advanced threats</li>
-</ul>
-<h2 id="active-defence">Active defence</h2>
-<ul>
-<li>Human analysis being involved in proactive defence</li>
-<li>Use of ICS specific tools, monitoring for, actively responding to and learning from adversaries</li>
-</ul>
-<h2 id="intelligence">Intelligence</h2>
-<ul>
-<li>Collecting data, exploiting collected data, processing it to produce information, obtaining or adding context, producing actionable threat intel</li>
-</ul>
-<h2 id="offence">Offence</h2>
-<ul>
-<li>Partaking in legal countermeasures and self defence actions against the adversary</li>
-</ul></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2025-08-31T11:35:05&#43;05:30">August 31, 2025</time>
-	</div>
-</article>
-				</div>
-			
 		</div>
 	</main>
 	
@@ -275,10 +378,10 @@
 				<a class="pagination__item pagination__item--desktop" href="/posts/">1</a>
 				<a class="pagination__item pagination__item--desktop" href="/posts/page/2/">2</a>
 				<a class="pagination__item pagination__item--desktop" href="/posts/page/3/">3</a>
-				<span class="pagination__item pagination__item--active" data-total="9">4</span>
+				<span class="pagination__item pagination__item--active" data-total="10">4</span>
 				<a class="pagination__item pagination__item--desktop" href="/posts/page/5/">5</a>
 			<span class="pagination__item pagination__item--gap">&hellip;</span>
-				<a class="pagination__item pagination__item--desktop" href="/posts/page/9/">9</a>
+				<a class="pagination__item pagination__item--desktop" href="/posts/page/10/">10</a>
 </div>
 
 	</div>
